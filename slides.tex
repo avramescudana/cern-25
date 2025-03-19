@@ -557,7 +557,7 @@
             \end{center}
         \column{.02\textwidth}
         \column{.47\textwidth}
-            \vspace{20pt}
+            \vspace{7pt}
             \begin{center}
             \begin{custombox2}{Glasma initial stage}{palviolet}
                 \small
@@ -569,11 +569,22 @@
                     \item Weakly coupled $\alpha_s\ll 1$
                     \item {\bfseries Classical gluon fields}\\[1pt]
                         {\color{lightgray}\scriptsize Occupation number $\sim 1/\alpha_s\gg 1$}
-                    \item Non-perturbative 
-                    \item {\bfseries Lattice gauge theory}\\[1pt]
-                        {\color{lightgray}\scriptsize Numerical solution}
-                    \item {\bfseries Out-of-equilibrium}
+                    \item {\bfseries Non-perturbative} regime
+                    % \item {\bfseries Lattice gauge theory}\\[1pt]
+                        % {\color{lightgray}\scriptsize Numerical solution}
+                    \item {\bfseries Out-of-equilibrium} medium
                     
+                \end{itemize}
+                \end{varwidth}
+            \end{custombox2}
+
+            \begin{custombox2}{Hard probes}{palteal}
+                \small
+                \begin{varwidth}{0.68\textwidth}
+                \begin{itemize}\itemsep0em 
+                    \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{palteal}\blacktriangleright}$}}} 
+                    \item Heavy quarks and jets\\[1pt]
+                    {\color{lightgray}\scriptsize Produced in the initial stage}
                 \end{itemize}
                 \end{varwidth}
             \end{custombox2}
@@ -594,9 +605,31 @@
 %%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\setbeamertemplate{background}{
+\tikz[overlay,remember picture] \node[at=(current page.center), align=center] {\\[10pt]
+{\includegraphics[height=0.8\paperheight]{images/Holmganga_jets_Liliana-scales.pdf}}};
+}
 \begin{frame}
     \frametitle{Jets as probes}
+    \framesubtitle{Stages and scales of interest}
+    \blfootnote{\scriptsize Apolinario - \textit{Jetography via the Quark-Gluon Plasma} \href{https://indico.cern.ch/event/1385550/}{{\color{red}\texttt{[CERN 24]$^\text{\tiny\faExternalLink}$}}}}
 \end{frame}
+\setbeamertemplate{background}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setbeamertemplate{background}{
+\tikz[overlay,remember picture] \node[at=(current page.center), align=center] {\\[-5pt]
+{\includegraphics[height=0.8\paperheight]{images/LApolinario_HP23-modelling-early.pdf}}};
+}
+\begin{frame}[noframenumbering]
+    \frametitle{Jets as probes of the {\color{red}early stage}}
+    % \framesubtitle{Stages and scales of interest}
+    \blfootnote{\scriptsize Apolinario - \textit{Monte Carlo modeling of jets} \href{https://indico.uni-muenster.de/event/1409/contributions/2412/}{{\color{red}\texttt{[Plenary Hard Probes 23]$^\text{\tiny\faExternalLink}$}}}, adapted}
+\end{frame}
+\setbeamertemplate{background}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
@@ -604,6 +637,61 @@
 
 \begin{frame}
     \frametitle{Heavy quarks as probes}
+    \framesubtitle{Approaches and kinematic regimes}
+
+    \begin{columns}[onlytextwidth,t]
+        \column{.02\textwidth}
+        \column{.57\textwidth}
+            \vspace{-20pt}
+            \begin{center}
+                \begin{tikzpicture}
+                    \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=0.95\textwidth]{images/HP24-Weiyao-Ke-HF-Theory-2-crop-white.png}};
+                \end{tikzpicture}
+            \end{center}
+        \column{.02\textwidth}
+        \column{.37\textwidth}
+        \vspace{10pt}
+        \begin{center}
+            \begin{custombox2}{\color{normal}Approaches}{lightgray}
+                \small
+                \begin{varwidth}{0.85\textwidth}
+                \begin{itemize}\itemsep0em 
+                    \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{normal}\blacktriangleright}$}}} 
+                    \item pQCD production\\[1pt]
+                        {\color{lightgray}\scriptsize FONLL and GM-VFNS at NLO+NLL accuracy}
+                    \item Transport models\\[1pt]
+                        {\color{lightgray}\scriptsize Boltzmann, Langevin, Fokker-Planck equations}
+                    \item Hadronization\\[1pt]
+                        {\color{lightgray}\scriptsize Fragmentation + coalescence}  
+                \end{itemize}
+                \end{varwidth}
+            \end{custombox2}
+            \end{center}
+        \column{.02\textwidth}
+    \end{columns}
+
+    \vspace{-5pt}    
+    \blfootnote{\scriptsize Ke - \textit{Open Heavy Flavor: Theory} \href{https://indico.cern.ch/event/1339555/contributions/6038190/}{{\color{red}\texttt{[Plenary Hard Probes 24]$^\text{\tiny\faExternalLink}$}}}}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[noframenumbering]
+    \frametitle{Heavy quarks as probes of the {\color{red}early stage}}
+    % \framesubtitle{Recent focus on the early stage}
+
+    \begin{center}
+        \begin{tikzpicture}
+            \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=0.8\textwidth]{images/HP24-Weiyao-Ke-HF-Theory-28-crop-white-edit.png}};
+            % \draw<1>[palgold,thick,fill=palgold,fill opacity=0.1,rounded corners=3pt] (0.0,4) rectangle (\textheight-0.5cm,4.0) node[opacity=1.0, pos=0, anchor=center, xshift=0.0\linewidth,text width=2cm,align=center]{{\Large\color{palgold}\bfseries This talk}};
+            % \draw<1>[white, fill=white, fill opacity=0.9] (4.3,0.85) rectangle (5.4,5.5);
+            % \draw<1>[red,thick,fill=red,fill opacity=0.1,rounded corners=3pt] (4.3,0.85) rectangle (5.4,5.5) node[opacity=1.0, pos=0.5, rotate=90, anchor=center, xshift=0.0 ,text width=6.2cm,align=center] {{\Large\color{red} Early stage}};
+        \end{tikzpicture}
+    \end{center}
+    \vspace{-10pt}    
+    \blfootnote{\scriptsize Ke - \textit{Open Heavy Flavor: Theory} \href{https://indico.cern.ch/event/1339555/contributions/6038190/}{{\color{red}\texttt{[Plenary Hard Probes 24]$^\text{\tiny\faExternalLink}$}}}, adapted}
 \end{frame}
 
 
@@ -613,6 +701,37 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Glasma fields}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setbeamertemplate{background}{
+\tikz[overlay,remember picture] \node[opacity=0.1, at=(current page.center), align=center] {\\[10pt]
+{\transparent{0.2}\includegraphics[height=0.8\paperheight]{images/fig1_overview.pdf}}};
+}
+\begin{frame}[plain,noframenumbering]{}
+    \begin{center}
+        \vspace{1cm}
+        {\large\color{normal}Initial stage of pre-equilibrium}\\[0.3cm]
+        {\huge\color{destacado}The glasma}
+    \end{center}
+\end{frame}
+\setbeamertemplate{background}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setbeamertemplate{background}{
+\tikz[overlay,remember picture] \node[at=(current page.center), align=center] {\\[10pt]
+{\includegraphics[height=0.7\paperheight]{images/fig1_overview.pdf}}};
+}
+\begin{frame}[plain,noframenumbering]
+    \frametitle{\\ Glasma color fields}
+    \blfootnote{\scriptsize Ipp, Müller  \href{https://arxiv.org/abs/1703.00017}{{\color{palgold}\texttt{[1703.00017]}$^\text{\tiny\faExternalLink}$}}}
+\end{frame}
+\setbeamertemplate{background}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%% SUBSECTION %%%%%%%%%%%%%%%
