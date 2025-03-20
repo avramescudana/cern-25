@@ -1157,32 +1157,184 @@
 
 \section{Transport in glasma}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setbeamertemplate{background}{
+\tikz[overlay,remember picture] \node[opacity=0.1, at=(current page.center), align=center] {\\[10pt]
+{\transparent{0.1}\includegraphics[width=\paperwidth]{images/hqs_jets_trajectories.png}}};
+}
+\setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{normal}\blacktriangleright}$}}} 
+\begin{frame}[plain,noframenumbering]{}
+    \begin{center}
+        \vspace{1cm}
+        {\large\color{normal}Transport during pre-equilibrium}\\[0.3cm]
+        {\huge\color{destacado}Hard probes in glasma}\\[0.3cm]
+    \end{center}
+\end{frame}
+\setbeamertemplate{background}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setbeamertemplate{background}{
+\tikz[overlay,remember picture] \node[at=(current page.center), align=center] {\\[20pt]
+{\includegraphics[width=\paperwidth]{images/hqs_jets_trajectories.png}}};
+}
+\setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{normal}\blacktriangleright}$}}} 
+\begin{frame}[plain, noframenumbering]
+    \frametitle{\\ Heavy quarks and jet in glasma}
+    \framesubtitle{Probing the glasma fields}
+    \blfootnote{\scriptsize Avramescu, Băran, Greco, Ipp, Müller, Ruggieri  \href{https://arxiv.org/abs/2303.05599}{{\color{palgold}\texttt{[2303.05599]}$^\text{\tiny\faExternalLink}$}}}
+\end{frame}
+\setbeamertemplate{background}{}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%% SUBSECTION %%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Classical transport}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-    \frametitle{Wong's equations}
+    \frametitle{Particles in Yang-Mills fields}
+    \framesubtitle{Wong's equations of motion}
+        \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{ming}\blacktriangleright}$}}} 
+   \begin{center}
+    \begin{custombox2}{Classical transport equations}{lightgray}
+        \small
+        \begin{varwidth}{0.75\textwidth}
+        \begin{itemize}\itemsep0em 
+            \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{lightgray}\blacktriangleright}$}}} 
+            \item \begin{center}Wong's equations $\leftrightarrow$ classical equations of motion for particles\\
+            $({\color{customblue}x^\mu},{\color{customred}p^\mu},{\color{customyellow}Q})$ evolving in a Yang-Mills background field ${\color{starrysecond}A^\mu}$\end{center} 
+        \end{itemize}
+        \end{varwidth}
+    \end{custombox2}
+
+    %    Wong's equations $\leftrightarrow$ classical equations of motion for particles $({\color{customblue}x^\mu},{\color{customred}p^\mu},{\color{customyellow}Q})$ \\
+    % evolving in a Yang-Mills background field ${\color{starrysecond}A^\mu}$
+   \end{center} 
+        \vspace{1cm}
+        \renewcommand{\eqnhighlightheight}{\vphantom{x}}
+        \begin{equation*}
+            \frac{\d}{\d\hspace{-0.1cm}\eqnmark[destacado]{tau}{\boldsymbol{\tau}}\hspace{-0.2cm}}\eqnmark[customblue]{xmu}{x^\mu}=\frac{{\color{customred}p^\mu}}{\eqnmark[destacado]{m}{m}},\qquad \frac{\mathrm{d}}{\d\boldsymbol{\tau}}\hspace{-0.1cm}\eqnmark[customred]{pmu}{p^\mu}=\eqnmark[destacado]{tr}{\dfrac{1}{\color{lightgray}T_R}}\hspace{-0.1cm}\eqnmark[destacado]{g}{g}\tr{{\color{customyellow}Q}F^{\mu\nu}[\hspace{-0.1cm}\eqnmark[starrysecond]{amu}{A^\mu}\hspace{-0.1cm}]}\frac{{\color{customred}p_\nu}}{m},\qquad 
+            \underbrace{\frac{\d}{\d\boldsymbol{\tau}}\hspace{-0.1cm}\eqnmark[customyellow]{Q}{Q}\hspace{-0.1cm}=-\mathrm{i}g [{\color{starrysecond}A_\mu},{\color{customyellow}Q}]\,\frac{{\color{customred}p^\mu}}{m}}_{\substack{\text{\footnotesize color rotation}\,\rightarrow\,{\color{customgreen}\mathcal{U}}\in\,\mathrm{SU(3)} \\[0.2cm] {\color{customyellow}Q}(\boldsymbol{\tau})=\,{\color{customgreen}\mathcal{U}}(\boldsymbol{\tau},\boldsymbol{\tau}^\prime){\color{customyellow}Q}(\boldsymbol{\tau^\prime})\,{\color{customgreen}\mathcal{U}^\dagger}(\boldsymbol{\tau},\boldsymbol{\tau}^\prime)}}
+            \end{equation*}
+            \annotate[yshift=1.2em]{above}{xmu}{coordinate}
+            \annotate[yshift=1.2em]{above}{pmu}{momentum}
+            \annotate[yshift=-0.5em]{below, right}{m}{\tiny mass}
+            % \annotate[yshift=-1.5em]{below, right}{Ddtau}{\tiny covariant derivative}
+            \annotate[yshift=-1.5em]{below, right}{tr}{\tiny\color{lightgray} $\mathrm{Tr}\{T^aT^b\}=T_R\delta^{ab}$}
+            \annotate[yshift=-1.5em]{below, right}{tau}{\tiny proper time}
+            \annotate[yshift=-0.7em]{below, right}{g}{\tiny coupling constant}
+            \annotate[yshift=1.2em]{above}{Q}{color charge}
+            \annotate[yshift=1.2em]{above, right}{amu}{gauge field}
+
+    \begin{itemize}\itemsep0em 
+        \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{${\color{starrysecond}\blacktriangleright}$}}} 
+        \item \begin{center}\footnotesize Solve the classical transport equations with {\color{starrysecond}$A^\mu$} the {\color{starrysecond}glasma field}\end{center} 
+        \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{${\color{palgold}\blacktriangleright}$}}} 
+        \item \begin{center}\footnotesize Color rotation conserves ${\color{palgold}q_{2}}=Q^aQ^a$ and ${\color{palgold}q_3}=d_{abc}Q^aQ^bQ^c$ {\color{palgold}SU($3$) Casimir invariants} \end{center} 
+    \end{itemize}
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%% SUBSECTION %%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsection{Field correlators}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-    \frametitle{Correlator method}
+    \frametitle{Particles in glasma fields}
+    \framesubtitle{Visualizing the trajectories}
+    \vspace{-0.5cm}
+    \begin{columns}[onlytextwidth,t]
+        \column{.025\textwidth}
+       \column{.3\textwidth}
+            \begin{itemize}\itemsep0em 
+                \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{normal}\blacktriangleright}$}}} 
+                \item \begin{center}\footnotesize Change in {\bfseries coordinates} due to momentum kicks\end{center}
+            \end{itemize}
+                \vspace{-20pt}
+                \begin{figure}[!hbt]
+                    \centering
+                \includegraphics[width=1.1\columnwidth]{images/wong_coord.png}
+                \end{figure}
+                \column{.025\textwidth}
+        \column{.3\textwidth}
+            \begin{itemize}\itemsep0em 
+                \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{normal}\blacktriangleright}$}}} 
+                \item \begin{center}\footnotesize {\bfseries Momentum} broadening due to color Lorentz force\end{center}
+            \end{itemize}
+            \vspace{-20pt}
+            \begin{figure}[!hbt]
+                \centering
+                \includegraphics[width=1.1\columnwidth]{images/wong_mom.png}
+            \end{figure}
+            \column{.025\textwidth}
+        \column{.3\textwidth}
+            \begin{itemize}\itemsep0em 
+                \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{normal}\blacktriangleright}$}}} 
+                \item \begin{center}\footnotesize {\bfseries Color charge} rotation in SU(3) with Wilson lines\end{center}
+            \end{itemize}
+            \vspace{-15pt}
+            \begin{figure}[!hbt]
+                \centering
+                \includegraphics[width=1.05\columnwidth]{images/wong_charge.png}
+            \end{figure}
+            \column{.025\textwidth}
+    \end{columns}
+
+    \blfootnote{\scriptsize Avramescu, Băran, Greco, Ipp, Müller, Ruggieri  \href{https://arxiv.org/abs/2303.05599}{{\color{palgold}\texttt{[2303.05599]}$^\text{\tiny\faExternalLink}$}}}
+\end{frame}
+
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \frametitle{Colored Particle-in-Cell}
+    \framesubtitle{Boltzmann-Vlasov equations}
+        \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{ming}\blacktriangleright}$}}} 
+   \begin{center}
+    \begin{custombox2}{Classical transport equations}{lightgray}
+        \small
+        \begin{varwidth}{0.82\textwidth}
+        \begin{itemize}\itemsep0em 
+            \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{lightgray}\blacktriangleright}$}}} 
+            \item \begin{center}Wong's equations $\leftrightarrow$ equations of motion for test particles $({\color{customblue}x^\mu},{\color{customred}p^\mu},{\color{customyellow}Q})$\\
+            probing a distribution function $\boldsymbol{f}({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})$ in a Yang-Mills field ${\color{starrysecond}A^\mu}$\end{center} 
+        \end{itemize}
+        \end{varwidth}
+    \end{custombox2}
+
+   \end{center} 
+    \begin{itemize}\itemsep0em 
+        \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{${\color{starrysecond}\blacktriangleright}$}}} 
+        \item \begin{center} Boltzmann-Vlasov equation for {\color{red}collisionless} non-Abelian plasma\\[10pt]
+            ${\color{customred}p^\mu}[\partial_\mu+g {\color{customyellow}Q^a} {\color{starrysecond}F^{\mu\nu}}({\color{customblue}x^\mu})\partial^\nu_{{\color{customred}p^\mu}}+gf^{abc}{\color{starrysecond}A^b_\mu}({\color{customblue}x^\mu}){\color{customyellow}Q^c}\partial_{{\color{customyellow}Q^a}}]\boldsymbol{f}({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})={\color{red}0}$\\[10pt]\end{center}
+            \begin{center} $\boldsymbol{f}({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})\xrightarrow{\text{sample}}$ test particles $({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})\Rightarrow$ Wong's equations\\[10pt] \end{center} 
+        \item \begin{center} Particle current $j^\mu\xleftrightarrow{\text{couple}}$ fields $\mathcal{D}_\mu F^{\mu\nu}[{\color{starrysecond}A^a_\mu}]=j^\mu({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})$ \end{center} 
+    \end{itemize}
+        
+
+    % \begin{itemize}\itemsep0em 
+    %     \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{${\color{starrysecond}\blacktriangleright}$}}} 
+    %     \item \begin{center}\footnotesize Solve the classical transport equations with {\color{starrysecond}$A^\mu$} the {\color{starrysecond}glasma field}\end{center} 
+    %     \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{${\color{palgold}\blacktriangleright}$}}} 
+    %     \item \begin{center}\footnotesize Color rotation conserves ${\color{palgold}q_{2}}=Q^aQ^a$ and ${\color{palgold}q_3}=d_{abc}Q^aQ^bQ^c$ {\color{palgold}SU($3$) Casimir invariants} \end{center} 
+    % \end{itemize}
+
+    \blfootnote{\scriptsize Moore, Hu, Muller  \href{https://arxiv.org/abs/hep-ph/9710436}{{\color{palgold}\texttt{[hep-ph/9710436]}$^\text{\tiny\faExternalLink}$}}, Dumitru, Nara, Strickland \href{https://arxiv.org/abs/hep-ph/0604149}{{\color{palgold}\texttt{[hep-ph/0604149]}$^\text{\tiny\faExternalLink}$}}}
 \end{frame}
 
 
@@ -1216,8 +1368,215 @@
 %%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\setbeamertemplate{background}{
+\tikz[overlay,remember picture] \node[opacity=0.1, at=(current page.center), align=center] {\\[10pt]
+{\transparent{0.1}\includegraphics[height=0.7\paperheight]{images/momentum_broadening_flipped.pdf}}};
+}
+\setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{normal}\blacktriangleright}$}}} 
+\begin{frame}[plain,noframenumbering]{}
+    \begin{center}
+        \vspace{1cm}
+        {\large\color{normal}Impact of glasma on hard probes}\\[0.3cm]
+        {\huge\color{destacado}Transport coefficients}\\[0.3cm]
+    \end{center}
+\end{frame}
+\setbeamertemplate{background}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setbeamertemplate{background}{
+\tikz[overlay,remember picture] \node[at=(current page.center), align=center] {\\[10pt]
+{\includegraphics[height=0.7\paperheight]{images/momentum_broadening_flipped.pdf}}};
+}
+\setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{normal}\blacktriangleright}$}}} 
+\begin{frame}[plain,noframenumbering]{}
+    \blfootnote{\scriptsize Ipp, Müller, Schuh \href{https://arxiv.org/abs/2009.14206}{{\color{customblue}\texttt{[2009.14206]}$^\text{\tiny\faExternalLink}$}}}
+\end{frame}
+\setbeamertemplate{background}{}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{frame}
-    \frametitle{Transport coefficients}
+    \frametitle{Transport coefficient $\kappa$}
+    % \framesubtitle{Momentum broadening in glasma}
+    \vspace{-10pt}
+    \begin{columns}[onlytextwidth,t]
+        \column{.033\textwidth}
+        \column{.5\textwidth}
+
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.9\textwidth]{images/hp23_mom_broad_kappa_anis_wong_vs_kappa-cropped.pdf}
+        \end{figure}
+       \column{.033\textwidth}
+       \column{.4\textwidth}
+        \begin{custombox2}{Classical transport}{lightgray}
+            \small
+            \begin{varwidth}{0.95\textwidth}
+            \begin{itemize}\itemsep0em 
+                \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{MidnightBlue}\blacktriangleright}$}}} 
+                \item {\color{MidnightBlue}\bfseries Momentum broadening}\\ ${\color{MidnightBlue}\boldsymbol{\delta p^2_i}}(\tau)=p^2_i(\tau)-p^2_i(\tau_\mathrm{form})$
+                \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{Maroon}\blacktriangleright}$}}} 
+                \item {\color{Maroon}\bfseries Transport coefficient}\\ ${\color{Maroon}\boldsymbol{\kappa_i}}(\tau)=\dfrac{\mathrm{d}}{\mathrm{d}\tau}\langle{\color{MidnightBlue}\boldsymbol{\delta p^2_i}}(\tau)\rangle$ 
+                \\[5pt]
+                {\scriptsize\color{lightgray} Formation time $\tau_\mathrm{form}=1/2m$\\[1pt]
+                Relative time $\delta\tau=\tau-\tau_\mathrm{form}$\\[-2pt]
+                Longitudinal $i=L$, transverse $i=T$}
+            \end{itemize}
+            \end{varwidth}
+        \end{custombox2}
+
+        \begin{itemize}\itemsep0em 
+            \footnotesize
+            \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{lightgray}\blacktriangleright}$}}}
+            {\color{lightgray}\item {\bfseries Anisotropic} $\kappa_L\neq\kappa_T$
+            \item Rapid increase in $\kappa$ at early times 
+            \item Negative $\kappa_L$ at late times}
+            \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{palgold}\blacktriangleright}$}}} 
+            \item {\bfseries\color{palgold}Large $\boldsymbol{\kappa}$ peak in glasma}
+            \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{palviolet}\blacktriangleright}$}}}
+            \item {\bfseries\color{palviolet}Approximate agreement with $\boldsymbol{\kappa}$ during EKT} {\color{lightgray}but not quantitative yet}
+        \end{itemize}    
+              
+        \column{.033\textwidth}
+    \end{columns}
+    \vspace{-10pt}
+    \blfootnote{\scriptsize Avramescu, Băran, Greco, Ipp, Müller, Ruggieri  \href{https://arxiv.org/abs/2307.07999}{{\color{palgold}\texttt{[2307.07999]}$^\text{\tiny\faExternalLink}$}}\\
+    \hspace{16.5pt}Boguslavski, Kurkela, Lappi, Lindenbauer, Peuron \href{https://arxiv.org/abs/2303.12520}{{\color{palviolet}\texttt{[2303.12520]}$^\text{\tiny\faExternalLink}$}}
+    }
+\end{frame}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[noframenumbering]
+    \frametitle{Transport coefficient $\kappa$}
+    % \framesubtitle{Momentum broadening in glasma}
+    % \vspace{-10pt}
+    \begin{columns}[onlytextwidth,t]
+        \column{.033\textwidth}
+        \column{.5\textwidth}
+
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.9\textwidth]{images/hp23_mom_broad_kappa_anis_wong_vs_kappa-cropped.pdf}
+        \end{figure}
+       \column{.033\textwidth}
+       \column{.4\textwidth}
+       \begin{custombox2}{Classical transport}{lightgray}
+        \small
+        \begin{varwidth}{0.95\textwidth}
+        \begin{itemize}\itemsep0em 
+            \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{MidnightBlue}\blacktriangleright}$}}} 
+            \item {\color{MidnightBlue}\bfseries Momentum broadening}\\ ${\color{MidnightBlue}\boldsymbol{\delta p^2_i}}(\tau)=p^2_i(\tau)-p^2_i(\tau_\mathrm{form})$
+            \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{Maroon}\blacktriangleright}$}}} 
+            \item {\color{Maroon}\bfseries Transport coefficient}\\ ${\color{Maroon}\boldsymbol{\kappa_i}}(\tau)=\dfrac{\mathrm{d}}{\mathrm{d}\tau}\langle{\color{MidnightBlue}\boldsymbol{\delta p^2_i}}(\tau)\rangle$ 
+            \\[5pt]
+            {\scriptsize\color{lightgray} Formation time $\tau_\mathrm{form}=1/2m$\\[1pt]
+            Relative time $\delta\tau=\tau-\tau_\mathrm{form}$\\[-2pt]
+            Longitudinal $i=L$, transverse $i=T$}
+        \end{itemize}
+        \end{varwidth}
+    \end{custombox2}
+
+        \begin{custombox2}{Limitation}{palgold}
+            \small
+            \begin{varwidth}{0.77\textwidth}
+            \begin{itemize}\itemsep0em 
+                \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{palgold}\blacktriangleright}$}}} 
+                \item Transport coefficients $\neq$ {\color{palgold}\bfseries measurable} quantities
+            \end{itemize}
+            \end{varwidth}
+        \end{custombox2} 
+              
+        \column{.033\textwidth}
+    \end{columns}
+    \blfootnote{\scriptsize Avramescu, Băran, Greco, Ipp, Müller, Ruggieri  \href{https://arxiv.org/abs/2307.07999}{{\color{palgold}\texttt{[2307.07999]}$^\text{\tiny\faExternalLink}$}}}
+\end{frame}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% SUBSECTION %%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \subsection{Field correlators}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \frametitle{Field correlators}
+    % \framesubtitle{Limiting cases}
+        \begin{center}
+            \begin{custombox2}{Gauge invariant force correlator}{lightgray}
+                \small
+                \begin{varwidth}{0.78\textwidth}
+                \begin{itemize}\itemsep0em 
+                    \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{lightgray}\blacktriangleright}$}}} 
+                    \item \begin{center} Momentum broadening for known trajectories from {\color{palteal}\bfseries force correlator}\\[5pt]
+                    $\displaystyle\langle \delta p^2_i(\tau)\rangle= g^2 \int_{\tau_\mathrm{form}}^{\tau}\mathrm{d}\tau^{\prime}\int_{\tau_\mathrm{form}}^{\tau}\mathrm{d}\tau^{\prime\prime}{\color{palteal}\boldsymbol{\Big\langle \mathrm{Tr}\big[\widetilde{\mathcal{F}}_i(\tau^{\prime})\widetilde{\mathcal{F}}_i(\tau^{\prime\prime})\big]\Big\rangle}}$\\[5pt]
+                    {\scriptsize\color{lightgray} Lorentz force $\mathcal{F}_i=F_{i\mu}p^\mu/p^0$, gauge invariant $\widetilde{\mathcal{F}}_i$ parallel transported on lattice}
+                    \end{center} 
+                \end{itemize}
+                \end{varwidth}
+            \end{custombox2}
+        
+           \end{center} 
+
+        \begin{columns}
+            \begin{column}{0.033\textwidth}\end{column}
+            \begin{column}{0.4\textwidth}
+                \centering
+                \includegraphics[width=0.9\columnwidth]{images/corr_hqs.pdf}
+            \end{column}
+            \begin{column}{0.01\textwidth}\end{column}
+            \begin{column}{0.5\textwidth}
+                % \centering
+                \vspace{-10pt}
+                \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{customyellow}\blacktriangleright}$}}} 
+                \begin{itemize}
+                    \item {\color{customyellow} Static heavy quarks} with $m\rightarrow\infty$
+                \end{itemize} 
+                \vspace{7pt}
+                {\footnotesize
+                \begin{equation*}
+                    \hspace{10pt}\langle \delta p^2_i\rangle\big|_{\color{customyellow}m\rightarrow\infty}\propto \int\mathrm{d}\tau^{\prime}\int\mathrm{d}\tau^{\prime\prime}\Big\langle \mathrm{Tr}\big[{\color{customyellow}E_i}(\tau^{\prime}){\color{customyellow}E_i}(\tau^{\prime\prime})\big]\Big\rangle
+                \end{equation*}}
+            \end{column}
+            \begin{column}{0.056\textwidth}\end{column}
+        \end{columns}
+
+        \begin{columns}
+            \begin{column}{0.033\textwidth}\end{column}
+            \begin{column}{0.4\textwidth}
+                \centering
+                \includegraphics[width=0.9\columnwidth]{images/corr_jets.pdf}
+            \end{column}
+            \begin{column}{0.01\textwidth}\end{column}
+            \begin{column}{0.5\textwidth}
+                % \centering
+                \vspace{-10pt}
+                \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{customblue}\blacktriangleright}$}}} 
+                \begin{itemize}
+                    \item {\color{customblue} Eikonal jets} with $p^x\rightarrow\infty$
+                \end{itemize} 
+                \vspace{7pt}
+                {\footnotesize
+                \begin{equation*}
+                    \hspace{10pt}\langle \delta p^2_i\rangle\big|_{\color{customblue}p^x\rightarrow\infty}\propto \int\mathrm{d}\tau^{\prime}\int\mathrm{d}\tau^{\prime\prime}\Big\langle \mathrm{Tr}\big[{\color{customblue}\widetilde{f}_i}(\tau^{\prime}){\color{customblue}\widetilde{f}_i}(\tau^{\prime\prime})\big]\Big\rangle
+                \end{equation*}}
+                {\scriptsize\color{lightgray} \hspace{18pt}$f_y=E_y-B_z$, $f_z=E_z+B_y$}
+            \end{column}
+            \begin{column}{0.056\textwidth}\end{column}
+        \end{columns}
 \end{frame}
 
 
