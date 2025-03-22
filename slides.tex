@@ -1416,649 +1416,649 @@
 % %%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}
-\frametitle{Classical transport in glasma}
-% \framesubtitle{Momentum broadening, transport coefficients, anisotropy}
-    \begin{columns}[onlytextwidth,t]
-        \column{.45\textwidth}
-            \begin{center}
-                \begin{figure}
-                    \centering
-                    \vspace{-25pt}
-                    \includegraphics[width=1.15\textwidth]{images/hqs_trajectories.png}
-                \end{figure}
-            \end{center}
-        \column{.05\textwidth}
-        \column{.5\textwidth}
-            \begin{center}
-                \begin{custombox2}{Momentum broadening}{palteal}
-                    \small
-                    \begin{varwidth}{0.92\textwidth}
-                    \vspace{-5pt}
-                    $${\color{palteal}\boldsymbol{\delta p^2_i}}(\tau)=p^2_i(\tau)-p^2_i(\tau_\mathrm{form})$$
-                    \\[-25pt]
-                    {\begin{center}\scriptsize\color{lightgray} Formation time $\tau_\mathrm{form}=1/2m$ \end{center}}    
-                    \vspace{-5pt}
-                    \begin{itemize}\itemsep0em 
-                        \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.6}{${\color{palteal}\blacktriangleright}$}}} 
-                        \item {\scriptsize Momentum kicks due to {\color{palteal}\bfseries coherent color fields}}
-                        % \\[1pt] 
-                        % \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.6}{${\color{palteal}\blacktriangleright}$}}} 
-                        % \item {\scriptsize Averaged over glasma and particle ensembles}
-                        \vspace{3pt}
-                    \end{itemize}
-                    \end{varwidth}
-                \end{custombox2}
+% \begin{frame}
+% \frametitle{Classical transport in glasma}
+% % \framesubtitle{Momentum broadening, transport coefficients, anisotropy}
+%     \begin{columns}[onlytextwidth,t]
+%         \column{.45\textwidth}
+%             \begin{center}
+%                 \begin{figure}
+%                     \centering
+%                     \vspace{-25pt}
+%                     \includegraphics[width=1.15\textwidth]{images/hqs_trajectories.png}
+%                 \end{figure}
+%             \end{center}
+%         \column{.05\textwidth}
+%         \column{.5\textwidth}
+%             \begin{center}
+%                 \begin{custombox2}{Momentum broadening}{palteal}
+%                     \small
+%                     \begin{varwidth}{0.92\textwidth}
+%                     \vspace{-5pt}
+%                     $${\color{palteal}\boldsymbol{\delta p^2_i}}(\tau)=p^2_i(\tau)-p^2_i(\tau_\mathrm{form})$$
+%                     \\[-25pt]
+%                     {\begin{center}\scriptsize\color{lightgray} Formation time $\tau_\mathrm{form}=1/2m$ \end{center}}    
+%                     \vspace{-5pt}
+%                     \begin{itemize}\itemsep0em 
+%                         \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.6}{${\color{palteal}\blacktriangleright}$}}} 
+%                         \item {\scriptsize Momentum kicks due to {\color{palteal}\bfseries coherent color fields}}
+%                         % \\[1pt] 
+%                         % \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.6}{${\color{palteal}\blacktriangleright}$}}} 
+%                         % \item {\scriptsize Averaged over glasma and particle ensembles}
+%                         \vspace{3pt}
+%                     \end{itemize}
+%                     \end{varwidth}
+%                 \end{custombox2}
 
-                \begin{custombox2}{Transport coefficients}{customyellow}
-                    \small
-                    \begin{varwidth}{0.92\textwidth}
-                        \vspace{-12pt}
-                    $$\frac{\d }{\d\tau}\langle {\color{palteal}\boldsymbol{\delta p^2_i}}(\tau)\rangle= \begin{cases}{\color{customyellow}\boldsymbol{\kappa_i}}(\tau),&\text{heavy quarks}\\
-                        {\color{customyellow}\boldsymbol{\hat{q}_i}}(\tau),&\text{jets}\end{cases}$$
-                    \\[-30pt]
-                    {\begin{center}\scriptsize\color{lightgray} $\langle \quad\rangle$ averaged over glasma and particle ensembles\end{center}}    
-                    \vspace{-15pt}
-                    \begin{itemize}\itemsep0em 
-                        \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.6}{${\color{customyellow}\blacktriangleright}$}}} 
-                        \item {\scriptsize Different interpretation than standard $\kappa$, $\hat{q}$}
-                    \end{itemize}
-                    \end{varwidth}
-                \end{custombox2}
+%                 \begin{custombox2}{Transport coefficients}{customyellow}
+%                     \small
+%                     \begin{varwidth}{0.92\textwidth}
+%                         \vspace{-12pt}
+%                     $$\frac{\d }{\d\tau}\langle {\color{palteal}\boldsymbol{\delta p^2_i}}(\tau)\rangle= \begin{cases}{\color{customyellow}\boldsymbol{\kappa_i}}(\tau),&\text{heavy quarks}\\
+%                         {\color{customyellow}\boldsymbol{\hat{q}_i}}(\tau),&\text{jets}\end{cases}$$
+%                     \\[-30pt]
+%                     {\begin{center}\scriptsize\color{lightgray} $\langle \quad\rangle$ averaged over glasma and particle ensembles\end{center}}    
+%                     \vspace{-15pt}
+%                     \begin{itemize}\itemsep0em 
+%                         \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.6}{${\color{customyellow}\blacktriangleright}$}}} 
+%                         \item {\scriptsize Different interpretation than standard $\kappa$, $\hat{q}$}
+%                     \end{itemize}
+%                     \end{varwidth}
+%                 \end{custombox2}
 
-                \begin{custombox2}{Momentum anisotropy}{starrymain}
-                    \small
-                    \begin{varwidth}{0.95\textwidth}
-                        \vspace{-3pt}
-                    % \vspace{-20pt}
-                    \begin{itemize}\itemsep0em 
-                        \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.6}{${\color{starrymain}\blacktriangleright}$}}} 
-                        \item {\scriptsize Longitudinal $L$ $\neq$ transverse $T$ $\Rightarrow$ ${\color{starrymain}\langle\boldsymbol{\delta p_L^2}\rangle/\langle\boldsymbol{\delta p_T^2}\rangle}$}
-                    \end{itemize}
-                    \end{varwidth}
-                \end{custombox2}
-        \end{center}
-    \end{columns}
-    \end{frame}
+%                 \begin{custombox2}{Momentum anisotropy}{starrymain}
+%                     \small
+%                     \begin{varwidth}{0.95\textwidth}
+%                         \vspace{-3pt}
+%                     % \vspace{-20pt}
+%                     \begin{itemize}\itemsep0em 
+%                         \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.6}{${\color{starrymain}\blacktriangleright}$}}} 
+%                         \item {\scriptsize Longitudinal $L$ $\neq$ transverse $T$ $\Rightarrow$ ${\color{starrymain}\langle\boldsymbol{\delta p_L^2}\rangle/\langle\boldsymbol{\delta p_T^2}\rangle}$}
+%                     \end{itemize}
+%                     \end{varwidth}
+%                 \end{custombox2}
+%         \end{center}
+%     \end{columns}
+%     \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}
-    \frametitle{Field correlators}
-    % \framesubtitle{Limiting cases}
-        \begin{center}
-            \begin{custombox2}{Gauge invariant force correlator}{lightgray}
-                \small
-                \begin{varwidth}{0.78\textwidth}
-                \begin{itemize}\itemsep0em 
-                    \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{lightgray}\blacktriangleright}$}}} 
-                    \item \begin{center} Momentum broadening for known trajectories from {\color{palteal}\bfseries force correlator}\\[5pt]
-                    $\displaystyle\langle \delta p^2_i(\tau)\rangle= g^2 \int_{\tau_\mathrm{form}}^{\tau}\mathrm{d}\tau^{\prime}\int_{\tau_\mathrm{form}}^{\tau}\mathrm{d}\tau^{\prime\prime}{\color{palteal}\boldsymbol{\Big\langle \mathrm{Tr}\big[\widetilde{\mathcal{F}}_i(\tau^{\prime})\widetilde{\mathcal{F}}_i(\tau^{\prime\prime})\big]\Big\rangle}}$\\[5pt]
-                    {\scriptsize\color{lightgray} Lorentz force $\mathcal{F}_i=F_{i\mu}p^\mu/p^0$, gauge invariant $\widetilde{\mathcal{F}}_i$ parallel transported on lattice}
-                    \end{center} 
-                \end{itemize}
-                \end{varwidth}
-            \end{custombox2}
+% \begin{frame}
+%     \frametitle{Field correlators}
+%     % \framesubtitle{Limiting cases}
+%         \begin{center}
+%             \begin{custombox2}{Gauge invariant force correlator}{lightgray}
+%                 \small
+%                 \begin{varwidth}{0.78\textwidth}
+%                 \begin{itemize}\itemsep0em 
+%                     \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{lightgray}\blacktriangleright}$}}} 
+%                     \item \begin{center} Momentum broadening for known trajectories from {\color{palteal}\bfseries force correlator}\\[5pt]
+%                     $\displaystyle\langle \delta p^2_i(\tau)\rangle= g^2 \int_{\tau_\mathrm{form}}^{\tau}\mathrm{d}\tau^{\prime}\int_{\tau_\mathrm{form}}^{\tau}\mathrm{d}\tau^{\prime\prime}{\color{palteal}\boldsymbol{\Big\langle \mathrm{Tr}\big[\widetilde{\mathcal{F}}_i(\tau^{\prime})\widetilde{\mathcal{F}}_i(\tau^{\prime\prime})\big]\Big\rangle}}$\\[5pt]
+%                     {\scriptsize\color{lightgray} Lorentz force $\mathcal{F}_i=F_{i\mu}p^\mu/p^0$, gauge invariant $\widetilde{\mathcal{F}}_i$ parallel transported on lattice}
+%                     \end{center} 
+%                 \end{itemize}
+%                 \end{varwidth}
+%             \end{custombox2}
         
-           \end{center} 
+%            \end{center} 
 
-        \begin{columns}
-            \begin{column}{0.033\textwidth}\end{column}
-            \begin{column}{0.4\textwidth}
-                \centering
-                \includegraphics[width=0.9\columnwidth]{images/corr_hqs.pdf}
-            \end{column}
-            \begin{column}{0.01\textwidth}\end{column}
-            \begin{column}{0.5\textwidth}
-                % \centering
-                \vspace{-10pt}
-                \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{customyellow}\blacktriangleright}$}}} 
-                \begin{itemize}
-                    \item {\color{customyellow} Static heavy quarks} with $m\rightarrow\infty$
-                \end{itemize} 
-                \vspace{7pt}
-                {\footnotesize
-                \begin{equation*}
-                    \hspace{10pt}\langle \delta p^2_i\rangle\big|_{\color{customyellow}m\rightarrow\infty}\propto \int\mathrm{d}\tau^{\prime}\int\mathrm{d}\tau^{\prime\prime}\Big\langle \mathrm{Tr}\big[{\color{customyellow}E_i}(\tau^{\prime}){\color{customyellow}E_i}(\tau^{\prime\prime})\big]\Big\rangle
-                \end{equation*}}
-            \end{column}
-            \begin{column}{0.056\textwidth}\end{column}
-        \end{columns}
+%         \begin{columns}
+%             \begin{column}{0.033\textwidth}\end{column}
+%             \begin{column}{0.4\textwidth}
+%                 \centering
+%                 \includegraphics[width=0.9\columnwidth]{images/corr_hqs.pdf}
+%             \end{column}
+%             \begin{column}{0.01\textwidth}\end{column}
+%             \begin{column}{0.5\textwidth}
+%                 % \centering
+%                 \vspace{-10pt}
+%                 \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{customyellow}\blacktriangleright}$}}} 
+%                 \begin{itemize}
+%                     \item {\color{customyellow} Static heavy quarks} with $m\rightarrow\infty$
+%                 \end{itemize} 
+%                 \vspace{7pt}
+%                 {\footnotesize
+%                 \begin{equation*}
+%                     \hspace{10pt}\langle \delta p^2_i\rangle\big|_{\color{customyellow}m\rightarrow\infty}\propto \int\mathrm{d}\tau^{\prime}\int\mathrm{d}\tau^{\prime\prime}\Big\langle \mathrm{Tr}\big[{\color{customyellow}E_i}(\tau^{\prime}){\color{customyellow}E_i}(\tau^{\prime\prime})\big]\Big\rangle
+%                 \end{equation*}}
+%             \end{column}
+%             \begin{column}{0.056\textwidth}\end{column}
+%         \end{columns}
 
-        \begin{columns}
-            \begin{column}{0.033\textwidth}\end{column}
-            \begin{column}{0.4\textwidth}
-                \centering
-                \includegraphics[width=0.9\columnwidth]{images/corr_jets.pdf}
-            \end{column}
-            \begin{column}{0.01\textwidth}\end{column}
-            \begin{column}{0.5\textwidth}
-                % \centering
-                \vspace{-10pt}
-                \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{customblue}\blacktriangleright}$}}} 
-                \begin{itemize}
-                    \item {\color{customblue} Eikonal jets} with $p^x\rightarrow\infty$
-                \end{itemize} 
-                \vspace{7pt}
-                {\footnotesize
-                \begin{equation*}
-                    \hspace{10pt}\langle \delta p^2_i\rangle\big|_{\color{customblue}p^x\rightarrow\infty}\propto \int\mathrm{d}\tau^{\prime}\int\mathrm{d}\tau^{\prime\prime}\Big\langle \mathrm{Tr}\big[{\color{customblue}\widetilde{f}_i}(\tau^{\prime}){\color{customblue}\widetilde{f}_i}(\tau^{\prime\prime})\big]\Big\rangle
-                \end{equation*}}
-                {\scriptsize\color{lightgray} \hspace{18pt}$f_y=E_y-B_z$, $f_z=E_z+B_y$}
-            \end{column}
-            \begin{column}{0.056\textwidth}\end{column}
-        \end{columns}
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}[t]
-    \frametitle{Literature timeline}
-    \begin{center}
-        \begin{tikzpicture}[xscale=1]
-            \draw[line width=0.7mm,-latex,palteal!20] (-0.2,0) -- (6.5+0.2,0);
-            \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2021, 2023, 2024}
-            {
-            \draw[highlight on=<0>] (\Y,0) circle[radius=3pt];
-            \node[anchor=south,highlight on=<0>,fill=white,rotate=45,anchor=south
-            west,inner sep=0pt] at (\Y,0.2) {\X};
-            }
-            \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2020}
-            {
-            \draw[highlight on=<\Z>] (\Y,0) circle[radius=3pt];
-            \node[anchor=south,highlight on=<\Z>,fill=white,rotate=45,anchor=south
-            west,inner sep=0pt] at (\Y,0.2) {\bfseries\X};
-            }
-        \end{tikzpicture}
-    \end{center}
-    \vspace{-10pt}
-    \begin{columns}[onlytextwidth,t]
-        \column{.02\textwidth}
-       \column{.44\textwidth}
-       \vspace{-10pt}
-       \begin{figure}
-            \centering
-            \captionsetup{justification=centering}
-            \caption{\texttt{Heavy Quarks Embedded in Glasma}}
-            \includegraphics[width=0.95\textwidth]{images/1-s2.0-S0375947420302244-gr003_lrg (1).jpg}
-        \end{figure}
-        \column{.02\textwidth}
-        \column{.5\textwidth}
-        % \vspace{0.2cm}
-        \begin{center}
-            {\Large\color{palteal} Momentum broadening $\hat{q}$ \\[5pt] Collisional energy loss $\mathrm{d}E/\mathrm{d}x$ \\[10pt]}
-            \footnotesize
-                \begin{itemize}
-                % \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.5}{${\color{palviolet}\blacktriangleright}$}}}
-                % \item {\normalsize\color{palviolet}Heavy quarks}
-                \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.5}{${\color{lightgray}\blacktriangleright}$}}}
-                \item {\color{lightgray}Analytical glasma fields in $\boldsymbol{\tau}$ \textbf{expansion}}
-                \item {\color{lightgray}$\langle EE\rangle$ and $\langle BB\rangle$ {\bfseries field correlators}}
-                \item {\color{lightgray}{\bfseries Fokker-Planck} equation for heavy quarks}
-            \end{itemize}
-        \end{center}
-        \column{.02\textwidth}
-    \end{columns}
-    \blfootnote{\scriptsize Carrington, Czajka, Mrowczynski \href{https://arxiv.org/abs/2001.05074}{\color{palgold}\texttt{[2001.05074]}$^\text{\tiny\faExternalLink}$}}
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}[t]
-    \frametitle{Literature timeline}
-    \begin{center}
-        \begin{tikzpicture}[xscale=1]
-            \draw[line width=0.7mm,-latex,palteal!20] (-0.2,0) -- (6.5+0.2,0);
-            \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2021, 2023, 2024}
-            {
-            \draw[highlight on=<0>] (\Y,0) circle[radius=3pt];
-            \node[anchor=south,highlight on=<0>,fill=white,rotate=45,anchor=south
-            west,inner sep=0pt] at (\Y,0.2) {\X};
-            }
-            \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2020}
-            {
-            \draw[highlight on=<\Z>] (\Y,0) circle[radius=3pt];
-            \node[anchor=south,highlight on=<\Z>,fill=white,rotate=45,anchor=south
-            west,inner sep=0pt] at (\Y,0.2) {\bfseries\X};
-            }
-        \end{tikzpicture}
-    \end{center}
-    \vspace{-10pt}
-    \begin{columns}[onlytextwidth,t]
-        \column{.02\textwidth}
-       \column{.44\textwidth}
-       \vspace{-13pt}
-       \begin{figure}
-            \centering
-            \captionsetup{justification=centering}
-            \caption{\texttt{Heavy quark diffusion in an \\overoccupied gluon plasma}}
-            \vspace{-10pt}
-            \includegraphics[width=0.9\textwidth]{images/mombroadening_with_inset_and_approximations.pdf}
-        \end{figure}
-        \column{.02\textwidth}
-        \column{.5\textwidth}
-        % \vspace{0.2cm}
-        \begin{center}
-            \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.5}{${\color{lightgray}\blacktriangleright}$}}}
-            {\Large\color{palteal} Momentum broadening $\langle p^2 \rangle$ \\[5pt] Transport coefficient $\kappa$ } \\[10pt]
-            \footnotesize
-                \begin{itemize}
-                \item {\footnotesize\color{lightgray}{\bfseries Over-occupied} classical Yang-Mills}
-                \item {\footnotesize\color{lightgray}Numerical lattice $\boldsymbol{\langle EE\rangle}$ {\bfseries correlator}}
-                \item {\footnotesize\color{lightgray}Rapid rise in $\langle p^2 \rangle$ at early $\Delta t$}
-                \item {\footnotesize\color{lightgray}{\bfseries Oscillations in $\boldsymbol{\kappa$}} with plasmon frequency}
-            \end{itemize}
-        \end{center}
-        \column{.02\textwidth}
-    \end{columns}
-    \blfootnote{\scriptsize Boguslavski, Kurkela, Lappi, Peuron \href{https://arxiv.org/abs/2005.02418}{\color{palgold}\texttt{[2005.02418]}$^\text{\tiny\faExternalLink}$}}
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}[t]
-    \frametitle{Literature timeline}
-    \begin{center}
-        \begin{tikzpicture}[xscale=1]
-            \draw[line width=0.7mm,-latex,palteal!20] (-0.2,0) -- (6.5+0.2,0);
-            \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2021, 2023, 2024}
-            {
-            \draw[highlight on=<0>] (\Y,0) circle[radius=3pt];
-            \node[anchor=south,highlight on=<0>,fill=white,rotate=45,anchor=south
-            west,inner sep=0pt] at (\Y,0.2) {\X};
-            }
-            \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2020}
-            {
-            \draw[highlight on=<\Z>] (\Y,0) circle[radius=3pt];
-            \node[anchor=south,highlight on=<\Z>,fill=white,rotate=45,anchor=south
-            west,inner sep=0pt] at (\Y,0.2) {\bfseries\X};
-            }
-        \end{tikzpicture}
-    \end{center}
-    \vspace{-10pt}
-    \begin{columns}[onlytextwidth,t]
-        \column{.02\textwidth}
-       \column{.44\textwidth}
-       \vspace{-13pt}
-       \begin{figure}
-            \centering
-            \captionsetup{justification=centering}
-            \caption{\texttt{Ballistic diffusion of heavy \\ quarks in the early stage }}
-            \vspace{-5pt}
-            \includegraphics[width=0.85\textwidth]{images/zoom_02fm_langevin_crop.png}
-        \end{figure}
-        \column{.02\textwidth}
-        \column{.5\textwidth}
-        % \vspace{0.2cm}
-        \begin{center}
-            \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.5}{${\color{lightgray}\blacktriangleright}$}}}
-            {\Large\color{palteal} Momentum variance $\sigma_p$ \\[10pt]}
-            \footnotesize
-                \begin{itemize}
-                    \item {\color{lightgray}SU(2) glasma, {\bfseries static box}}
-                    \item {\color{lightgray}Numerical {\bfseries Wong's equations}}
-                    \item {\color{lightgray}Dynamics compared to {\bfseries Langevin}}
-                    \item {\color{lightgray}Diffusion with {\bfseries memory effects}}
-                \end{itemize}
-                % {\footnotesize\color{lightgray}\texttt{Ballistic diffusion of heavy quarks in \\ the early stage of relativistic heavy \\ ion collisions at RHIC and LHC}}
-        \end{center}
-        \column{.02\textwidth}
-    \end{columns}
-    \blfootnote{\scriptsize Liu, Das, Greco, Ruggieri \href{https://arxiv.org/abs/2011.05818}{\color{palgold}\texttt{[2011.05818]}$^\text{\tiny\faExternalLink}$}}
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}[t]
-    \frametitle{Literature timeline}
-    \begin{center}
-        \begin{tikzpicture}[xscale=1]
-            \draw[line width=0.7mm,-latex,palteal!20] (-0.2,0) -- (6.5+0.2,0);
-            \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2021, 2023, 2024}
-            {
-            \draw[highlight on=<0>] (\Y,0) circle[radius=3pt];
-            \node[anchor=south,highlight on=<0>,fill=white,rotate=45,anchor=south
-            west,inner sep=0pt] at (\Y,0.2) {\X};
-            }
-            \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2020}
-            {
-            \draw[highlight on=<\Z>] (\Y,0) circle[radius=3pt];
-            \node[anchor=south,highlight on=<\Z>,fill=white,rotate=45,anchor=south
-            west,inner sep=0pt] at (\Y,0.2) {\bfseries\X};
-            }
-        \end{tikzpicture}
-    \end{center}
-    \vspace{-10pt}
-    \begin{columns}[onlytextwidth,t]
-        \column{.02\textwidth}
-       \column{.44\textwidth}
-       \vspace{-13pt}
-       \begin{figure}
-            \centering
-            \captionsetup{justification=centering}
-            \caption{\texttt{Anisotropic momentum broadening \\ in the 2+1D Glasma}}
-            \vspace{-15pt}
-            \includegraphics[width=1.05\textwidth]{images/accumulated_momentum_tau.pdf}
-        \end{figure}
-        \column{.02\textwidth}
-        \column{.5\textwidth}
-        % \vspace{0.2cm}
-        \begin{center}
-            \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.5}{${\color{lightgray}\blacktriangleright}$}}}
-            {\Large\color{palteal} Momentum broadening $\langle p^2\rangle$ \\[10pt]}
-            \footnotesize
-                \begin{itemize}
-                    \item {\color{lightgray}SU(3) glasma, lattice discretization}
-                    \item {\color{lightgray}{\bfseries Eikonal jets} using {\bfseries field correlators}}
-                     \item {\color{lightgray}Interpretation of {\bfseries anisotropic broadening}}
-                    \item {\color{lightgray}{\bfseries Weak field} analytical calculations}
-                \end{itemize}
-                % {\footnotesize\color{lightgray}\texttt{Ballistic diffusion of heavy quarks in \\ the early stage of relativistic heavy \\ ion collisions at RHIC and LHC}}
-        \end{center}
-        \column{.02\textwidth}
-    \end{columns}
-    \blfootnote{\scriptsize Ipp, Müller, Schuh \href{https://arxiv.org/abs/2001.10001}{\color{palgold}\texttt{[2001.10001]}$^\text{\tiny\faExternalLink}$}}
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}[t]
-    \frametitle{Literature timeline}
-    \begin{center}
-        \begin{tikzpicture}[xscale=1]
-            \draw[line width=0.7mm,-latex,palteal!20] (-0.2,0) -- (6.5+0.2,0);
-            \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2021, 2023, 2024}
-            {
-            \draw[highlight on=<0>] (\Y,0) circle[radius=3pt];
-            \node[anchor=south,highlight on=<0>,fill=white,rotate=45,anchor=south
-            west,inner sep=0pt] at (\Y,0.2) {\X};
-            }
-            \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2020}
-            {
-            \draw[highlight on=<\Z>] (\Y,0) circle[radius=3pt];
-            \node[anchor=south,highlight on=<\Z>,fill=white,rotate=45,anchor=south
-            west,inner sep=0pt] at (\Y,0.2) {\bfseries\X};
-            }
-        \end{tikzpicture}
-    \end{center}
-    \vspace{-10pt}
-    \begin{columns}[onlytextwidth,t]
-        \column{.02\textwidth}
-       \column{.44\textwidth}
-       \vspace{-13pt}
-       \begin{figure}
-            \centering
-            \captionsetup{justification=centering}
-            \caption{\texttt{Jet momentum broadening in the \\ pre-equilibrium Glasma
-            }}
-            % \vspace{-5pt}
-            \includegraphics[width=0.95\textwidth]{images/qhat_tau.pdf}
-        \end{figure}
-        \column{.02\textwidth}
-        \column{.5\textwidth}
-        % \vspace{0.2cm}
-        \begin{center}
-            \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.5}{${\color{lightgray}\blacktriangleright}$}}}
-            {\Large\color{palteal} Momentum broadening $\langle p^2\rangle$ \\[5pt] Jet quenching parameter $\hat{q}$\\[10pt]}
-            \footnotesize
-                \begin{itemize}
-                    \item {\color{lightgray}SU(3) glasma, lattice discretization}
-                    \item {\color{lightgray}{\bfseries Eikonal jets} using {\bfseries field correlators}}
-                     \item {\color{lightgray}Interpretation of {\bfseries anisotropic broadening}}
-                    % \item {\normalsize\color{lightgray}{\bfseries Weak field} analytical calculations}
-                \end{itemize}
-                % {\footnotesize\color{lightgray}\texttt{Ballistic diffusion of heavy quarks in \\ the early stage of relativistic heavy \\ ion collisions at RHIC and LHC}}
-        \end{center}
-        \column{.02\textwidth}
-    \end{columns}
-    \blfootnote{\scriptsize Ipp, Müller, Schuh \href{https://arxiv.org/abs/2009.14206}{\color{palgold}\texttt{[2009.14206]}$^\text{\tiny\faExternalLink}$}}
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}[t]
-    \frametitle{Literature timeline}
-    \begin{center}
-        \begin{tikzpicture}[xscale=1]
-            \draw[line width=0.7mm,-latex,palteal!20] (-0.2,0) -- (6.5+0.2,0);
-            \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2020, 2023, 2024}
-            {
-            \draw[highlight on=<0>] (\Y,0) circle[radius=3pt];
-            \node[anchor=south,highlight on=<0>,fill=white,rotate=45,anchor=south
-            west,inner sep=0pt] at (\Y,0.2) {\X};
-            }
-            \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2021}
-            {
-            \draw[highlight on=<\Z>] (\Y,0) circle[radius=3pt];
-            \node[anchor=south,highlight on=<\Z>,fill=white,rotate=45,anchor=south
-            west,inner sep=0pt] at (\Y,0.2) {\bfseries\X};
-            }
-        \end{tikzpicture}
-    \end{center}
-    \vspace{-10pt}
-    \begin{columns}[onlytextwidth,t]
-        \column{.02\textwidth}
-       \column{.44\textwidth}
-       \vspace{-13pt}
-       \begin{figure}
-            \centering
-            \captionsetup{justification=centering}
-            \caption{\texttt{Heavy quarks in the early \\ stage of high energy collisions
-            }}
-            \vspace{-5pt}
-            \includegraphics[width=0.9\textwidth]{images/sigmap_charm_expanding_04_crop.png}
-        \end{figure}
-        \column{.02\textwidth}
-        \column{.5\textwidth}
-        % \vspace{0.2cm}
-        \begin{center}
-            \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.5}{${\color{lightgray}\blacktriangleright}$}}}
-            {\Large\color{palteal} Momentum variance $\sigma_p$ \\[10pt]}
-            \footnotesize
-                \begin{itemize}
-                    \item {\color{lightgray}SU(2) glasma, {\bfseries longitudinal expansion}}
-                    \item {\color{lightgray}Numerical {\bfseries Wong's equations}}
-                    \item {\color{lightgray}Dynamics compared to {\bfseries pQCD Langevin}}
-                    \item {\color{lightgray}Diffusion and {\bfseries brownian motion}}
-                \end{itemize}
-                % {\footnotesize\color{lightgray}\texttt{Ballistic diffusion of heavy quarks in \\ the early stage of relativistic heavy \\ ion collisions at RHIC and LHC}}
-        \end{center}
-        \column{.02\textwidth}
-    \end{columns}
-    \blfootnote{\scriptsize Pooja, Das, Oliva, Ruggieri \href{https://arxiv.org/abs/2110.14610}{\color{palgold}\texttt{[2110.14610]}$^\text{\tiny\faExternalLink}$}}
-\end{frame}
+%         \begin{columns}
+%             \begin{column}{0.033\textwidth}\end{column}
+%             \begin{column}{0.4\textwidth}
+%                 \centering
+%                 \includegraphics[width=0.9\columnwidth]{images/corr_jets.pdf}
+%             \end{column}
+%             \begin{column}{0.01\textwidth}\end{column}
+%             \begin{column}{0.5\textwidth}
+%                 % \centering
+%                 \vspace{-10pt}
+%                 \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{customblue}\blacktriangleright}$}}} 
+%                 \begin{itemize}
+%                     \item {\color{customblue} Eikonal jets} with $p^x\rightarrow\infty$
+%                 \end{itemize} 
+%                 \vspace{7pt}
+%                 {\footnotesize
+%                 \begin{equation*}
+%                     \hspace{10pt}\langle \delta p^2_i\rangle\big|_{\color{customblue}p^x\rightarrow\infty}\propto \int\mathrm{d}\tau^{\prime}\int\mathrm{d}\tau^{\prime\prime}\Big\langle \mathrm{Tr}\big[{\color{customblue}\widetilde{f}_i}(\tau^{\prime}){\color{customblue}\widetilde{f}_i}(\tau^{\prime\prime})\big]\Big\rangle
+%                 \end{equation*}}
+%                 {\scriptsize\color{lightgray} \hspace{18pt}$f_y=E_y-B_z$, $f_z=E_z+B_y$}
+%             \end{column}
+%             \begin{column}{0.056\textwidth}\end{column}
+%         \end{columns}
+% \end{frame}
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}[t]
-    \frametitle{Literature timeline}
-    \begin{center}
-        \begin{tikzpicture}[xscale=1]
-            \draw[line width=0.7mm,-latex,palteal!20] (-0.2,0) -- (6.5+0.2,0);
-            \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2020, 2023, 2024}
-            {
-            \draw[highlight on=<0>] (\Y,0) circle[radius=3pt];
-            \node[anchor=south,highlight on=<0>,fill=white,rotate=45,anchor=south
-            west,inner sep=0pt] at (\Y,0.2) {\X};
-            }
-            \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2021}
-            {
-            \draw[highlight on=<\Z>] (\Y,0) circle[radius=3pt];
-            \node[anchor=south,highlight on=<\Z>,fill=white,rotate=45,anchor=south
-            west,inner sep=0pt] at (\Y,0.2) {\bfseries\X};
-            }
-        \end{tikzpicture}
-    \end{center}
-    \vspace{-10pt}
-    \begin{columns}[onlytextwidth,t]
-        \column{.02\textwidth}
-       \column{.44\textwidth}
-       \vspace{-13pt}
-       \begin{figure}
-            \centering
-            \captionsetup{justification=centering}
-            \caption{\texttt{Jet quenching in glasma}}
-            % \vspace{-5pt}
-            \includegraphics[width=0.95\textwidth]{images/Fig-qhat-six-cases.pdf}
-        \end{figure}
-        \column{.02\textwidth}
-        \column{.5\textwidth}
-        % \vspace{0.2cm}
-        \begin{center}
-            \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.5}{${\color{lightgray}\blacktriangleright}$}}}
-            {\Large\color{palteal} Momentum broadening $\Delta p_T^2$ \\[5pt] Jet quenching parameter $\hat{q}$  \\[10pt]}
-            \footnotesize
-                \begin{itemize}
-                    \item {\color{lightgray}Analytical glasma fields in $\boldsymbol{\tau}$ \textbf{expansion}}
-                    \item {\color{lightgray} {\bfseries Field correlators}, {\bfseries Fokker-Planck} equation}
-                    \item {\color{lightgray} Estimate $\Delta p_T^2|^\mathrm{neq}/\Delta p_T^2|^\mathrm{eq}\approx 0.93$}
-                \end{itemize}
-                % {\footnotesize\color{lightgray}\texttt{Ballistic diffusion of heavy quarks in \\ the early stage of relativistic heavy \\ ion collisions at RHIC and LHC}}
-        \end{center}
-        \column{.02\textwidth}
-    \end{columns}
-    \blfootnote{\scriptsize Carrington, Czajka, Mrowczynski \href{https://arxiv.org/abs/2112.06812}{\color{palgold}\texttt{[2112.06812]}$^\text{\tiny\faExternalLink}$}}
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}[t]
-    \frametitle{Literature timeline}
-    \begin{center}
-        \begin{tikzpicture}[xscale=1]
-            \draw[line width=0.7mm,-latex,palteal!20] (-0.2,0) -- (6.5+0.2,0);
-            \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2020, 2021, 2024}
-            {
-            \draw[highlight on=<0>] (\Y,0) circle[radius=3pt];
-            \node[anchor=south,highlight on=<0>,fill=white,rotate=45,anchor=south
-            west,inner sep=0pt] at (\Y,0.2) {\X};
-            }
-            \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2023}
-            {
-            \draw[highlight on=<\Z>] (\Y,0) circle[radius=3pt];
-            \node[anchor=south,highlight on=<\Z>,fill=white,rotate=45,anchor=south
-            west,inner sep=0pt] at (\Y,0.2) {\bfseries\X};
-            }
-        \end{tikzpicture}
-    \end{center}
-    \vspace{-10pt}
-    \begin{columns}[onlytextwidth,t]
-        \column{.02\textwidth}
-       \column{.44\textwidth}
-       \vspace{-13pt}
-       \begin{figure}
-            \centering
-            \captionsetup{justification=centering}
-            \caption{\texttt{Simulating jets and \\ heavy quarks in the Glasma}}
-            \vspace{-10pt}
-            \includegraphics[width=0.75\textwidth]{images/wong_kappa.pdf}
-        \end{figure}
-        \column{.02\textwidth}
-        \column{.5\textwidth}
-        % \vspace{0.2cm}
-        \begin{center}
-            \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.5}{${\color{lightgray}\blacktriangleright}$}}}
-            {\Large\color{palteal} Momentum broadening $\langle \delta p^2\rangle$\\[5pt]
-            Transport coefficients $\kappa$, $\hat{q}$  \\[10pt]}
-            \footnotesize
-                \begin{itemize}
-                    \item {\color{lightgray}SU(3) glasma, longitudinal expansion}
-                    \item {\color{lightgray}Numerical {\bfseries Wong's equations}}
-                    \item {\color{lightgray}Colored-particle-in-cell solver}
-                    \item {\color{lightgray}Comparison with {\bfseries field correlators}}
-                \end{itemize}
-                % {\footnotesize\color{lightgray}\texttt{Ballistic diffusion of heavy quarks in \\ the early stage of relativistic heavy \\ ion collisions at RHIC and LHC}}
-        \end{center}
-        \column{.02\textwidth}
-    \end{columns}
-    \blfootnote{\scriptsize Avramescu, Băran, Greco, Ipp, Müller, Ruggieri \href{https://arxiv.org/abs/2303.05599}{\color{palgold}\texttt{[2303.05599]}$^\text{\tiny\faExternalLink}$}}
-\end{frame}
+% \begin{frame}[t]
+%     \frametitle{Literature timeline}
+%     \begin{center}
+%         \begin{tikzpicture}[xscale=1]
+%             \draw[line width=0.7mm,-latex,palteal!20] (-0.2,0) -- (6.5+0.2,0);
+%             \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2021, 2023, 2024}
+%             {
+%             \draw[highlight on=<0>] (\Y,0) circle[radius=3pt];
+%             \node[anchor=south,highlight on=<0>,fill=white,rotate=45,anchor=south
+%             west,inner sep=0pt] at (\Y,0.2) {\X};
+%             }
+%             \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2020}
+%             {
+%             \draw[highlight on=<\Z>] (\Y,0) circle[radius=3pt];
+%             \node[anchor=south,highlight on=<\Z>,fill=white,rotate=45,anchor=south
+%             west,inner sep=0pt] at (\Y,0.2) {\bfseries\X};
+%             }
+%         \end{tikzpicture}
+%     \end{center}
+%     \vspace{-10pt}
+%     \begin{columns}[onlytextwidth,t]
+%         \column{.02\textwidth}
+%        \column{.44\textwidth}
+%        \vspace{-10pt}
+%        \begin{figure}
+%             \centering
+%             \captionsetup{justification=centering}
+%             \caption{\texttt{Heavy Quarks Embedded in Glasma}}
+%             \includegraphics[width=0.95\textwidth]{images/1-s2.0-S0375947420302244-gr003_lrg (1).jpg}
+%         \end{figure}
+%         \column{.02\textwidth}
+%         \column{.5\textwidth}
+%         % \vspace{0.2cm}
+%         \begin{center}
+%             {\Large\color{palteal} Momentum broadening $\hat{q}$ \\[5pt] Collisional energy loss $\mathrm{d}E/\mathrm{d}x$ \\[10pt]}
+%             \footnotesize
+%                 \begin{itemize}
+%                 % \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.5}{${\color{palviolet}\blacktriangleright}$}}}
+%                 % \item {\normalsize\color{palviolet}Heavy quarks}
+%                 \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.5}{${\color{lightgray}\blacktriangleright}$}}}
+%                 \item {\color{lightgray}Analytical glasma fields in $\boldsymbol{\tau}$ \textbf{expansion}}
+%                 \item {\color{lightgray}$\langle EE\rangle$ and $\langle BB\rangle$ {\bfseries field correlators}}
+%                 \item {\color{lightgray}{\bfseries Fokker-Planck} equation for heavy quarks}
+%             \end{itemize}
+%         \end{center}
+%         \column{.02\textwidth}
+%     \end{columns}
+%     \blfootnote{\scriptsize Carrington, Czajka, Mrowczynski \href{https://arxiv.org/abs/2001.05074}{\color{palgold}\texttt{[2001.05074]}$^\text{\tiny\faExternalLink}$}}
+% \end{frame}
 
 
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{frame}[t]
+%     \frametitle{Literature timeline}
+%     \begin{center}
+%         \begin{tikzpicture}[xscale=1]
+%             \draw[line width=0.7mm,-latex,palteal!20] (-0.2,0) -- (6.5+0.2,0);
+%             \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2021, 2023, 2024}
+%             {
+%             \draw[highlight on=<0>] (\Y,0) circle[radius=3pt];
+%             \node[anchor=south,highlight on=<0>,fill=white,rotate=45,anchor=south
+%             west,inner sep=0pt] at (\Y,0.2) {\X};
+%             }
+%             \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2020}
+%             {
+%             \draw[highlight on=<\Z>] (\Y,0) circle[radius=3pt];
+%             \node[anchor=south,highlight on=<\Z>,fill=white,rotate=45,anchor=south
+%             west,inner sep=0pt] at (\Y,0.2) {\bfseries\X};
+%             }
+%         \end{tikzpicture}
+%     \end{center}
+%     \vspace{-10pt}
+%     \begin{columns}[onlytextwidth,t]
+%         \column{.02\textwidth}
+%        \column{.44\textwidth}
+%        \vspace{-13pt}
+%        \begin{figure}
+%             \centering
+%             \captionsetup{justification=centering}
+%             \caption{\texttt{Heavy quark diffusion in an \\overoccupied gluon plasma}}
+%             \vspace{-10pt}
+%             \includegraphics[width=0.9\textwidth]{images/mombroadening_with_inset_and_approximations.pdf}
+%         \end{figure}
+%         \column{.02\textwidth}
+%         \column{.5\textwidth}
+%         % \vspace{0.2cm}
+%         \begin{center}
+%             \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.5}{${\color{lightgray}\blacktriangleright}$}}}
+%             {\Large\color{palteal} Momentum broadening $\langle p^2 \rangle$ \\[5pt] Transport coefficient $\kappa$ } \\[10pt]
+%             \footnotesize
+%                 \begin{itemize}
+%                 \item {\footnotesize\color{lightgray}{\bfseries Over-occupied} classical Yang-Mills}
+%                 \item {\footnotesize\color{lightgray}Numerical lattice $\boldsymbol{\langle EE\rangle}$ {\bfseries correlator}}
+%                 \item {\footnotesize\color{lightgray}Rapid rise in $\langle p^2 \rangle$ at early $\Delta t$}
+%                 \item {\footnotesize\color{lightgray}{\bfseries Oscillations in $\boldsymbol{\kappa$}} with plasmon frequency}
+%             \end{itemize}
+%         \end{center}
+%         \column{.02\textwidth}
+%     \end{columns}
+%     \blfootnote{\scriptsize Boguslavski, Kurkela, Lappi, Peuron \href{https://arxiv.org/abs/2005.02418}{\color{palgold}\texttt{[2005.02418]}$^\text{\tiny\faExternalLink}$}}
+% \end{frame}
 
-\begin{frame}[t]
-    \frametitle{Literature timeline}
-    \begin{center}
-        \begin{tikzpicture}[xscale=1]
-            \draw[line width=0.7mm,-latex,palteal!20] (-0.2,0) -- (6.5+0.2,0);
-            \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2020, 2021, 2023}
-            {
-            \draw[highlight on=<0>] (\Y,0) circle[radius=3pt];
-            \node[anchor=south,highlight on=<0>,fill=white,rotate=45,anchor=south
-            west,inner sep=0pt] at (\Y,0.2) {\X};
-            }
-            \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2024}
-            {
-            \draw[highlight on=<\Z>] (\Y,0) circle[radius=3pt];
-            \node[anchor=south,highlight on=<\Z>,fill=white,rotate=45,anchor=south
-            west,inner sep=0pt] at (\Y,0.2) {\bfseries\X};
-            }
-        \end{tikzpicture}
-    \end{center}
-    \vspace{-10pt}
-    \begin{columns}[onlytextwidth,t]
-        \column{.02\textwidth}
-       \column{.44\textwidth}
-       \vspace{-13pt}
-       \begin{figure}
-            \centering
-            \captionsetup{justification=centering}
-            \caption{\texttt{Heavy-quark diffusion in\\ 2+1D and Glasma-like plasmas}}
-            \vspace{-5pt}
-            \includegraphics[width=0.75\textwidth]{images/2Dsc_g_SR_Qt500.pdf}
-        \end{figure}
-        \column{.02\textwidth}
-        \column{.5\textwidth}
-        % \vspace{0.2cm}
-        \begin{center}
-            \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.5}{${\color{lightgray}\blacktriangleright}$}}}
-            {\Large\color{palteal} Transport coefficient $\kappa$ \\[10pt]}
-            \footnotesize
-                \begin{itemize}
-                    \item {\color{lightgray}Glasma-like classical gluon fields}
-                    \item {\color{lightgray}Numerical lattice $\boldsymbol{\langle EE\rangle}$ {\bfseries  correlator}}
-                    \item {\color{lightgray}Non-perturbative gluonic excitations}
-                    \item {\color{lightgray}Explain the {\bfseries peak in $\boldsymbol{\kappa}$} from glasma}
-                \end{itemize}
-                % {\footnotesize\color{lightgray}\texttt{Ballistic diffusion of heavy quarks in \\ the early stage of relativistic heavy \\ ion collisions at RHIC and LHC}}
-        \end{center}
-        \column{.02\textwidth}
-    \end{columns}
-    \blfootnote{\scriptsize Backfried, Boguslavski, Hotzy \href{https://arxiv.org/abs/2408.12646}{\color{palgold}\texttt{[2408.12646]}$^\text{\tiny\faExternalLink}$}}
-\end{frame}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{frame}[t]
+%     \frametitle{Literature timeline}
+%     \begin{center}
+%         \begin{tikzpicture}[xscale=1]
+%             \draw[line width=0.7mm,-latex,palteal!20] (-0.2,0) -- (6.5+0.2,0);
+%             \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2021, 2023, 2024}
+%             {
+%             \draw[highlight on=<0>] (\Y,0) circle[radius=3pt];
+%             \node[anchor=south,highlight on=<0>,fill=white,rotate=45,anchor=south
+%             west,inner sep=0pt] at (\Y,0.2) {\X};
+%             }
+%             \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2020}
+%             {
+%             \draw[highlight on=<\Z>] (\Y,0) circle[radius=3pt];
+%             \node[anchor=south,highlight on=<\Z>,fill=white,rotate=45,anchor=south
+%             west,inner sep=0pt] at (\Y,0.2) {\bfseries\X};
+%             }
+%         \end{tikzpicture}
+%     \end{center}
+%     \vspace{-10pt}
+%     \begin{columns}[onlytextwidth,t]
+%         \column{.02\textwidth}
+%        \column{.44\textwidth}
+%        \vspace{-13pt}
+%        \begin{figure}
+%             \centering
+%             \captionsetup{justification=centering}
+%             \caption{\texttt{Ballistic diffusion of heavy \\ quarks in the early stage }}
+%             \vspace{-5pt}
+%             \includegraphics[width=0.85\textwidth]{images/zoom_02fm_langevin_crop.png}
+%         \end{figure}
+%         \column{.02\textwidth}
+%         \column{.5\textwidth}
+%         % \vspace{0.2cm}
+%         \begin{center}
+%             \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.5}{${\color{lightgray}\blacktriangleright}$}}}
+%             {\Large\color{palteal} Momentum variance $\sigma_p$ \\[10pt]}
+%             \footnotesize
+%                 \begin{itemize}
+%                     \item {\color{lightgray}SU(2) glasma, {\bfseries static box}}
+%                     \item {\color{lightgray}Numerical {\bfseries Wong's equations}}
+%                     \item {\color{lightgray}Dynamics compared to {\bfseries Langevin}}
+%                     \item {\color{lightgray}Diffusion with {\bfseries memory effects}}
+%                 \end{itemize}
+%                 % {\footnotesize\color{lightgray}\texttt{Ballistic diffusion of heavy quarks in \\ the early stage of relativistic heavy \\ ion collisions at RHIC and LHC}}
+%         \end{center}
+%         \column{.02\textwidth}
+%     \end{columns}
+%     \blfootnote{\scriptsize Liu, Das, Greco, Ruggieri \href{https://arxiv.org/abs/2011.05818}{\color{palgold}\texttt{[2011.05818]}$^\text{\tiny\faExternalLink}$}}
+% \end{frame}
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{frame}[t]
+%     \frametitle{Literature timeline}
+%     \begin{center}
+%         \begin{tikzpicture}[xscale=1]
+%             \draw[line width=0.7mm,-latex,palteal!20] (-0.2,0) -- (6.5+0.2,0);
+%             \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2021, 2023, 2024}
+%             {
+%             \draw[highlight on=<0>] (\Y,0) circle[radius=3pt];
+%             \node[anchor=south,highlight on=<0>,fill=white,rotate=45,anchor=south
+%             west,inner sep=0pt] at (\Y,0.2) {\X};
+%             }
+%             \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2020}
+%             {
+%             \draw[highlight on=<\Z>] (\Y,0) circle[radius=3pt];
+%             \node[anchor=south,highlight on=<\Z>,fill=white,rotate=45,anchor=south
+%             west,inner sep=0pt] at (\Y,0.2) {\bfseries\X};
+%             }
+%         \end{tikzpicture}
+%     \end{center}
+%     \vspace{-10pt}
+%     \begin{columns}[onlytextwidth,t]
+%         \column{.02\textwidth}
+%        \column{.44\textwidth}
+%        \vspace{-13pt}
+%        \begin{figure}
+%             \centering
+%             \captionsetup{justification=centering}
+%             \caption{\texttt{Anisotropic momentum broadening \\ in the 2+1D Glasma}}
+%             \vspace{-15pt}
+%             \includegraphics[width=1.05\textwidth]{images/accumulated_momentum_tau.pdf}
+%         \end{figure}
+%         \column{.02\textwidth}
+%         \column{.5\textwidth}
+%         % \vspace{0.2cm}
+%         \begin{center}
+%             \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.5}{${\color{lightgray}\blacktriangleright}$}}}
+%             {\Large\color{palteal} Momentum broadening $\langle p^2\rangle$ \\[10pt]}
+%             \footnotesize
+%                 \begin{itemize}
+%                     \item {\color{lightgray}SU(3) glasma, lattice discretization}
+%                     \item {\color{lightgray}{\bfseries Eikonal jets} using {\bfseries field correlators}}
+%                      \item {\color{lightgray}Interpretation of {\bfseries anisotropic broadening}}
+%                     \item {\color{lightgray}{\bfseries Weak field} analytical calculations}
+%                 \end{itemize}
+%                 % {\footnotesize\color{lightgray}\texttt{Ballistic diffusion of heavy quarks in \\ the early stage of relativistic heavy \\ ion collisions at RHIC and LHC}}
+%         \end{center}
+%         \column{.02\textwidth}
+%     \end{columns}
+%     \blfootnote{\scriptsize Ipp, Müller, Schuh \href{https://arxiv.org/abs/2001.10001}{\color{palgold}\texttt{[2001.10001]}$^\text{\tiny\faExternalLink}$}}
+% \end{frame}
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{frame}[t]
+%     \frametitle{Literature timeline}
+%     \begin{center}
+%         \begin{tikzpicture}[xscale=1]
+%             \draw[line width=0.7mm,-latex,palteal!20] (-0.2,0) -- (6.5+0.2,0);
+%             \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2021, 2023, 2024}
+%             {
+%             \draw[highlight on=<0>] (\Y,0) circle[radius=3pt];
+%             \node[anchor=south,highlight on=<0>,fill=white,rotate=45,anchor=south
+%             west,inner sep=0pt] at (\Y,0.2) {\X};
+%             }
+%             \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2020}
+%             {
+%             \draw[highlight on=<\Z>] (\Y,0) circle[radius=3pt];
+%             \node[anchor=south,highlight on=<\Z>,fill=white,rotate=45,anchor=south
+%             west,inner sep=0pt] at (\Y,0.2) {\bfseries\X};
+%             }
+%         \end{tikzpicture}
+%     \end{center}
+%     \vspace{-10pt}
+%     \begin{columns}[onlytextwidth,t]
+%         \column{.02\textwidth}
+%        \column{.44\textwidth}
+%        \vspace{-13pt}
+%        \begin{figure}
+%             \centering
+%             \captionsetup{justification=centering}
+%             \caption{\texttt{Jet momentum broadening in the \\ pre-equilibrium Glasma
+%             }}
+%             % \vspace{-5pt}
+%             \includegraphics[width=0.95\textwidth]{images/qhat_tau.pdf}
+%         \end{figure}
+%         \column{.02\textwidth}
+%         \column{.5\textwidth}
+%         % \vspace{0.2cm}
+%         \begin{center}
+%             \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.5}{${\color{lightgray}\blacktriangleright}$}}}
+%             {\Large\color{palteal} Momentum broadening $\langle p^2\rangle$ \\[5pt] Jet quenching parameter $\hat{q}$\\[10pt]}
+%             \footnotesize
+%                 \begin{itemize}
+%                     \item {\color{lightgray}SU(3) glasma, lattice discretization}
+%                     \item {\color{lightgray}{\bfseries Eikonal jets} using {\bfseries field correlators}}
+%                      \item {\color{lightgray}Interpretation of {\bfseries anisotropic broadening}}
+%                     % \item {\normalsize\color{lightgray}{\bfseries Weak field} analytical calculations}
+%                 \end{itemize}
+%                 % {\footnotesize\color{lightgray}\texttt{Ballistic diffusion of heavy quarks in \\ the early stage of relativistic heavy \\ ion collisions at RHIC and LHC}}
+%         \end{center}
+%         \column{.02\textwidth}
+%     \end{columns}
+%     \blfootnote{\scriptsize Ipp, Müller, Schuh \href{https://arxiv.org/abs/2009.14206}{\color{palgold}\texttt{[2009.14206]}$^\text{\tiny\faExternalLink}$}}
+% \end{frame}
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{frame}[t]
+%     \frametitle{Literature timeline}
+%     \begin{center}
+%         \begin{tikzpicture}[xscale=1]
+%             \draw[line width=0.7mm,-latex,palteal!20] (-0.2,0) -- (6.5+0.2,0);
+%             \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2020, 2023, 2024}
+%             {
+%             \draw[highlight on=<0>] (\Y,0) circle[radius=3pt];
+%             \node[anchor=south,highlight on=<0>,fill=white,rotate=45,anchor=south
+%             west,inner sep=0pt] at (\Y,0.2) {\X};
+%             }
+%             \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2021}
+%             {
+%             \draw[highlight on=<\Z>] (\Y,0) circle[radius=3pt];
+%             \node[anchor=south,highlight on=<\Z>,fill=white,rotate=45,anchor=south
+%             west,inner sep=0pt] at (\Y,0.2) {\bfseries\X};
+%             }
+%         \end{tikzpicture}
+%     \end{center}
+%     \vspace{-10pt}
+%     \begin{columns}[onlytextwidth,t]
+%         \column{.02\textwidth}
+%        \column{.44\textwidth}
+%        \vspace{-13pt}
+%        \begin{figure}
+%             \centering
+%             \captionsetup{justification=centering}
+%             \caption{\texttt{Heavy quarks in the early \\ stage of high energy collisions
+%             }}
+%             \vspace{-5pt}
+%             \includegraphics[width=0.9\textwidth]{images/sigmap_charm_expanding_04_crop.png}
+%         \end{figure}
+%         \column{.02\textwidth}
+%         \column{.5\textwidth}
+%         % \vspace{0.2cm}
+%         \begin{center}
+%             \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.5}{${\color{lightgray}\blacktriangleright}$}}}
+%             {\Large\color{palteal} Momentum variance $\sigma_p$ \\[10pt]}
+%             \footnotesize
+%                 \begin{itemize}
+%                     \item {\color{lightgray}SU(2) glasma, {\bfseries longitudinal expansion}}
+%                     \item {\color{lightgray}Numerical {\bfseries Wong's equations}}
+%                     \item {\color{lightgray}Dynamics compared to {\bfseries pQCD Langevin}}
+%                     \item {\color{lightgray}Diffusion and {\bfseries brownian motion}}
+%                 \end{itemize}
+%                 % {\footnotesize\color{lightgray}\texttt{Ballistic diffusion of heavy quarks in \\ the early stage of relativistic heavy \\ ion collisions at RHIC and LHC}}
+%         \end{center}
+%         \column{.02\textwidth}
+%     \end{columns}
+%     \blfootnote{\scriptsize Pooja, Das, Oliva, Ruggieri \href{https://arxiv.org/abs/2110.14610}{\color{palgold}\texttt{[2110.14610]}$^\text{\tiny\faExternalLink}$}}
+% \end{frame}
+
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{frame}[t]
+%     \frametitle{Literature timeline}
+%     \begin{center}
+%         \begin{tikzpicture}[xscale=1]
+%             \draw[line width=0.7mm,-latex,palteal!20] (-0.2,0) -- (6.5+0.2,0);
+%             \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2020, 2023, 2024}
+%             {
+%             \draw[highlight on=<0>] (\Y,0) circle[radius=3pt];
+%             \node[anchor=south,highlight on=<0>,fill=white,rotate=45,anchor=south
+%             west,inner sep=0pt] at (\Y,0.2) {\X};
+%             }
+%             \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2021}
+%             {
+%             \draw[highlight on=<\Z>] (\Y,0) circle[radius=3pt];
+%             \node[anchor=south,highlight on=<\Z>,fill=white,rotate=45,anchor=south
+%             west,inner sep=0pt] at (\Y,0.2) {\bfseries\X};
+%             }
+%         \end{tikzpicture}
+%     \end{center}
+%     \vspace{-10pt}
+%     \begin{columns}[onlytextwidth,t]
+%         \column{.02\textwidth}
+%        \column{.44\textwidth}
+%        \vspace{-13pt}
+%        \begin{figure}
+%             \centering
+%             \captionsetup{justification=centering}
+%             \caption{\texttt{Jet quenching in glasma}}
+%             % \vspace{-5pt}
+%             \includegraphics[width=0.95\textwidth]{images/Fig-qhat-six-cases.pdf}
+%         \end{figure}
+%         \column{.02\textwidth}
+%         \column{.5\textwidth}
+%         % \vspace{0.2cm}
+%         \begin{center}
+%             \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.5}{${\color{lightgray}\blacktriangleright}$}}}
+%             {\Large\color{palteal} Momentum broadening $\Delta p_T^2$ \\[5pt] Jet quenching parameter $\hat{q}$  \\[10pt]}
+%             \footnotesize
+%                 \begin{itemize}
+%                     \item {\color{lightgray}Analytical glasma fields in $\boldsymbol{\tau}$ \textbf{expansion}}
+%                     \item {\color{lightgray} {\bfseries Field correlators}, {\bfseries Fokker-Planck} equation}
+%                     \item {\color{lightgray} Estimate $\Delta p_T^2|^\mathrm{neq}/\Delta p_T^2|^\mathrm{eq}\approx 0.93$}
+%                 \end{itemize}
+%                 % {\footnotesize\color{lightgray}\texttt{Ballistic diffusion of heavy quarks in \\ the early stage of relativistic heavy \\ ion collisions at RHIC and LHC}}
+%         \end{center}
+%         \column{.02\textwidth}
+%     \end{columns}
+%     \blfootnote{\scriptsize Carrington, Czajka, Mrowczynski \href{https://arxiv.org/abs/2112.06812}{\color{palgold}\texttt{[2112.06812]}$^\text{\tiny\faExternalLink}$}}
+% \end{frame}
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{frame}[t]
+%     \frametitle{Literature timeline}
+%     \begin{center}
+%         \begin{tikzpicture}[xscale=1]
+%             \draw[line width=0.7mm,-latex,palteal!20] (-0.2,0) -- (6.5+0.2,0);
+%             \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2020, 2021, 2024}
+%             {
+%             \draw[highlight on=<0>] (\Y,0) circle[radius=3pt];
+%             \node[anchor=south,highlight on=<0>,fill=white,rotate=45,anchor=south
+%             west,inner sep=0pt] at (\Y,0.2) {\X};
+%             }
+%             \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2023}
+%             {
+%             \draw[highlight on=<\Z>] (\Y,0) circle[radius=3pt];
+%             \node[anchor=south,highlight on=<\Z>,fill=white,rotate=45,anchor=south
+%             west,inner sep=0pt] at (\Y,0.2) {\bfseries\X};
+%             }
+%         \end{tikzpicture}
+%     \end{center}
+%     \vspace{-10pt}
+%     \begin{columns}[onlytextwidth,t]
+%         \column{.02\textwidth}
+%        \column{.44\textwidth}
+%        \vspace{-13pt}
+%        \begin{figure}
+%             \centering
+%             \captionsetup{justification=centering}
+%             \caption{\texttt{Simulating jets and \\ heavy quarks in the Glasma}}
+%             \vspace{-10pt}
+%             \includegraphics[width=0.75\textwidth]{images/wong_kappa.pdf}
+%         \end{figure}
+%         \column{.02\textwidth}
+%         \column{.5\textwidth}
+%         % \vspace{0.2cm}
+%         \begin{center}
+%             \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.5}{${\color{lightgray}\blacktriangleright}$}}}
+%             {\Large\color{palteal} Momentum broadening $\langle \delta p^2\rangle$\\[5pt]
+%             Transport coefficients $\kappa$, $\hat{q}$  \\[10pt]}
+%             \footnotesize
+%                 \begin{itemize}
+%                     \item {\color{lightgray}SU(3) glasma, longitudinal expansion}
+%                     \item {\color{lightgray}Numerical {\bfseries Wong's equations}}
+%                     \item {\color{lightgray}Colored-particle-in-cell solver}
+%                     \item {\color{lightgray}Comparison with {\bfseries field correlators}}
+%                 \end{itemize}
+%                 % {\footnotesize\color{lightgray}\texttt{Ballistic diffusion of heavy quarks in \\ the early stage of relativistic heavy \\ ion collisions at RHIC and LHC}}
+%         \end{center}
+%         \column{.02\textwidth}
+%     \end{columns}
+%     \blfootnote{\scriptsize Avramescu, Băran, Greco, Ipp, Müller, Ruggieri \href{https://arxiv.org/abs/2303.05599}{\color{palgold}\texttt{[2303.05599]}$^\text{\tiny\faExternalLink}$}}
+% \end{frame}
+
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{frame}[t]
+%     \frametitle{Literature timeline}
+%     \begin{center}
+%         \begin{tikzpicture}[xscale=1]
+%             \draw[line width=0.7mm,-latex,palteal!20] (-0.2,0) -- (6.5+0.2,0);
+%             \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2020, 2021, 2023}
+%             {
+%             \draw[highlight on=<0>] (\Y,0) circle[radius=3pt];
+%             \node[anchor=south,highlight on=<0>,fill=white,rotate=45,anchor=south
+%             west,inner sep=0pt] at (\Y,0.2) {\X};
+%             }
+%             \foreach \X [evaluate=\X as \Y using int(\X-2019),count=\Z] in {2024}
+%             {
+%             \draw[highlight on=<\Z>] (\Y,0) circle[radius=3pt];
+%             \node[anchor=south,highlight on=<\Z>,fill=white,rotate=45,anchor=south
+%             west,inner sep=0pt] at (\Y,0.2) {\bfseries\X};
+%             }
+%         \end{tikzpicture}
+%     \end{center}
+%     \vspace{-10pt}
+%     \begin{columns}[onlytextwidth,t]
+%         \column{.02\textwidth}
+%        \column{.44\textwidth}
+%        \vspace{-13pt}
+%        \begin{figure}
+%             \centering
+%             \captionsetup{justification=centering}
+%             \caption{\texttt{Heavy-quark diffusion in\\ 2+1D and Glasma-like plasmas}}
+%             \vspace{-5pt}
+%             \includegraphics[width=0.75\textwidth]{images/2Dsc_g_SR_Qt500.pdf}
+%         \end{figure}
+%         \column{.02\textwidth}
+%         \column{.5\textwidth}
+%         % \vspace{0.2cm}
+%         \begin{center}
+%             \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.5}{${\color{lightgray}\blacktriangleright}$}}}
+%             {\Large\color{palteal} Transport coefficient $\kappa$ \\[10pt]}
+%             \footnotesize
+%                 \begin{itemize}
+%                     \item {\color{lightgray}Glasma-like classical gluon fields}
+%                     \item {\color{lightgray}Numerical lattice $\boldsymbol{\langle EE\rangle}$ {\bfseries  correlator}}
+%                     \item {\color{lightgray}Non-perturbative gluonic excitations}
+%                     \item {\color{lightgray}Explain the {\bfseries peak in $\boldsymbol{\kappa}$} from glasma}
+%                 \end{itemize}
+%                 % {\footnotesize\color{lightgray}\texttt{Ballistic diffusion of heavy quarks in \\ the early stage of relativistic heavy \\ ion collisions at RHIC and LHC}}
+%         \end{center}
+%         \column{.02\textwidth}
+%     \end{columns}
+%     \blfootnote{\scriptsize Backfried, Boguslavski, Hotzy \href{https://arxiv.org/abs/2408.12646}{\color{palgold}\texttt{[2408.12646]}$^\text{\tiny\faExternalLink}$}}
+% \end{frame}
 
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2376,6 +2376,20 @@
 
 % \subsection{Field correlators}
 
+\setbeamertemplate{background}{
+\tikz[overlay,remember picture] \node[opacity=0.15, at=(current page.center)] {
+   \includegraphics[height=0.8\paperheight]{images/Cdetadphi_3D_toy_charm_pT_1_tau_0.1_crop.png}};
+}
+\begin{frame}[plain,noframenumbering]{}
+    \begin{center}
+        \vspace{1cm}
+        {\large\color{normal}How to probe pre-equilibrium}\\[0.3cm]
+        {\huge\color{destacado}Observables sensitive to glasma}\\[0.4cm]
+        {\large\textit{Candidates: $R_{AA}$, $v_2$, angular correlations, anisotropies...}}
+    \end{center}
+\end{frame}
+\setbeamertemplate{background}{}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%% SUBSECTION %%%%%%%%%%%%%%%
@@ -2383,13 +2397,404 @@
 
 \subsection{Observables}
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}
-    \frametitle{Phenomenology}
+\begin{frame}[t]
+    \frametitle{Literature timeline}
+    \begin{center}
+        \begin{tikzpicture}[xscale=1]
+            \draw[line width=0.7mm,-latex,palteal!20] (-0.2,0) -- (8.5+0.2,0);
+            \foreach \X [evaluate=\X as \Y using int(\X-2017),count=\Z] in {2019, 2022, 2024}
+            {
+            \draw[highlight on=<0>] (\Y,0) circle[radius=3pt];
+            \node[anchor=south,highlight on=<0>,fill=white,rotate=45,anchor=south
+            west,inner sep=0pt] at (\Y,0.2) {\X};
+            }
+            \foreach \X [evaluate=\X as \Y using int(\X-2017),count=\Z] in {2018}
+            {
+            \draw[highlight on=<\Z>] (\Y,0) circle[radius=3pt];
+            \node[anchor=south,highlight on=<\Z>,fill=white,rotate=45,anchor=south
+            west,inner sep=0pt] at (\Y,0.2) {\bfseries\X};
+            }
+        \end{tikzpicture}
+    \end{center}
+    \vspace{-10pt}
+    \begin{columns}[onlytextwidth,t]
+        \column{.02\textwidth}
+       \column{.43\textwidth}
+       \vspace{-13pt}
+       \begin{figure}
+            \centering
+            \captionsetup{justification=centering}
+            \caption{\texttt{The cathode tube effect}: \texttt{heavy \\ quarks probing the Glasma}}
+            \vspace{-5pt}
+            \includegraphics[width=0.8\textwidth]{images/pPb_RpPb_FRAGME_new_2_crop.pdf}
+        \end{figure}
+        \column{.02\textwidth}
+        \column{.5\textwidth}
+        % \vspace{0.2cm}
+        \begin{center}
+            \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.5}{${\color{lightgray}\blacktriangleright}$}}}
+            {\Large\color{palteal} $R_{pA}$ for D-mesons  \\[10pt]}
+            \footnotesize
+                \begin{itemize}
+                    \item {\color{lightgray}SU(2) glasma, {\bfseries static box}}
+                    \item {\color{lightgray}Numerical {\bfseries Wong's equations}}
+                    \item {\color{lightgray}Proton $Q_s$ from {\bfseries hot spots} model}
+                    \item {\color{lightgray}FONLL $p_T$-spetra + fragmentation $D_{c\rightarrow D}$}
+                \end{itemize}
+                % {\footnotesize\color{lightgray}\texttt{Ballistic diffusion of heavy quarks in \\ the early stage of relativistic heavy \\ ion collisions at RHIC and LHC}}
+        \end{center}
+        \column{.02\textwidth}
+    \end{columns}
+    \blfootnote{\scriptsize Ruggieri, Das \href{https://arxiv.org/abs/1805.09617}{\color{palgold}\texttt{[1805.09617]}$^\text{\tiny\faExternalLink}$}}
 \end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[t]
+    \frametitle{Literature timeline}
+    \begin{center}
+        \begin{tikzpicture}[xscale=1]
+            \draw[line width=0.7mm,-latex,palteal!20] (-0.2,0) -- (8.5+0.2,0);
+            \foreach \X [evaluate=\X as \Y using int(\X-2017),count=\Z] in {2018, 2022, 2024}
+            {
+            \draw[highlight on=<0>] (\Y,0) circle[radius=3pt];
+            \node[anchor=south,highlight on=<0>,fill=white,rotate=45,anchor=south
+            west,inner sep=0pt] at (\Y,0.2) {\X};
+            }
+            \foreach \X [evaluate=\X as \Y using int(\X-2017),count=\Z] in {2019}
+            {
+            \draw[highlight on=<\Z>] (\Y,0) circle[radius=3pt];
+            \node[anchor=south,highlight on=<\Z>,fill=white,rotate=45,anchor=south
+            west,inner sep=0pt] at (\Y,0.2) {\bfseries\X};
+            }
+        \end{tikzpicture}
+    \end{center}
+    \vspace{-10pt}
+    \begin{columns}[onlytextwidth,t]
+        \column{.02\textwidth}
+       \column{.43\textwidth}
+       \vspace{-13pt}
+       \begin{figure}
+            \centering
+            \captionsetup{justification=centering}
+            \caption{\texttt{Impact of Glasma on heavy quark \\ observables in AA collisions}}
+            % \vspace{-5pt}
+            \includegraphics[width=0.8\textwidth]{images/1-s2.0-S0370269319306550-gr003_lrg.jpg}
+        \end{figure}
+        \column{.02\textwidth}
+        \column{.5\textwidth}
+        % \vspace{0.2cm}
+        \begin{center}
+            \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.5}{${\color{lightgray}\blacktriangleright}$}}}
+            {\Large\color{palteal} Hybrid $R_{AA}$ and $v_2$ for D-mesons \\[10pt]}
+            \footnotesize
+                \begin{itemize}
+                    \item {\color{lightgray}SU(2) glasma, {\bfseries static box}}
+                    \item {\color{lightgray}Numerical {\bfseries Wong's equations}}
+                    \item {\color{lightgray}Compared with Langevin with $\Gamma$ and $D$}
+                    \item {\color{lightgray}Considering the glasma {\bfseries increases} $\boldsymbol{v_2}$}
+                \end{itemize}
+                % {\footnotesize\color{lightgray}\texttt{Ballistic diffusion of heavy quarks in \\ the early stage of relativistic heavy \\ ion collisions at RHIC and LHC}}
+        \end{center}
+        \column{.02\textwidth}
+    \end{columns}
+    \blfootnote{\scriptsize Sun, Coci, Das, Plumari, Ruggieri, Greco \href{https://arxiv.org/abs/1902.06254}{\color{palgold}\texttt{[1902.06254]}$^\text{\tiny\faExternalLink}$}}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[t]
+    \frametitle{Literature timeline}
+    \begin{center}
+        \begin{tikzpicture}[xscale=1]
+            \draw[line width=0.7mm,-latex,palteal!20] (-0.2,0) -- (8.5+0.2,0);
+            \foreach \X [evaluate=\X as \Y using int(\X-2017),count=\Z] in {2018, 2022, 2024}
+            {
+            \draw[highlight on=<0>] (\Y,0) circle[radius=3pt];
+            \node[anchor=south,highlight on=<0>,fill=white,rotate=45,anchor=south
+            west,inner sep=0pt] at (\Y,0.2) {\X};
+            }
+            \foreach \X [evaluate=\X as \Y using int(\X-2017),count=\Z] in {2019}
+            {
+            \draw[highlight on=<\Z>] (\Y,0) circle[radius=3pt];
+            \node[anchor=south,highlight on=<\Z>,fill=white,rotate=45,anchor=south
+            west,inner sep=0pt] at (\Y,0.2) {\bfseries\X};
+            }
+        \end{tikzpicture}
+    \end{center}
+    \vspace{-10pt}
+    \begin{columns}[onlytextwidth,t]
+        \column{.02\textwidth}
+       \column{.47\textwidth}
+       \vspace{-13pt}
+       \begin{figure}
+            \centering
+            \captionsetup{justification=centering}
+            \caption{\texttt{Jet quenching as a probe \\ of the initial stages}}
+            \vspace{-5pt}
+            \includegraphics[width=\textwidth]{images/raa-vn-tauq_crop.pdf}
+        \end{figure}
+        \column{.02\textwidth}
+        \column{.46\textwidth}
+        % \vspace{0.2cm}
+        \begin{center}
+            \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.5}{${\color{lightgray}\blacktriangleright}$}}}
+            {\Large\color{palteal} $R_{AA}$ and $v_2$ for jets \\[10pt]}
+            \footnotesize
+                \begin{itemize}
+                    \item {\color{lightgray}{\bfseries EKRT} initial condition}
+                    \item {\color{lightgray}Relativistic boost-invariant hydrodynamics}
+                    \item {\color{lightgray}Jet quenching using {\bfseries BDMPS-Z} formalism}
+                    \item {\color{lightgray}Energy loss in suppressed in first $\sim 0.6\,\mathrm{fm/c}$}
+                    \item {\color{lightgray}Initial stage energy loss affects $v_2$}
+                \end{itemize}
+                % {\footnotesize\color{lightgray}\texttt{Ballistic diffusion of heavy quarks in \\ the early stage of relativistic heavy \\ ion collisions at RHIC and LHC}}
+        \end{center}
+        \column{.02\textwidth}
+    \end{columns}
+    \blfootnote{\scriptsize Andres, Armesto, Niemi, Paatelainen, Salgado \href{https://arxiv.org/abs/1902.03231}{\color{palgold}\texttt{[1902.03231]}$^\text{\tiny\faExternalLink}$}}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[t]
+    \frametitle{Literature timeline}
+    \begin{center}
+        \begin{tikzpicture}[xscale=1]
+            \draw[line width=0.7mm,-latex,palteal!20] (-0.2,0) -- (8.5+0.2,0);
+            \foreach \X [evaluate=\X as \Y using int(\X-2017),count=\Z] in {2018, 2022, 2024}
+            {
+            \draw[highlight on=<0>] (\Y,0) circle[radius=3pt];
+            \node[anchor=south,highlight on=<0>,fill=white,rotate=45,anchor=south
+            west,inner sep=0pt] at (\Y,0.2) {\X};
+            }
+            \foreach \X [evaluate=\X as \Y using int(\X-2017),count=\Z] in {2019}
+            {
+            \draw[highlight on=<\Z>] (\Y,0) circle[radius=3pt];
+            \node[anchor=south,highlight on=<\Z>,fill=white,rotate=45,anchor=south
+            west,inner sep=0pt] at (\Y,0.2) {\bfseries\X};
+            }
+        \end{tikzpicture}
+    \end{center}
+    \vspace{-10pt}
+    \begin{columns}[onlytextwidth,t]
+        \column{.02\textwidth}
+       \column{.47\textwidth}
+       \vspace{-13pt}
+       \begin{figure}
+            \centering
+            \captionsetup{justification=centering}
+            \caption{\texttt{Exploring the initial stages with\\ high-$p_T$ $R_{AA}$ and $v_2$ theory and data}}
+            \vspace{-5pt}
+            \includegraphics[width=\textwidth]{images/InitialConditions_Fig2_Fig3_merge.pdf}
+        \end{figure}
+        \column{.02\textwidth}
+        \column{.46\textwidth}
+        % \vspace{0.2cm}
+        \begin{center}
+            \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.5}{${\color{lightgray}\blacktriangleright}$}}}
+            {\Large\color{palteal} $R_{AA}$ and $v_2$ for high-$p_T$ \\[10pt]}
+            \footnotesize
+                \begin{itemize}
+                    \item {\color{lightgray}{\bfseries DREENA} framework for energy loss}
+                    \item {\color{lightgray}Bjorken hydrodynamics for medium evolution}
+                    \item {\color{lightgray}Radiative and collisional energy loss}
+                    \item {\color{lightgray}Different {\bfseries initial $\boldsymbol{T}$ profiles}}
+                    \item {\color{lightgray}No effect on $v_2$, {\bfseries only $\boldsymbol{R_{AA}}$ is affected}}
+                \end{itemize}
+                % {\footnotesize\color{lightgray}\texttt{Ballistic diffusion of heavy quarks in \\ the early stage of relativistic heavy \\ ion collisions at RHIC and LHC}}
+        \end{center}
+        \column{.02\textwidth}
+    \end{columns}
+    \blfootnote{\scriptsize Zigic, Ilic, Djordjevic, Djordjevic \href{https://arxiv.org/abs/1908.11866}{\color{palgold}\texttt{[1908.11866]}$^\text{\tiny\faExternalLink}$}}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[t]
+    \frametitle{Literature timeline}
+    \begin{center}
+        \begin{tikzpicture}[xscale=1]
+            \draw[line width=0.7mm,-latex,palteal!20] (-0.2,0) -- (8.5+0.2,0);
+            \foreach \X [evaluate=\X as \Y using int(\X-2017),count=\Z] in {2018, 2019, 2024}
+            {
+            \draw[highlight on=<0>] (\Y,0) circle[radius=3pt];
+            \node[anchor=south,highlight on=<0>,fill=white,rotate=45,anchor=south
+            west,inner sep=0pt] at (\Y,0.2) {\X};
+            }
+            \foreach \X [evaluate=\X as \Y using int(\X-2017),count=\Z] in {2022}
+            {
+            \draw[highlight on=<\Z>] (\Y,0) circle[radius=3pt];
+            \node[anchor=south,highlight on=<\Z>,fill=white,rotate=45,anchor=south
+            west,inner sep=0pt] at (\Y,0.2) {\bfseries\X};
+            }
+        \end{tikzpicture}
+    \end{center}
+    \vspace{-10pt}
+    \begin{columns}[onlytextwidth,t]
+        \column{.02\textwidth}
+       \column{.47\textwidth}
+       \vspace{-13pt}
+       \begin{figure}
+            \centering
+            \captionsetup{justification=centering}
+            \caption{\footnotesize\texttt{Medium-induced radiation with vacuum \\ propagation in pre-hydrodynamics phase}}
+            % \vspace{-5pt}
+            \includegraphics[width=\textwidth]{images/fig2_v2.pdf}
+        \end{figure}
+        \column{.02\textwidth}
+        \column{.46\textwidth}
+        % \vspace{0.2cm}
+        \begin{center}
+            \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.5}{${\color{lightgray}\blacktriangleright}$}}}
+            {\Large\color{palteal} $R_{AA}$ and $v_2$ for jets \\[10pt]}
+            \footnotesize
+                \begin{itemize}
+                    \item {\color{lightgray}{\bfseries BDMPS-Z} framework for energy loss}
+                    \item {\color{lightgray}Consider {\bfseries vacuum emissions before QGP}}
+                    \item {\color{lightgray}Extract $Q_{AA}$ and $w_2$, proxies for $R_{AA}$ and $v_2$}
+                    \item {\color{lightgray}No effect on $Q_{AA}$, {\bfseries only $\boldsymbol{w_2}$ is affected}}
+                \end{itemize}
+                % {\footnotesize\color{lightgray}\texttt{Ballistic diffusion of heavy quarks in \\ the early stage of relativistic heavy \\ ion collisions at RHIC and LHC}}
+        \end{center}
+        \column{.02\textwidth}
+    \end{columns}
+    \blfootnote{\scriptsize Andres, Apolinário, Dominguez, Gonzalez Martinez, Salgado \href{https://arxiv.org/abs/2211.10161}{\color{palgold}\texttt{[2211.10161]}$^\text{\tiny\faExternalLink}$}}
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[t]
+    \frametitle{Literature timeline}
+    \begin{center}
+        \begin{tikzpicture}[xscale=1]
+            \draw[line width=0.7mm,-latex,palteal!20] (-0.2,0) -- (8.5+0.2,0);
+            \foreach \X [evaluate=\X as \Y using int(\X-2017),count=\Z] in {2018, 2019, 2022}
+            {
+            \draw[highlight on=<0>] (\Y,0) circle[radius=3pt];
+            \node[anchor=south,highlight on=<0>,fill=white,rotate=45,anchor=south
+            west,inner sep=0pt] at (\Y,0.2) {\X};
+            }
+            \foreach \X [evaluate=\X as \Y using int(\X-2017),count=\Z] in {2024}
+            {
+            \draw[highlight on=<\Z>] (\Y,0) circle[radius=3pt];
+            \node[anchor=south,highlight on=<\Z>,fill=white,rotate=45,anchor=south
+            west,inner sep=0pt] at (\Y,0.2) {\bfseries\X};
+            }
+        \end{tikzpicture}
+    \end{center}
+    \vspace{-10pt}
+    \begin{columns}[onlytextwidth,t]
+        \column{.02\textwidth}
+       \column{.43\textwidth}
+       \vspace{-13pt}
+       \begin{figure}
+            \centering
+            \captionsetup{justification=centering}
+            \caption{\footnotesize\texttt{The impact of glasma on heavy flavor\\ azimuthal correlations and spectra}}
+            \vspace{-10pt}
+            \includegraphics[width=0.7\textwidth]{images/clean_raa_tau_0.3_charm_quark_Qs_2.0_fonll_pdf_vs_npdf_v3.png}
+        \end{figure}
+        \column{.02\textwidth}
+        \column{.5\textwidth}
+        % \vspace{0.2cm}
+        \begin{center}
+            \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.5}{${\color{lightgray}\blacktriangleright}$}}}
+            {\Large\color{palteal} $R_{AA}$ with nPDF effects \\[10pt]}
+            \footnotesize
+                \begin{itemize}
+                    \item {\color{lightgray}SU(3) glasma, longitudinal expansion}
+                    \item {\color{lightgray}Numerical {\bfseries Wong's equations}}
+                    \item {\color{lightgray}Colored-particle-in-cell solver}
+                    \item {\color{lightgray}Moderate effect on $R_{AA}$ {\bfseries compared to nPDFs}}
+                \end{itemize}
+                % {\footnotesize\color{lightgray}\texttt{Ballistic diffusion of heavy quarks in \\ the early stage of relativistic heavy \\ ion collisions at RHIC and LHC}}
+        \end{center}
+        \column{.02\textwidth}
+    \end{columns}
+    \blfootnote{\scriptsize Avramescu, Greco, Lappi, Mäntysaari, M\"{u}ller \href{https://arxiv.org/abs/2409.10564}{\color{palgold}\texttt{[2409.10564]}$^\text{\tiny\faExternalLink}$}, \href{https://arxiv.org/abs/2409.10565}{\color{palgold}\texttt{[2409.10565]}$^\text{\tiny\faExternalLink}$}}
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[t]
+    \frametitle{Literature timeline}
+    \begin{center}
+        \begin{tikzpicture}[xscale=1]
+            \draw[line width=0.7mm,-latex,palteal!20] (-0.2,0) -- (8.5+0.2,0);
+            \foreach \X [evaluate=\X as \Y using int(\X-2017),count=\Z] in {2018, 2019, 2022}
+            {
+            \draw[highlight on=<0>] (\Y,0) circle[radius=3pt];
+            \node[anchor=south,highlight on=<0>,fill=white,rotate=45,anchor=south
+            west,inner sep=0pt] at (\Y,0.2) {\X};
+            }
+            \foreach \X [evaluate=\X as \Y using int(\X-2017),count=\Z] in {2024}
+            {
+            \draw[highlight on=<\Z>] (\Y,0) circle[radius=3pt];
+            \node[anchor=south,highlight on=<\Z>,fill=white,rotate=45,anchor=south
+            west,inner sep=0pt] at (\Y,0.2) {\bfseries\X};
+            }
+        \end{tikzpicture}
+    \end{center}
+    \vspace{-10pt}
+    \begin{columns}[onlytextwidth,t]
+        \column{.02\textwidth}
+       \column{.43\textwidth}
+       \vspace{-13pt}
+       \begin{figure}
+            \centering
+            \captionsetup{justification=centering}
+            \caption{\texttt{Heavy flavor angular correlations\\ as a direct probe of the glasma}}
+            \vspace{-10pt}
+            \includegraphics[width=0.7\textwidth]{images/final_dNdphi_tau_dep_charm_v2.png}
+        \end{figure}
+        \column{.02\textwidth}
+        \column{.5\textwidth}
+        % \vspace{0.2cm}
+        \begin{center}
+            \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.5}{${\color{lightgray}\blacktriangleright}$}}}
+            {\Large\color{palteal} Azimuthal correlation $\mathcal{C}(\Delta\phi)$\\[10pt]}
+            \footnotesize
+                \begin{itemize}
+                    \item {\color{lightgray}SU(3) glasma, longitudinal expansion}
+                    \item {\color{lightgray}Numerical {\bfseries Wong's equations}}
+                    \item {\color{lightgray}Colored-particle-in-cell solver}
+                    \item {\color{lightgray}$Q\overline{Q}$ pairs produced back-to-back}
+                    \item {\color{lightgray}Large effect on {\bfseries azimuthal correlation} $\boldsymbol{\mathcal{C}(\Delta\phi)}$}
+                \end{itemize}
+                % {\footnotesize\color{lightgray}\texttt{Ballistic diffusion of heavy quarks in \\ the early stage of relativistic heavy \\ ion collisions at RHIC and LHC}}
+        \end{center}
+        \column{.02\textwidth}
+    \end{columns}
+    \blfootnote{\scriptsize Avramescu, Greco, Lappi, Mäntysaari, M\"{u}ller \href{https://arxiv.org/abs/2409.10564}{\color{palgold}\texttt{[2409.10564]}$^\text{\tiny\faExternalLink}$}, \href{https://arxiv.org/abs/2409.10565}{\color{palgold}\texttt{[2409.10565]}$^\text{\tiny\faExternalLink}$}}
+\end{frame}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%% SECTION %%%%%%%%%%%%%%%%
