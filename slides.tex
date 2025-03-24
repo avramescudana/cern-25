@@ -411,8 +411,8 @@
   \edef\progressbarwidth{\the\dimen0}
 
   \leavevmode%
-  \begin{beamercolorbox}[wd=\paperwidth,ht=0.08cm]{progress bar}
-    \begin{beamercolorbox}[wd=\progressbarwidth,ht=0.1cm]{progress bar progress}
+  \begin{beamercolorbox}[wd=\paperwidth,ht=0.12cm]{progress bar}
+    \begin{beamercolorbox}[wd=\progressbarwidth,ht=0.12cm]{progress bar progress}
     \end{beamercolorbox}%
   \end{beamercolorbox}%
 }
@@ -427,8 +427,8 @@
 \newcounter{parvalue}
 
 \def\aux{4}
-\def\radius{12pt}
-\def\innerradius{7pt}
+\def\radius{13pt}
+\def\innerradius{8pt}
 \def\step{6pt}
 
 \newcommand\circcounter{%
@@ -442,13 +442,13 @@
   \pgfmathsetmacro{\aux}{360/\thetotavalue}
   \begin{tikzpicture}[remember picture,overlay,rotate=90+\aux]
   \foreach \i in {0,1,...,\thetotavalue}
-    \fill[palteal!40] 
+    \fill[palteal!40, draw=palteal!40, line width=1.5pt] 
       (0,0) -- (-\i*\aux:\radius) arc  (-\i*\aux:-(\i+1)*\aux+\step:\radius) -- cycle;
   \foreach \i in {1,...,\insertframenumber}
-    \fill[palteal] 
+    \fill[palteal, draw=palteal, line width=1.5pt] 
       (0,0) -- (-\i*\aux:\radius) arc  (-\i*\aux:-(\i+1)*\aux+\step:\radius) -- cycle;
   \fill[white] circle (\innerradius);
-  \node at (0,0) {\footnotesize\insertframenumber}; 
+  \node at (0,0) {\normalsize\insertframenumber}; 
   % \node at (0,0) {}; 
   \end{tikzpicture}%
 \fi%
@@ -1218,140 +1218,140 @@
 % %%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}
-    \frametitle{Particles in Yang-Mills fields}
-    \framesubtitle{Wong's equations of motion}
-        \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{ming}\blacktriangleright}$}}} 
-   \begin{center}
-    \begin{custombox2}{Classical transport equations}{lightgray}
-        \small
-        \begin{varwidth}{0.75\textwidth}
-        \begin{itemize}\itemsep0em 
-            \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{lightgray}\blacktriangleright}$}}} 
-            \item \begin{center}Wong's equations $\leftrightarrow$ classical equations of motion for particles\\
-            $({\color{customblue}x^\mu},{\color{customred}p^\mu},{\color{customyellow}Q})$ evolving in a Yang-Mills background field ${\color{starrysecond}A^\mu}$\end{center} 
-        \end{itemize}
-        \end{varwidth}
-    \end{custombox2}
+% \begin{frame}
+%     \frametitle{Particles in Yang-Mills fields}
+%     \framesubtitle{Wong's equations of motion}
+%         \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{ming}\blacktriangleright}$}}} 
+%    \begin{center}
+%     \begin{custombox2}{Classical transport equations}{lightgray}
+%         \small
+%         \begin{varwidth}{0.75\textwidth}
+%         \begin{itemize}\itemsep0em 
+%             \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{lightgray}\blacktriangleright}$}}} 
+%             \item \begin{center}Wong's equations $\leftrightarrow$ classical equations of motion for particles\\
+%             $({\color{customblue}x^\mu},{\color{customred}p^\mu},{\color{customyellow}Q})$ evolving in a Yang-Mills background field ${\color{starrysecond}A^\mu}$\end{center} 
+%         \end{itemize}
+%         \end{varwidth}
+%     \end{custombox2}
 
-    %    Wong's equations $\leftrightarrow$ classical equations of motion for particles $({\color{customblue}x^\mu},{\color{customred}p^\mu},{\color{customyellow}Q})$ \\
-    % evolving in a Yang-Mills background field ${\color{starrysecond}A^\mu}$
-   \end{center} 
-        \vspace{1cm}
-        \renewcommand{\eqnhighlightheight}{\vphantom{x}}
-        \begin{equation*}
-            \frac{\d}{\d\hspace{-0.1cm}\eqnmark[destacado]{tau}{\boldsymbol{\tau}}\hspace{-0.2cm}}\eqnmark[customblue]{xmu}{x^\mu}=\frac{{\color{customred}p^\mu}}{\eqnmark[destacado]{m}{m}},\qquad \frac{\mathrm{d}}{\d\boldsymbol{\tau}}\hspace{-0.1cm}\eqnmark[customred]{pmu}{p^\mu}=\eqnmark[destacado]{tr}{\dfrac{1}{\color{lightgray}T_R}}\hspace{-0.1cm}\eqnmark[destacado]{g}{g}\tr{{\color{customyellow}Q}F^{\mu\nu}[\hspace{-0.1cm}\eqnmark[starrysecond]{amu}{A^\mu}\hspace{-0.1cm}]}\frac{{\color{customred}p_\nu}}{m},\qquad 
-            \underbrace{\frac{\d}{\d\boldsymbol{\tau}}\hspace{-0.1cm}\eqnmark[customyellow]{Q}{Q}\hspace{-0.1cm}=-\mathrm{i}g [{\color{starrysecond}A_\mu},{\color{customyellow}Q}]\,\frac{{\color{customred}p^\mu}}{m}}_{\substack{\text{\footnotesize color rotation}\,\rightarrow\,{\color{customgreen}\mathcal{U}}\in\,\mathrm{SU(3)} \\[0.2cm] {\color{customyellow}Q}(\boldsymbol{\tau})=\,{\color{customgreen}\mathcal{U}}(\boldsymbol{\tau},\boldsymbol{\tau}^\prime){\color{customyellow}Q}(\boldsymbol{\tau^\prime})\,{\color{customgreen}\mathcal{U}^\dagger}(\boldsymbol{\tau},\boldsymbol{\tau}^\prime)}}
-            \end{equation*}
-            \annotate[yshift=1.2em]{above}{xmu}{coordinate}
-            \annotate[yshift=1.2em]{above}{pmu}{momentum}
-            \annotate[yshift=-0.5em]{below, right}{m}{\tiny mass}
-            % \annotate[yshift=-1.5em]{below, right}{Ddtau}{\tiny covariant derivative}
-            \annotate[yshift=-1.5em]{below, right}{tr}{\tiny\color{lightgray} $\mathrm{Tr}\{T^aT^b\}=T_R\delta^{ab}$}
-            \annotate[yshift=-1.5em]{below, right}{tau}{\tiny proper time}
-            \annotate[yshift=-0.7em]{below, right}{g}{\tiny coupling constant}
-            \annotate[yshift=1.2em]{above}{Q}{color charge}
-            \annotate[yshift=1.2em]{above, right}{amu}{gauge field}
+%     %    Wong's equations $\leftrightarrow$ classical equations of motion for particles $({\color{customblue}x^\mu},{\color{customred}p^\mu},{\color{customyellow}Q})$ \\
+%     % evolving in a Yang-Mills background field ${\color{starrysecond}A^\mu}$
+%    \end{center} 
+%         \vspace{1cm}
+%         \renewcommand{\eqnhighlightheight}{\vphantom{x}}
+%         \begin{equation*}
+%             \frac{\d}{\d\hspace{-0.1cm}\eqnmark[destacado]{tau}{\boldsymbol{\tau}}\hspace{-0.2cm}}\eqnmark[customblue]{xmu}{x^\mu}=\frac{{\color{customred}p^\mu}}{\eqnmark[destacado]{m}{m}},\qquad \frac{\mathrm{d}}{\d\boldsymbol{\tau}}\hspace{-0.1cm}\eqnmark[customred]{pmu}{p^\mu}=\eqnmark[destacado]{tr}{\dfrac{1}{\color{lightgray}T_R}}\hspace{-0.1cm}\eqnmark[destacado]{g}{g}\tr{{\color{customyellow}Q}F^{\mu\nu}[\hspace{-0.1cm}\eqnmark[starrysecond]{amu}{A^\mu}\hspace{-0.1cm}]}\frac{{\color{customred}p_\nu}}{m},\qquad 
+%             \underbrace{\frac{\d}{\d\boldsymbol{\tau}}\hspace{-0.1cm}\eqnmark[customyellow]{Q}{Q}\hspace{-0.1cm}=-\mathrm{i}g [{\color{starrysecond}A_\mu},{\color{customyellow}Q}]\,\frac{{\color{customred}p^\mu}}{m}}_{\substack{\text{\footnotesize color rotation}\,\rightarrow\,{\color{customgreen}\mathcal{U}}\in\,\mathrm{SU(3)} \\[0.2cm] {\color{customyellow}Q}(\boldsymbol{\tau})=\,{\color{customgreen}\mathcal{U}}(\boldsymbol{\tau},\boldsymbol{\tau}^\prime){\color{customyellow}Q}(\boldsymbol{\tau^\prime})\,{\color{customgreen}\mathcal{U}^\dagger}(\boldsymbol{\tau},\boldsymbol{\tau}^\prime)}}
+%             \end{equation*}
+%             \annotate[yshift=1.2em]{above}{xmu}{coordinate}
+%             \annotate[yshift=1.2em]{above}{pmu}{momentum}
+%             \annotate[yshift=-0.5em]{below, right}{m}{\tiny mass}
+%             % \annotate[yshift=-1.5em]{below, right}{Ddtau}{\tiny covariant derivative}
+%             \annotate[yshift=-1.5em]{below, right}{tr}{\tiny\color{lightgray} $\mathrm{Tr}\{T^aT^b\}=T_R\delta^{ab}$}
+%             \annotate[yshift=-1.5em]{below, right}{tau}{\tiny proper time}
+%             \annotate[yshift=-0.7em]{below, right}{g}{\tiny coupling constant}
+%             \annotate[yshift=1.2em]{above}{Q}{color charge}
+%             \annotate[yshift=1.2em]{above, right}{amu}{gauge field}
 
-    \begin{itemize}\itemsep0em 
-        \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{${\color{starrysecond}\blacktriangleright}$}}} 
-        \item \begin{center}\footnotesize Solve the classical transport equations with {\color{starrysecond}$A^\mu$} the {\color{starrysecond}glasma field}\end{center} 
-        \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{${\color{palgold}\blacktriangleright}$}}} 
-        \item \begin{center}\footnotesize Color rotation conserves ${\color{palgold}q_{2}}=Q^aQ^a$ and ${\color{palgold}q_3}=d_{abc}Q^aQ^bQ^c$ {\color{palgold}SU($3$) Casimir invariants} \end{center} 
-    \end{itemize}
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-    \frametitle{Particles in glasma fields}
-    \framesubtitle{Visualizing the trajectories}
-    \vspace{-0.5cm}
-    \begin{columns}[onlytextwidth,t]
-        \column{.025\textwidth}
-       \column{.3\textwidth}
-            \begin{itemize}\itemsep0em 
-                \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{normal}\blacktriangleright}$}}} 
-                \item \begin{center}\footnotesize Change in {\bfseries coordinates} due to momentum kicks\end{center}
-            \end{itemize}
-                \vspace{-20pt}
-                \begin{figure}[!hbt]
-                    \centering
-                \includegraphics[width=1.1\columnwidth]{images/wong_coord.png}
-                \end{figure}
-                \column{.025\textwidth}
-        \column{.3\textwidth}
-            \begin{itemize}\itemsep0em 
-                \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{normal}\blacktriangleright}$}}} 
-                \item \begin{center}\footnotesize {\bfseries Momentum} broadening due to color Lorentz force\end{center}
-            \end{itemize}
-            \vspace{-20pt}
-            \begin{figure}[!hbt]
-                \centering
-                \includegraphics[width=1.1\columnwidth]{images/wong_mom.png}
-            \end{figure}
-            \column{.025\textwidth}
-        \column{.3\textwidth}
-            \begin{itemize}\itemsep0em 
-                \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{normal}\blacktriangleright}$}}} 
-                \item \begin{center}\footnotesize {\bfseries Color charge} rotation in SU(3) with Wilson lines\end{center}
-            \end{itemize}
-            \vspace{-15pt}
-            \begin{figure}[!hbt]
-                \centering
-                \includegraphics[width=1.05\columnwidth]{images/wong_charge.png}
-            \end{figure}
-            \column{.025\textwidth}
-    \end{columns}
-
-    \blfootnote{\scriptsize Avramescu, Băran, Greco, Ipp, Müller, Ruggieri  \href{https://arxiv.org/abs/2303.05599}{{\color{palgold}\texttt{[2303.05599]}$^\text{\tiny\faExternalLink}$}}}
-\end{frame}
-
+%     \begin{itemize}\itemsep0em 
+%         \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{${\color{starrysecond}\blacktriangleright}$}}} 
+%         \item \begin{center}\footnotesize Solve the classical transport equations with {\color{starrysecond}$A^\mu$} the {\color{starrysecond}glasma field}\end{center} 
+%         \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{${\color{palgold}\blacktriangleright}$}}} 
+%         \item \begin{center}\footnotesize Color rotation conserves ${\color{palgold}q_{2}}=Q^aQ^a$ and ${\color{palgold}q_3}=d_{abc}Q^aQ^bQ^c$ {\color{palgold}SU($3$) Casimir invariants} \end{center} 
+%     \end{itemize}
+% \end{frame}
 
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}
-    \frametitle{Colored Particle-in-Cell}
-    \framesubtitle{Boltzmann-Vlasov equations}
-        \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{ming}\blacktriangleright}$}}} 
-   \begin{center}
-    \begin{custombox2}{Classical transport equations}{lightgray}
-        \small
-        \begin{varwidth}{0.82\textwidth}
-        \begin{itemize}\itemsep0em 
-            \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{lightgray}\blacktriangleright}$}}} 
-            \item \begin{center}Wong's equations $\leftrightarrow$ equations of motion for test particles $({\color{customblue}x^\mu},{\color{customred}p^\mu},{\color{customyellow}Q})$\\
-            probing a distribution function $\boldsymbol{f}({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})$ in a Yang-Mills field ${\color{starrysecond}A^\mu}$\end{center} 
-        \end{itemize}
-        \end{varwidth}
-    \end{custombox2}
+% \begin{frame}
+%     \frametitle{Particles in glasma fields}
+%     \framesubtitle{Visualizing the trajectories}
+%     \vspace{-0.5cm}
+%     \begin{columns}[onlytextwidth,t]
+%         \column{.025\textwidth}
+%        \column{.3\textwidth}
+%             \begin{itemize}\itemsep0em 
+%                 \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{normal}\blacktriangleright}$}}} 
+%                 \item \begin{center}\footnotesize Change in {\bfseries coordinates} due to momentum kicks\end{center}
+%             \end{itemize}
+%                 \vspace{-20pt}
+%                 \begin{figure}[!hbt]
+%                     \centering
+%                 \includegraphics[width=1.1\columnwidth]{images/wong_coord.png}
+%                 \end{figure}
+%                 \column{.025\textwidth}
+%         \column{.3\textwidth}
+%             \begin{itemize}\itemsep0em 
+%                 \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{normal}\blacktriangleright}$}}} 
+%                 \item \begin{center}\footnotesize {\bfseries Momentum} broadening due to color Lorentz force\end{center}
+%             \end{itemize}
+%             \vspace{-20pt}
+%             \begin{figure}[!hbt]
+%                 \centering
+%                 \includegraphics[width=1.1\columnwidth]{images/wong_mom.png}
+%             \end{figure}
+%             \column{.025\textwidth}
+%         \column{.3\textwidth}
+%             \begin{itemize}\itemsep0em 
+%                 \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{normal}\blacktriangleright}$}}} 
+%                 \item \begin{center}\footnotesize {\bfseries Color charge} rotation in SU(3) with Wilson lines\end{center}
+%             \end{itemize}
+%             \vspace{-15pt}
+%             \begin{figure}[!hbt]
+%                 \centering
+%                 \includegraphics[width=1.05\columnwidth]{images/wong_charge.png}
+%             \end{figure}
+%             \column{.025\textwidth}
+%     \end{columns}
 
-   \end{center} 
-    \begin{itemize}\itemsep0em 
-        \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{${\color{starrysecond}\blacktriangleright}$}}} 
-        \item \begin{center} Boltzmann-Vlasov equation for {\color{red}collisionless} non-Abelian plasma\\[10pt]
-            ${\color{customred}p^\mu}[\partial_\mu+g {\color{customyellow}Q^a} {\color{starrysecond}F^{\mu\nu}}({\color{customblue}x^\mu})\partial^\nu_{{\color{customred}p^\mu}}+gf^{abc}{\color{starrysecond}A^b_\mu}({\color{customblue}x^\mu}){\color{customyellow}Q^c}\partial_{{\color{customyellow}Q^a}}]\boldsymbol{f}({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})={\color{red}0}$\\[10pt]\end{center}
-            \begin{center} $\boldsymbol{f}({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})\xrightarrow{\text{sample}}$ test particles $({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})\Rightarrow$ Wong's equations\\[10pt] \end{center} 
-        \item \begin{center} Particle current $j^\mu\xleftrightarrow{\text{couple}}$ fields $\mathcal{D}_\mu F^{\mu\nu}[{\color{starrysecond}A^a_\mu}]=j^\mu({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})$ \end{center} 
-    \end{itemize}
+%     \blfootnote{\scriptsize Avramescu, Băran, Greco, Ipp, Müller, Ruggieri  \href{https://arxiv.org/abs/2303.05599}{{\color{palgold}\texttt{[2303.05599]}$^\text{\tiny\faExternalLink}$}}}
+% \end{frame}
+
+
+
+% % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % %%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+% % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{frame}
+%     \frametitle{Colored Particle-in-Cell}
+%     \framesubtitle{Boltzmann-Vlasov equations}
+%         \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{ming}\blacktriangleright}$}}} 
+%    \begin{center}
+%     \begin{custombox2}{Classical transport equations}{lightgray}
+%         \small
+%         \begin{varwidth}{0.82\textwidth}
+%         \begin{itemize}\itemsep0em 
+%             \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{lightgray}\blacktriangleright}$}}} 
+%             \item \begin{center}Wong's equations $\leftrightarrow$ equations of motion for test particles $({\color{customblue}x^\mu},{\color{customred}p^\mu},{\color{customyellow}Q})$\\
+%             probing a distribution function $\boldsymbol{f}({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})$ in a Yang-Mills field ${\color{starrysecond}A^\mu}$\end{center} 
+%         \end{itemize}
+%         \end{varwidth}
+%     \end{custombox2}
+
+%    \end{center} 
+%     \begin{itemize}\itemsep0em 
+%         \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{${\color{starrysecond}\blacktriangleright}$}}} 
+%         \item \begin{center} Boltzmann-Vlasov equation for {\color{red}collisionless} non-Abelian plasma\\[10pt]
+%             ${\color{customred}p^\mu}[\partial_\mu+g {\color{customyellow}Q^a} {\color{starrysecond}F^{\mu\nu}}({\color{customblue}x^\mu})\partial^\nu_{{\color{customred}p^\mu}}+gf^{abc}{\color{starrysecond}A^b_\mu}({\color{customblue}x^\mu}){\color{customyellow}Q^c}\partial_{{\color{customyellow}Q^a}}]\boldsymbol{f}({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})={\color{red}0}$\\[10pt]\end{center}
+%             \begin{center} $\boldsymbol{f}({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})\xrightarrow{\text{sample}}$ test particles $({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})\Rightarrow$ Wong's equations\\[10pt] \end{center} 
+%         \item \begin{center} Particle current $j^\mu\xleftrightarrow{\text{couple}}$ fields $\mathcal{D}_\mu F^{\mu\nu}[{\color{starrysecond}A^a_\mu}]=j^\mu({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})$ \end{center} 
+%     \end{itemize}
         
 
-    % \begin{itemize}\itemsep0em 
-    %     \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{${\color{starrysecond}\blacktriangleright}$}}} 
-    %     \item \begin{center}\footnotesize Solve the classical transport equations with {\color{starrysecond}$A^\mu$} the {\color{starrysecond}glasma field}\end{center} 
-    %     \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{${\color{palgold}\blacktriangleright}$}}} 
-    %     \item \begin{center}\footnotesize Color rotation conserves ${\color{palgold}q_{2}}=Q^aQ^a$ and ${\color{palgold}q_3}=d_{abc}Q^aQ^bQ^c$ {\color{palgold}SU($3$) Casimir invariants} \end{center} 
-    % \end{itemize}
+%     % \begin{itemize}\itemsep0em 
+%     %     \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{${\color{starrysecond}\blacktriangleright}$}}} 
+%     %     \item \begin{center}\footnotesize Solve the classical transport equations with {\color{starrysecond}$A^\mu$} the {\color{starrysecond}glasma field}\end{center} 
+%     %     \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{${\color{palgold}\blacktriangleright}$}}} 
+%     %     \item \begin{center}\footnotesize Color rotation conserves ${\color{palgold}q_{2}}=Q^aQ^a$ and ${\color{palgold}q_3}=d_{abc}Q^aQ^bQ^c$ {\color{palgold}SU($3$) Casimir invariants} \end{center} 
+%     % \end{itemize}
 
-    \blfootnote{\scriptsize Moore, Hu, Muller \href{https://arxiv.org/abs/hep-ph/9710436}{{\color{palgold}\texttt{[hep-ph/9710436]}$^\text{\tiny\faExternalLink}$}}, Dumitru, Nara, Strickland \href{https://arxiv.org/abs/hep-ph/0604149}{{\color{palgold}\texttt{[hep-ph/0604149]}$^\text{\tiny\faExternalLink}$}}\\
-    \hspace{17pt}\scriptsize Mrowczynski, Schenke, Strickland \href{https://arxiv.org/abs/1603.08946}{{\color{palgold}\texttt{[1603.08946]}$^\text{\tiny\faExternalLink}$}}}
-\end{frame}
+%     \blfootnote{\scriptsize Moore, Hu, Muller \href{https://arxiv.org/abs/hep-ph/9710436}{{\color{palgold}\texttt{[hep-ph/9710436]}$^\text{\tiny\faExternalLink}$}}, Dumitru, Nara, Strickland \href{https://arxiv.org/abs/hep-ph/0604149}{{\color{palgold}\texttt{[hep-ph/0604149]}$^\text{\tiny\faExternalLink}$}}\\
+%     \hspace{17pt}\scriptsize Mrowczynski, Schenke, Strickland \href{https://arxiv.org/abs/1603.08946}{{\color{palgold}\texttt{[1603.08946]}$^\text{\tiny\faExternalLink}$}}}
+% \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2376,19 +2376,19 @@
 
 % \subsection{Field correlators}
 
-\setbeamertemplate{background}{
-\tikz[overlay,remember picture] \node[opacity=0.15, at=(current page.center)] {
-   \includegraphics[height=0.8\paperheight]{images/Cdetadphi_3D_toy_charm_pT_1_tau_0.1_crop.png}};
-}
-\begin{frame}[plain,noframenumbering]{}
-    \begin{center}
-        \vspace{1cm}
-        {\large\color{normal}How to probe pre-equilibrium}\\[0.3cm]
-        {\huge\color{destacado}Sensitivity to early stages}\\[0.4cm]
-        {\large\textit{Candidates: $R_{AA}$, $v_2$, angular correlations...}}
-    \end{center}
-\end{frame}
-\setbeamertemplate{background}{}
+% \setbeamertemplate{background}{
+% \tikz[overlay,remember picture] \node[opacity=0.15, at=(current page.center)] {
+%    \includegraphics[height=0.8\paperheight]{images/Cdetadphi_3D_toy_charm_pT_1_tau_0.1_crop.png}};
+% }
+% \begin{frame}[plain,noframenumbering]{}
+%     \begin{center}
+%         \vspace{1cm}
+%         {\large\color{normal}How to probe pre-equilibrium}\\[0.3cm]
+%         {\huge\color{destacado}Sensitivity to early stages}\\[0.4cm]
+%         {\large\textit{Candidates: $R_{AA}$, $v_2$, angular correlations...}}
+%     \end{center}
+% \end{frame}
+% \setbeamertemplate{background}{}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -3277,9 +3277,129 @@
 %%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}
-    \frametitle{Open questions}
+\setbeamertemplate{background}{
+\tikz[overlay,remember picture] \node[opacity=0.15, at=(current page.center)] {
+   \includegraphics[height=0.8\paperheight]{images/momentum_broadening_flipped_jetquenched_notext.png}};
+}
+\begin{frame}[plain,noframenumbering]{}
+    \begin{center}
+        \vspace{1cm}
+        {\Large\color{normal}\color{red}\bfseries Question 1:}\\[0.3cm]
+        {\huge\color{destacado}Jet quenching in glasma fields?}\\[0.4cm]
+        % {\large\textit{Ongoing works, new perspectives}}
+    \end{center}
 \end{frame}
+\setbeamertemplate{background}{}
+
+\begin{frame}[noframenumbering]
+    \frametitle{Going from classical broadening...}
+    \vspace{10pt}
+    \begin{center}
+        \includegraphics[height=0.7\paperheight]{images/momentum_broadening_flipped_cljet.png}
+    \end{center}
+\end{frame}
+
+\begin{frame}[noframenumbering]
+    \frametitle{...to radiation in glasma fields}
+    \vspace{10pt}
+    \begin{center}
+        \includegraphics[height=0.7\paperheight]{images/momentum_broadening_flipped_jetquenched.png}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Classical radiation in glasma}
+    % \framesubtitle{}
+    \vspace{10pt}
+    \begin{center}
+        \includegraphics[height=0.7\paperheight]{images/momentum_broadening_flipped_jetquenched.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}[noframenumbering]
+    \frametitle{Embed standard calculations...}
+    % \vspace{10pt}
+    \hspace{20pt}
+    % \begin{center}
+        \includegraphics[width=0.8\paperwidth]{images/probingQCDqgp.png}
+    % \end{center}
+\end{frame}
+
+\begin{frame}[noframenumbering]
+    \frametitle{...in glasma-like media}
+    % \vspace{10pt}
+    \hspace{20pt}
+    % \begin{center}
+        \includegraphics[width=0.8\paperwidth]{images/probingQCDglasma.png}
+    % \end{center}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \frametitle{Quantum jet evolution}
+    \framesubtitle{In classical glasma fields}
+    \vspace{-15pt}
+    \begin{center}
+        \begin{columns}[onlytextwidth,t]
+            \column{.02\textwidth}
+           \column{.4\textwidth}
+           \begin{center}
+                
+                % \begin{untitledcustombox}
+                %     \begin{varwidth}{0.88\textwidth}
+                %         \hspace{10pt}\normalsize{\bfseries\color{palteal} This study}: FONLL + {\color{palteal}EPPS16}\hspace{10pt}
+                %     \end{varwidth}
+                % \end{untitledcustombox}
+            \end{center}
+
+            \vspace{-10pt}
+            \begin{center}
+                \includegraphics[width=0.88\columnwidth]{images/F1_qgA_worldline_mono.pdf}
+            \end{center}
+
+            \column{.02\textwidth}
+            \column{.54\textwidth}
+            \begin{center}
+                \begin{custombox2}{\normalsize tBLFQ}{raablue}
+                    \small
+                    \begin{varwidth}{0.95\textwidth}
+                    \begin{itemize}\itemsep0em 
+                        \itemsep0em
+                        \footnotesize
+                        \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{raablue}\blacktriangleright}$}}} 
+                        \item Time-dependent basis light-front quantization
+                    \end{itemize}
+                    \end{varwidth}
+                \end{custombox2}
+                \begin{custombox2}{\normalsize Quantum jet in glasma}{raapink}
+                    \small
+                    \begin{varwidth}{0.95\textwidth}
+                    \begin{itemize}\itemsep0em 
+                        \itemsep0em
+                        \footnotesize
+                        \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{raapink}\blacktriangleright}$}}} 
+                        \item Schroedinger equation for jet evolution from light-cone quantized QCD
+                        \item Interaction part with numerical glasma field $\mathcal{A}$
+                    \end{itemize}
+                    \end{varwidth}
+                \end{custombox2}
+            \end{center}
+            \vspace{-10pt}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.95\columnwidth]{images/tblfq_sectors.png}
+            \end{figure}
+            \column{.02\textwidth}
+        \end{columns}    
+    \end{center}
+    \vspace{-10pt}
+    \blfootnote{\scriptsize Li, Lappi, Zhao \href{https://arxiv.org/abs/2107.02225}{{\color{raablue}\texttt{[2107.02225]$^\text{\tiny\faExternalLink}$}}}}
+\end{frame}
+
 
 
 \begin{frame}[plain,noframenumbering]{}
