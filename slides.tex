@@ -373,7 +373,7 @@
 \author{\vspace{-20pt}{\large {\color{jyured} $\displaystyle\int\mathcal{DA}$}vramescu}\\[22pt]{\scriptsize\itshape U. Jyväskylä, HIP}\\[10pt]}
 \institute{\vspace{-22pt}
 \begin{center}
-    Showcasing results done in collaboration with
+    Results done in collaboration with:
 \end{center}
 \begin{columns}
     \begin{column}{0.22\textwidth}
@@ -470,19 +470,75 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\setbeamertemplate{background}{
-\tikz[overlay,remember picture] \node[opacity=0.15, at=(current page.center), align=center] {
-    \\[15pt]
-    {\transparent{0.2}\includegraphics[height=0.7\paperheight]{images/trajectories_cpic.png}} 
-    \\[10pt]  
-   };
-}
-\begin{frame}{Outline}
+% \setbeamertemplate{background}{
+% \tikz[overlay,remember picture] \node[opacity=0.15, at=(current page.center), align=center] {
+%     \\[15pt]
+%     {\transparent{0.2}\includegraphics[height=0.7\paperheight]{images/trajectories_cpic.png}} 
+%     \\[10pt]  
+%    };
+% }
+% \begin{frame}{Outline}
+%     \begin{center}
+%         \tableofcontents
+%     \end{center}
+% \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \frametitle{Outline}
+    % \framesubtitle{MARTINI + IP-Glasma + MUSIC}
+    \vspace{-13pt}
+
     \begin{center}
-        \tableofcontents
+        \begin{columns}
+            \column{.02\textwidth}
+            \column{.6\textwidth}
+                \vspace{5pt}
+                \begin{center}
+                \begin{custombox2}{\Large Contents}{starrysecond}
+                    \footnotesize
+                    \begin{varwidth}{0.89\textwidth}
+                    \begin{itemize}\itemsep0em 
+                        \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{starrysecond}\blacktriangleright}$}}} 
+                        \item {\bfseries\color{starrysecond}Introduction}: {\scriptsize\itshape hard probes in glasma initial stage}
+                        \item {\bfseries\color{starrysecond}Glasma}: {\scriptsize\itshape classical Yang-Mills equations, features}
+                        \item {\bfseries\color{starrysecond}Transport in glasma}: {\scriptsize\itshape Wong's equations}
+                        \item {\bfseries\color{starrysecond}Transport coefficients}: {\scriptsize\itshape momentum broadening}
+                        \item {\bfseries\color{starrysecond}Phenomenology}: {\scriptsize\itshape heavy quark $R_{AA}$, $Q\overline{Q}$ correlations}
+                    \end{itemize}
+                    \end{varwidth}
+                \end{custombox2}
+                \vspace{15pt}
+                \begin{custombox2}{{\color{jyured}\large Developments}}{lightgray}
+                    \footnotesize
+                    \begin{varwidth}{0.78\textwidth}
+                    \begin{itemize}\itemsep0em 
+                        \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{jyured}\blacktriangleright}$}}} 
+                        \item Jet quenching in glasma
+                        \item Couple transport in glasma to next stages
+                        \item Relevant observables for transport in glasma
+                        \item Glasma improvements
+                    \end{itemize}
+                    \end{varwidth}
+                \end{custombox2}
+            \end{center}
+            \column{.01\textwidth}
+            \column{.36\textwidth}
+                % \vspace{-5pt}
+                \begin{center}\includegraphics[width=0.9\columnwidth]{images/hqs_trajectories.png}\\[5pt]
+                    \includegraphics[width=\columnwidth]{images/momentum_broadening_flipped_jetquenched_notext.pdf}\end{center}
+            \column{.02\textwidth}
+        \end{columns}
     \end{center}
+
+    % \vspace{-15pt}
+    % \blfootnote{\scriptsize Gale, Jeon, Kurian, Schenke, Singh \href{https://arxiv.org/abs/2409.15038}{{\color{blue}\texttt{[2409.15038]$^\text{\tiny\faExternalLink}$}}}}
 \end{frame}
-\setbeamertemplate{background}{}
+
+% \setbeamertemplate{background}{}
 
 \setcounter{framenumber}{0}
 \setbeamertemplate{footline}[progress bar]
@@ -630,7 +686,7 @@
 % \begin{frame}
 %     \frametitle{Jets as probes}
 %     \framesubtitle{Stages and scales of interest}
-%     \blfootnote{\scriptsize Apolinario - \textit{Jetography via the Quark-Gluon Plasma} \href{https://indico.cern.ch/event/1385550/}{{\color{red}\texttt{[CERN 24]$^\text{\tiny\faExternalLink}$}}}}
+%     \blfootnote{\scriptsize Apolinario - \textit{Jetography via the Quark-Gluon Plasma} \href{https://indico.cern.ch/event/1385550/}{{\color{jyured}\texttt{[CERN 24]$^\text{\tiny\faExternalLink}$}}}}
 % \end{frame}
 % \setbeamertemplate{background}{}
 
@@ -643,9 +699,9 @@
 % {\includegraphics[height=0.8\paperheight]{images/LApolinario_HP23-modelling-early.pdf}}};
 % }
 % \begin{frame}
-%     \frametitle{Jets as probes of the {\color{red}early stage}}
+%     \frametitle{Jets as probes of the {\color{jyured}early stage}}
 %     % \framesubtitle{Stages and scales of interest}
-%     \blfootnote{\scriptsize Apolinario - \textit{Monte Carlo modeling of jets} \href{https://indico.uni-muenster.de/event/1409/contributions/2412/}{{\color{red}\texttt{[Plenary Hard Probes 23]$^\text{\tiny\faExternalLink}$}}}, adapted}
+%     \blfootnote{\scriptsize Apolinario - \textit{Monte Carlo modeling of jets} \href{https://indico.uni-muenster.de/event/1409/contributions/2412/}{{\color{jyured}\texttt{[Plenary Hard Probes 23]$^\text{\tiny\faExternalLink}$}}}, adapted}
 % \end{frame}
 % \setbeamertemplate{background}{}
 
@@ -689,7 +745,7 @@
 %     \end{columns}
 
 %     \vspace{-5pt}    
-%     \blfootnote{\scriptsize Ke - \textit{Open Heavy Flavor: Theory} \href{https://indico.cern.ch/event/1339555/contributions/6038190/}{{\color{red}\texttt{[Plenary Hard Probes 24]$^\text{\tiny\faExternalLink}$}}}}
+%     \blfootnote{\scriptsize Ke - \textit{Open Heavy Flavor: Theory} \href{https://indico.cern.ch/event/1339555/contributions/6038190/}{{\color{jyured}\texttt{[Plenary Hard Probes 24]$^\text{\tiny\faExternalLink}$}}}}
 % \end{frame}
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -697,7 +753,7 @@
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % \begin{frame}[noframenumbering]
-%     \frametitle{Heavy quarks as probes of the {\color{red}early stage}}
+%     \frametitle{Heavy quarks as probes of the {\color{jyured}early stage}}
 %     % \framesubtitle{Recent focus on the early stage}
 
 %     \begin{center}
@@ -705,11 +761,11 @@
 %             \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=0.8\textwidth]{images/HP24-Weiyao-Ke-HF-Theory-28-crop-white-edit.png}};
 %             % \draw<1>[palgold,thick,fill=palgold,fill opacity=0.1,rounded corners=3pt] (0.0,4) rectangle (\textheight-0.5cm,4.0) node[opacity=1.0, pos=0, anchor=center, xshift=0.0\linewidth,text width=2cm,align=center]{{\Large\color{palgold}\bfseries This talk}};
 %             % \draw<1>[white, fill=white, fill opacity=0.9] (4.3,0.85) rectangle (5.4,5.5);
-%             % \draw<1>[red,thick,fill=red,fill opacity=0.1,rounded corners=3pt] (4.3,0.85) rectangle (5.4,5.5) node[opacity=1.0, pos=0.5, rotate=90, anchor=center, xshift=0.0 ,text width=6.2cm,align=center] {{\Large\color{red} Early stage}};
+%             % \draw<1>[red,thick,fill=red,fill opacity=0.1,rounded corners=3pt] (4.3,0.85) rectangle (5.4,5.5) node[opacity=1.0, pos=0.5, rotate=90, anchor=center, xshift=0.0 ,text width=6.2cm,align=center] {{\Large\color{jyured} Early stage}};
 %         \end{tikzpicture}
 %     \end{center}
 %     \vspace{-10pt}    
-%     \blfootnote{\scriptsize Ke - \textit{Open Heavy Flavor: Theory} \href{https://indico.cern.ch/event/1339555/contributions/6038190/}{{\color{red}\texttt{[Plenary Hard Probes 24]$^\text{\tiny\faExternalLink}$}}}, adapted}
+%     \blfootnote{\scriptsize Ke - \textit{Open Heavy Flavor: Theory} \href{https://indico.cern.ch/event/1339555/contributions/6038190/}{{\color{jyured}\texttt{[Plenary Hard Probes 24]$^\text{\tiny\faExternalLink}$}}}, adapted}
 % \end{frame}
 
 
@@ -938,7 +994,7 @@
 %             \begin{itemize}\itemsep0em 
 %                 \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{palviolet}\blacktriangleright}$}}} 
 %                 \footnotesize
-%                 \item Analytical {\color{red}pure gauge} fields before collision
+%                 \item Analytical {\color{jyured}pure gauge} fields before collision
 %                 \item Weizsäcker–Williams gluon distribution
 %             \end{itemize}
 %             \end{varwidth}
@@ -1155,16 +1211,16 @@
 %%%%%%%%%%%%%% SUBSECTION %%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Frameworks}
+% \subsection{Frameworks}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}
-    \frametitle{Frameworks for glasma}
-    \framesubtitle{Analytical approaches, 3+1D extensions}
-\end{frame}
+% \begin{frame}
+%     \frametitle{Frameworks for glasma}
+%     \framesubtitle{Analytical approaches, 3+1D extensions}
+% \end{frame}
 
 
 
@@ -1337,8 +1393,8 @@
 %    \end{center} 
 %     \begin{itemize}\itemsep0em 
 %         \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{${\color{starrysecond}\blacktriangleright}$}}} 
-%         \item \begin{center} Boltzmann-Vlasov equation for {\color{red}collisionless} non-Abelian plasma\\[10pt]
-%             ${\color{customred}p^\mu}[\partial_\mu+g {\color{customyellow}Q^a} {\color{starrysecond}F^{\mu\nu}}({\color{customblue}x^\mu})\partial^\nu_{{\color{customred}p^\mu}}+gf^{abc}{\color{starrysecond}A^b_\mu}({\color{customblue}x^\mu}){\color{customyellow}Q^c}\partial_{{\color{customyellow}Q^a}}]\boldsymbol{f}({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})={\color{red}0}$\\[10pt]\end{center}
+%         \item \begin{center} Boltzmann-Vlasov equation for {\color{jyured}collisionless} non-Abelian plasma\\[10pt]
+%             ${\color{customred}p^\mu}[\partial_\mu+g {\color{customyellow}Q^a} {\color{starrysecond}F^{\mu\nu}}({\color{customblue}x^\mu})\partial^\nu_{{\color{customred}p^\mu}}+gf^{abc}{\color{starrysecond}A^b_\mu}({\color{customblue}x^\mu}){\color{customyellow}Q^c}\partial_{{\color{customyellow}Q^a}}]\boldsymbol{f}({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})={\color{jyured}0}$\\[10pt]\end{center}
 %             \begin{center} $\boldsymbol{f}({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})\xrightarrow{\text{sample}}$ test particles $({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})\Rightarrow$ Wong's equations\\[10pt] \end{center} 
 %         \item \begin{center} Particle current $j^\mu\xleftrightarrow{\text{couple}}$ fields $\mathcal{D}_\mu F^{\mu\nu}[{\color{starrysecond}A^a_\mu}]=j^\mu({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})$ \end{center} 
 %     \end{itemize}
@@ -3274,7 +3330,7 @@
 \begin{frame}[plain,noframenumbering]{}
     \begin{center}
         \vspace{1cm}
-        {\huge\color{red}\bfseries Open questions}\\[0.4cm]
+        {\huge\color{jyured}\bfseries Open questions}\\[0.4cm]
         {\Large\color{normal} New developments, future directions}\\[0.4cm]
         {\large\textit{Jet quenching, coupling to next stages,\\relevant observables, glasma improvements}}
     \end{center}
@@ -3295,7 +3351,7 @@
 % \begin{frame}[plain,noframenumbering]{}
 %     \begin{center}
 %         \vspace{1cm}
-%         {\Large\color{normal}\color{red}\bfseries Question 1:}\\[0.3cm]
+%         {\Large\color{normal}\color{jyured}\bfseries Question 1:}\\[0.3cm]
 %         {\huge\color{destacado}Jet quenching in glasma fields?}\\[0.4cm]
 %         {\large\textit{Classical radiation, jet energy loss, quantum jet evolution}}
 %     \end{center}
@@ -3331,7 +3387,7 @@
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % \begin{frame}
-%     \frametitle{{\normalsize\color{red}\bfseries\sffamily Option 1: }Classical radiation in glasma}
+%     \frametitle{{\normalsize\color{jyured}\bfseries\sffamily Option 1: }Classical radiation in glasma}
 %     % \framesubtitle{}
 %     \vspace{-15pt}
 %     \begin{center}
@@ -3401,7 +3457,7 @@
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % \begin{frame}[noframenumbering]
-%     \frametitle{{\normalsize\color{red}\bfseries\sffamily Option 1: }Classical radiation in glasma}
+%     \frametitle{{\normalsize\color{jyured}\bfseries\sffamily Option 1: }Classical radiation in glasma}
 %     % \framesubtitle{}
 %     \vspace{-15pt}
 %     \begin{center}
@@ -3472,7 +3528,7 @@
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % \begin{frame}[noframenumbering]
-%     \frametitle{{\normalsize\color{red}\bfseries\sffamily Option 2: }Embed standard calculations...}
+%     \frametitle{{\normalsize\color{jyured}\bfseries\sffamily Option 2: }Embed standard calculations...}
 %     % \vspace{10pt}
 %     \hspace{20pt}
 %     % \begin{center}
@@ -3498,7 +3554,7 @@
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % \begin{frame}
-%     \frametitle{{\normalsize\color{red}\bfseries\sffamily Development: }Jet quenching in glasma}
+%     \frametitle{{\normalsize\color{jyured}\bfseries\sffamily Development: }Jet quenching in glasma}
 %     % \framesubtitle{Synchrotron radiation in color domains}
 %     \vspace{-15pt}
 %     \begin{center}
@@ -3523,7 +3579,7 @@
 %                         \footnotesize
 %                         \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{raablue}\blacktriangleright}$}}} 
 %                         \item Consecuvite color {\bfseries\color{raablue}longitudinal electric fields}
-%                         \item Fields constant in {\bfseries\color{red}color domains $\boldsymbol{l\sim 1/Q_s}$}
+%                         \item Fields constant in {\bfseries\color{jyured}color domains $\boldsymbol{l\sim 1/Q_s}$}
 %                         \item {\bfseries\color{raablue} Gaussian averages} over the electric fields
 %                     \end{itemize}
 %                     \end{varwidth}
@@ -3562,7 +3618,7 @@
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % \begin{frame}[noframenumbering]
-%     \frametitle{{\normalsize\color{red}\bfseries\sffamily Development: }Jet quenching in glasma}
+%     \frametitle{{\normalsize\color{jyured}\bfseries\sffamily Development: }Jet quenching in glasma}
 %     % \framesubtitle{Synchrotron radiation in color domains}
 %     \vspace{-15pt}
 %     \begin{center}
@@ -3587,7 +3643,7 @@
 %                         \footnotesize
 %                         \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{raablue}\blacktriangleright}$}}} 
 %                         \item Consecuvite color {\bfseries\color{raablue}longitudinal electric fields}
-%                         \item Fields constant in {\bfseries\color{red}color domains $\boldsymbol{l\sim 1/Q_s}$}
+%                         \item Fields constant in {\bfseries\color{jyured}color domains $\boldsymbol{l\sim 1/Q_s}$}
 %                         \item {\bfseries\color{raablue} Gaussian averages} over the electric fields
 %                     \end{itemize}
 %                     \end{varwidth}
@@ -3624,7 +3680,7 @@
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % \begin{frame}
-%     \frametitle{{\normalsize\color{red}\bfseries\sffamily Development: }Quantum jets in glasma}
+%     \frametitle{{\normalsize\color{jyured}\bfseries\sffamily Development: }Quantum jets in glasma}
 %     % \framesubtitle{In classical glasma fields}
 %     \vspace{-15pt}
 %     \begin{center}
@@ -3667,7 +3723,7 @@
 %                         \footnotesize
 %                         \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{raapink}\blacktriangleright}$}}} 
 %                         \item Schr\"{o}dinger equation for jet evolution using {\bfseries\color{raapink} light-cone quantization of QCD}
-%                         \item Interaction term with gluon field $\color{red}\boldsymbol{\mathcal{A}}$ $\rightarrow$ {\bfseries\color{red} glasma}
+%                         \item Interaction term with gluon field $\color{jyured}\boldsymbol{\mathcal{A}}$ $\rightarrow$ {\bfseries\color{jyured} glasma}
 %                     \end{itemize}
 %                     \end{varwidth}
 %                 \end{custombox2}
@@ -3691,7 +3747,7 @@
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % \begin{frame}[noframenumbering]
-%     \frametitle{{\normalsize\color{red}\bfseries\sffamily Development: }Quantum jets in glasma}
+%     \frametitle{{\normalsize\color{jyured}\bfseries\sffamily Development: }Quantum jets in glasma}
 %     % \framesubtitle{In classical glasma fields}
 %     \vspace{-15pt}
 %     \begin{center}
@@ -3734,7 +3790,7 @@
 %                         \footnotesize
 %                         \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{raapink}\blacktriangleright}$}}} 
 %                         \item Schr\"{o}dinger equation for jet evolution using {\bfseries\color{raapink} light-cone quantization of QCD}
-%                         \item Interaction term with gluon field $\color{red}\boldsymbol{\mathcal{A}}$ $\rightarrow$ {\bfseries\color{red} glasma}
+%                         \item Interaction term with gluon field $\color{jyured}\boldsymbol{\mathcal{A}}$ $\rightarrow$ {\bfseries\color{jyured} glasma}
 %                     \end{itemize}
 %                     \end{varwidth}
 %                 \end{custombox2}
@@ -3764,7 +3820,7 @@
 % \begin{frame}[plain,noframenumbering]{}
 %     \begin{center}
 %         \vspace{1cm}
-%         {\Large\color{normal}\color{red}\bfseries Question 2:}\\[0.3cm]
+%         {\Large\color{normal}\color{jyured}\bfseries Question 2:}\\[0.3cm]
 %         {\huge\color{destacado}Couple glasma to next stages?}\\[0.4cm]
 %         {\large\textit{Wong + Langevin, glasma + EKT, Boltzmann-Vlasov}}
 %     \end{center}
@@ -3776,27 +3832,68 @@
 % %%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% \begin{frame}
-%     \frametitle{{\normalsize\color{red}\bfseries\sffamily Option 1: }Couple heavy quark transport}
-%     \vspace{-10pt}
-%     \begin{center}
-%         \includegraphics[width=0.7\paperwidth]{images/Greco-HF-Theory-HP2020-v-5_edit.png}
-%     \end{center}
+\begin{frame}
+    \frametitle{{\normalsize\color{jyured}\bfseries\sffamily Option 1: }Couple heavy quark transport}
+    \vspace{-10pt}
+    \begin{center}
+        \includegraphics[width=0.7\paperwidth]{images/Greco-HF-Theory-HP2020-v-5_edit.png}
+    \end{center}
 
-%    \begin{center}
-%     \begin{custombox2}{Couple Wong + Langevin}{lightgray}
-%         \small
-%         \begin{varwidth}{0.89\textwidth}
-%         \begin{itemize}\itemsep0em 
-%             \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{lightgray}\blacktriangleright}$}}} 
-%             \item pQCD production $\xrightarrow{p_T\text{-spectra}}$ Wong's equations in glasma $\xrightarrow{x^\mu, p^\mu}$ Langevin transport
-%         \end{itemize}
-%         \end{varwidth}
-%     \end{custombox2}
+   \begin{center}
+    \begin{custombox2}{Couple Wong + Langevin}{lightgray}
+        \small
+        \begin{varwidth}{0.89\textwidth}
+        \begin{itemize}\itemsep0em 
+            \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{lightgray}\blacktriangleright}$}}} 
+            \item pQCD production $\xrightarrow{p_T\text{-spectra}}$ Wong's equations in glasma $\xrightarrow{x^\mu, p^\mu}$ Langevin transport
+        \end{itemize}
+        \end{varwidth}
+    \end{custombox2}
 
-%    \end{center} 
-%     \blfootnote{\scriptsize Greco \href{https://indico.ectstar.eu/event/40/contributions/1055/attachments/745/968/Greco-transport-ECT.pdf}{{\color{customblue}\texttt{[ECT$^\star$ 20]}$^\text{\tiny\faExternalLink}$}} Sun, Coci, Das, Plumari, Ruggieri, Greco \href{https://arxiv.org/abs/1902.06254}{{\color{customblue}\texttt{[1902.06254]$^\text{\tiny\faExternalLink}$}}}}
-% \end{frame}
+   \end{center} 
+    \blfootnote{\scriptsize Greco \href{https://indico.ectstar.eu/event/40/contributions/1055/attachments/745/968/Greco-transport-ECT.pdf}{{\color{jyured}\texttt{[ECT$^\star$ 20]}$^\text{\tiny\faExternalLink}$}} Sun, Coci, Das, Plumari, Ruggieri, Greco \href{https://arxiv.org/abs/1902.06254}{{\color{jyured}\texttt{[1902.06254]$^\text{\tiny\faExternalLink}$}}}}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \frametitle{{\normalsize\color{jyured}\bfseries\sffamily Development: }Hybrid heavy quark transport}
+    \framesubtitle{MARTINI + IP-Glasma + MUSIC}
+    \vspace{-13pt}
+
+    \begin{center}
+        \begin{columns}
+            \column{.03\textwidth}
+            \column{.6\textwidth}
+                \begin{center}\includegraphics[width=\columnwidth]{images/model_edit.png}
+                    \vspace{-20pt}
+                \begin{custombox2}{Framework}{lightgray}
+                    \small
+                    \begin{varwidth}{\textwidth}
+                    \begin{itemize}\itemsep0em 
+                        \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{lightgray}\blacktriangleright}$}}} 
+                        \item Heavy quark evolution with {\bfseries\color{blue}Langevin equation}\\
+                            {\tiny Drag and diffusion from lattice data at $p_T=0$}
+                        \item Extract {\bfseries\color{jyured}temperature} from {\bfseries\color{jyured}glasma energy density} 
+                        % \item D-meson hadronization through fragmentation
+                    \end{itemize}
+                    \end{varwidth}
+                \end{custombox2}
+            \end{center}
+            \column{.01\textwidth}
+            \column{.32\textwidth}
+                \begin{center}\includegraphics[width=\columnwidth]{images/RAA.png}\\
+                    \includegraphics[width=\columnwidth]{images/v2.png}\end{center}
+            \column{.03\textwidth}
+        \end{columns}
+    \end{center}
+
+    \vspace{-15pt}
+    \blfootnote{\scriptsize Gale, Jeon, Kurian, Schenke, Singh \href{https://arxiv.org/abs/2409.15038}{{\color{blue}\texttt{[2409.15038]$^\text{\tiny\faExternalLink}$}}}}
+\end{frame}
 
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -3804,7 +3901,7 @@
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % \begin{frame}
-%     \frametitle{{\normalsize\color{red}\bfseries\sffamily Option 2: }Couple glasma to EKT}
+%     \frametitle{{\normalsize\color{jyured}\bfseries\sffamily Option 2: }Couple glasma to EKT}
 %     \vspace{-15pt}
 %     \begin{center}
 %         \begin{columns}
@@ -3841,7 +3938,7 @@
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % \begin{frame}
-%     \frametitle{{\normalsize\color{red}\bfseries\sffamily The dream: }Boltzmann-Vlasov in glasma}
+%     \frametitle{{\normalsize\color{jyured}\bfseries\sffamily The dream: }Boltzmann-Vlasov in glasma}
 %     \framesubtitle{Wong-Yang-Mills with collisions}
 %     \vspace{-20pt}
 %     \begin{center}
@@ -3857,7 +3954,7 @@
 %                     \itemsep0em
 %                     \footnotesize
 %                     \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{lightgray}\blacktriangleright}$}}} 
-%                     \item Coupled Wong-Yang-Mills, {\bfseries\color{red}missing $\boldsymbol{j^\mu}$}
+%                     \item Coupled Wong-Yang-Mills, {\bfseries\color{jyured}missing $\boldsymbol{j^\mu}$}
 %                 \end{itemize}
 %                 \end{varwidth}
 %             \end{custombox2}
@@ -3875,8 +3972,8 @@
 %                         \itemsep0em
 %                         \footnotesize
 %                         \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{lightgray}\blacktriangleright}$}}} 
-%                         \item Separate {\bfseries\color{palteal} soft (background)} particles \\ from {\bfseries\color{red}hard (test)} particles at $k^*$
-%                         \item {\bfseries\color{red}Hard} particles $\rightarrow$ collision term $\mathcal{C}$
+%                         \item Separate {\bfseries\color{palteal} soft (background)} particles \\ from {\bfseries\color{jyured}hard (test)} particles at $k^*$
+%                         \item {\bfseries\color{jyured}Hard} particles $\rightarrow$ collision term $\mathcal{C}$
 %                         \item {\bfseries\color{palteal}Soft} particles $\,\,\rightarrow$ glasma fields 
 %                     \end{itemize}
 %                     \end{varwidth}
@@ -3903,7 +4000,7 @@
 % \begin{frame}[plain,noframenumbering]{}
 %     \begin{center}
 %         \vspace{1cm}
-%         {\Large\color{normal}\color{red}\bfseries Question 3:}\\[0.3cm]
+%         {\Large\color{normal}\color{jyured}\bfseries Question 3:}\\[0.3cm]
 %         {\huge\color{destacado}Observables sensitive to glasma?}\\[0.4cm]
 %         {\large\textit{$R_{AA}$, $R_{pA}$, $v_2$, $\mathcal{C}(\Delta\phi)$, others...}}
 %     \end{center}
@@ -3934,7 +4031,7 @@
 %                     \footnotesize
 %                     \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{lightgray}\blacktriangleright}$}}} 
 %                     \item Only heavy quark observables\\ $R_{AA}$, $R_{pA}$, $v_2$, $\mathcal{C}(\Delta\phi)$
-%                     \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{red}\blacktriangleright}$}}} \item {\bfseries\color{red} Other observables? Jets?}
+%                     \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{jyured}\blacktriangleright}$}}} \item {\bfseries\color{jyured} Other observables? Jets?}
 %                 \end{itemize}
 %                 \end{varwidth}
 %             \end{custombox2}
@@ -3955,7 +4052,7 @@
 %                         \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{lightgray}\blacktriangleright}$}}} 
 %                         \item Glasma+Wong framework has few parameters\\
 %                          $Q_s$, $\tau_\mathrm{switch}$, $\tau_\mathrm{form}$, $p_T(\tau_\mathrm{form})$
-%                         \item Couple glasma to next stages and perform \\ {\bfseries\color{bayesian}bayesian analysis} $\Rightarrow$ {\bfseries\color{red}sensitivity to glasma}
+%                         \item Couple glasma to next stages and perform \\ {\bfseries\color{bayesian}bayesian analysis} $\Rightarrow$ {\bfseries\color{jyured}sensitivity to glasma}
 %                     \end{itemize}
 %                     \end{varwidth}
 %                 \end{custombox2}
@@ -3981,7 +4078,7 @@
 \begin{frame}[plain,noframenumbering]{}
     \begin{center}
         \vspace{1cm}
-        {\Large\color{normal}\color{red}\bfseries Question 4:}\\[0.3cm]
+        {\Large\color{normal}\color{jyured}\bfseries Question 4:}\\[0.3cm]
         {\huge\color{destacado}Glasma improvements?}\\[0.4cm]
         {\large\textit{3+1D, proton shape, fluctuations...}}
     \end{center}
@@ -4000,7 +4097,7 @@
         \begin{columns}[onlytextwidth,c]
             \column{.01\textwidth}
             \column{.02\textwidth}
-                \rotatebox{90}{\large\bfseries\color{Mahogany} 3+1D glasma}
+                \rotatebox{90}{\large\bfseries\color{jyured} 3+1D glasma}
             \column{.02\textwidth}
             \column{.31\textwidth}
                 \begin{center}
@@ -4008,7 +4105,7 @@
                     \\[1pt]
                     \includegraphics[width=0.6\columnwidth]{images/glasma_tau_0.4_paper.png}
                     \\[-4pt]
-                    {\tiny Ipp, Leuthner, Müller, Schlichting, Schmidt, Singh} \\ \tiny \href{https://arxiv.org/abs/2401.10320}{\color{Mahogany}\texttt{[2401.10320]}\scalebox{.6}{$^\text{\tiny\faExternalLink}$}}
+                    {\tiny Ipp, Leuthner, Müller, Schlichting, Schmidt, Singh} \\ \tiny \href{https://arxiv.org/abs/2401.10320}{\color{jyured}\texttt{[2401.10320]}\scalebox{.6}{$^\text{\tiny\faExternalLink}$}}
                 \end{center}
             \column{.01\textwidth}
             \column{.3\textwidth}
@@ -4017,7 +4114,7 @@
                     \\[1pt]
                     \includegraphics[width=0.6\columnwidth]{images/evolution.png}
                     \\[-4pt]
-                    {\tiny Schlichting, Singh} \\ \tiny \href{https://arxiv.org/abs/2010.11172}{\color{Mahogany}\texttt{[2010.11172]}\scalebox{.6}{$^\text{\tiny\faExternalLink}$}}
+                    {\tiny Schlichting, Singh} \\ \tiny \href{https://arxiv.org/abs/2010.11172}{\color{jyured}\texttt{[2010.11172]}\scalebox{.6}{$^\text{\tiny\faExternalLink}$}}
                 \end{center}
             \column{.01\textwidth}
             \column{.3\textwidth}
@@ -4027,7 +4124,7 @@
                     \\[1pt]
                     \includegraphics[width=0.65\columnwidth]{images/Event_IPSat_PbPb_5020_energies_crop.pdf}
                     \\[-4pt]
-                    {\tiny Garcia-Montero, Elfner, Schlichting} \\ \tiny \href{https://arxiv.org/abs/2308.11713}{\color{Mahogany}\texttt{[2308.11713]}\scalebox{.6}{$^\text{\tiny\faExternalLink}$}}
+                    {\tiny Garcia-Montero, Elfner, Schlichting} \\ \tiny \href{https://arxiv.org/abs/2308.11713}{\color{jyured}\texttt{[2308.11713]}\scalebox{.6}{$^\text{\tiny\faExternalLink}$}}
                 \end{center}
             \column{.02\textwidth}
         \end{columns}    
@@ -4035,7 +4132,7 @@
         \begin{columns}[onlytextwidth,c]
             \column{.01\textwidth}
             \column{.02\textwidth}
-                \rotatebox{90}{\large\bfseries\color{blue} proton structure}
+                \rotatebox{90}{\large\bfseries\color{blue} proton shape}
             \column{.02\textwidth}
             \column{.3\textwidth}
                 \begin{center}
@@ -4078,7 +4175,7 @@
     \begin{columns}[onlytextwidth,c]
         \column{.01\textwidth}
         \column{.02\textwidth}
-            \rotatebox{90}{\large\bfseries\color{Mahogany} 3+1D glasma}
+            \rotatebox{90}{\large\bfseries\color{jyured} 3+1D glasma}
         \column{.02\textwidth}
         \column{.31\textwidth}
             \begin{center}
@@ -4086,7 +4183,7 @@
                 \\[1pt]
                 \includegraphics[width=0.6\columnwidth]{images/glasma_tau_0.4_paper.png}
                 \\[-4pt]
-                {\tiny Ipp, Leuthner, Müller, Schlichting, Schmidt, Singh} \\ \tiny \href{https://arxiv.org/abs/2401.10320}{\color{Mahogany}\texttt{[2401.10320]}\scalebox{.6}{$^\text{\tiny\faExternalLink}$}}
+                {\tiny Ipp, Leuthner, Müller, Schlichting, Schmidt, Singh} \\ \tiny \href{https://arxiv.org/abs/2401.10320}{\color{jyured}\texttt{[2401.10320]}\scalebox{.6}{$^\text{\tiny\faExternalLink}$}}
             \end{center}
         \column{.01\textwidth}
         \column{.3\textwidth}
@@ -4095,7 +4192,7 @@
                 \\[1pt]
                 \includegraphics[width=0.6\columnwidth]{images/evolution.png}
                 \\[-4pt]
-                {\tiny Schlichting, Singh} \\ \tiny \href{https://arxiv.org/abs/2010.11172}{\color{Mahogany}\texttt{[2010.11172]}\scalebox{.6}{$^\text{\tiny\faExternalLink}$}}
+                {\tiny Schlichting, Singh} \\ \tiny \href{https://arxiv.org/abs/2010.11172}{\color{jyured}\texttt{[2010.11172]}\scalebox{.6}{$^\text{\tiny\faExternalLink}$}}
             \end{center}
         \column{.01\textwidth}
         \column{.3\textwidth}
@@ -4105,7 +4202,7 @@
                 \\[1pt]
                 \includegraphics[width=0.65\columnwidth]{images/Event_IPSat_PbPb_5020_energies_crop.pdf}
                 \\[-4pt]
-                {\tiny Garcia-Montero, Elfner, Schlichting} \\ \tiny \href{https://arxiv.org/abs/2308.11713}{\color{Mahogany}\texttt{[2308.11713]}\scalebox{.6}{$^\text{\tiny\faExternalLink}$}}
+                {\tiny Garcia-Montero, Elfner, Schlichting} \\ \tiny \href{https://arxiv.org/abs/2308.11713}{\color{jyured}\texttt{[2308.11713]}\scalebox{.6}{$^\text{\tiny\faExternalLink}$}}
             \end{center}
         \column{.02\textwidth}
     \end{columns}    
@@ -4113,7 +4210,7 @@
     \begin{columns}[onlytextwidth,c]
         \column{.01\textwidth}
         \column{.02\textwidth}
-            \rotatebox{90}{\large\bfseries\color{blue} proton structure}
+            \rotatebox{90}{\large\bfseries\color{blue} proton shape}
         \column{.02\textwidth}
         \column{.3\textwidth}
             \begin{center}
@@ -4151,17 +4248,77 @@
             \node[align=center] at (0,4) {
                 \large \textit{Future prospects}\\[10pt]
                 \Large Transport of hard probes in glasma \\
-                \Large from $\color{red}\boldsymbol{pp}$, $\color{red}\boldsymbol{pA}$ to $AA$ collisions \\[20pt]
-                \Large Effect of glasma transport\\ \Large in {\bfseries\color{red}small systems}
+                \Large from $\color{jyured}\boldsymbol{pp}$, $\color{jyured}\boldsymbol{pA}$ to $AA$ collisions \\[20pt]
+                \Large Effect of glasma transport\\ \Large in {\bfseries\color{jyured}small systems}
             };
         \end{tikzpicture} 
     \end{center}
 \end{frame}
 
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \frametitle{Conclusions}
+    % \framesubtitle{MARTINI + IP-Glasma + MUSIC}
+    \vspace{-13pt}
+
+    \begin{center}
+        \begin{columns}
+            \column{.02\textwidth}
+            \column{.56\textwidth}
+                \vspace{-10pt}
+                \begin{center}
+                \begin{custombox2}{Summary}{starrysecond}
+                    \footnotesize
+                    \begin{varwidth}{\textwidth}
+                    \begin{itemize}\itemsep0em 
+                        \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{starrysecond}\blacktriangleright}$}}} 
+                        \item Numerical solver for {\bfseries\color{starrysecond}transport of heavy quarks and} \\ {\bfseries\color{starrysecond}jets} in the {\bfseries\color{starrysecond}glasma early-stage fields}
+                        \item {\bfseries\color{starrysecond}Transport coefficients $\boldsymbol{\kappa}$} and {\bfseries\color{starrysecond}$\boldsymbol{\hat{q}}$} large peak in glasma
+                        \item Moderate effect on heavy quark $R_{AA}$, {\bfseries\color{starrysecond}large effect on azimuthal correlations} of $Q\overline{Q}$ pairs
+                    \end{itemize}
+                    \end{varwidth}
+                \end{custombox2}
+                \vspace{10pt}
+                \begin{custombox2}{Developments}{lightgray}
+                    \footnotesize
+                    \begin{varwidth}{\textwidth}
+                    \begin{itemize}\itemsep0em 
+                        \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{custompink}\blacktriangleright}$}}} 
+                        \item {\bfseries\color{custompink} Jet quenching in glasma}: classical radiation, energy \\ loss, quantum transport
+                        \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{jyured}\blacktriangleright}$}}} 
+                        \item Couple transport in glasma to next stages: Langevin, EKT, {\bfseries\color{jyured} Boltzmann-Vlasov in glasma}
+                        % \item D-meson hadronization through fragmentation
+                    \end{itemize}
+                    \end{varwidth}
+                \end{custombox2}
+            \end{center}
+            \column{.01\textwidth}
+            \column{.4\textwidth}
+                \vspace{10pt}
+                \begin{center}\includegraphics[width=\columnwidth]{images/hqs_flux_tubes.png}\\[5pt]
+                    \includegraphics[width=\columnwidth]{images/cpic.pdf}\end{center}
+            \column{.02\textwidth}
+        \end{columns}
+    \end{center}
+
+    % \vspace{-15pt}
+    % \blfootnote{\scriptsize Gale, Jeon, Kurian, Schenke, Singh \href{https://arxiv.org/abs/2409.15038}{{\color{blue}\texttt{[2409.15038]$^\text{\tiny\faExternalLink}$}}}}
+\end{frame}
+
+
 \begin{frame}[plain,noframenumbering]{}
     \vspace{20pt}
-    \huge\centering Thank you!
+    \begin{center}
+    {\huge\centering Thank you!} \\[20pt]
+
+    \large \textit{I probably left out many relevant works...\\
+     Let me know which!}
+    \end{center}
 \end{frame}
 
 \begin{frame}[plain,noframenumbering]{}
