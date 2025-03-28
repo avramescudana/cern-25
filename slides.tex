@@ -642,7 +642,7 @@
                     1\,\mathrm{fm/c}$}\\[1pt] 
                         {\color{lightgray}\scriptsize\itshape Effective kinetic theory (EKT)} 
                         % \\ {\color{lightgray}\scriptsize Quasiparticle distribution function}
-                    \item Equilibration {\scriptsize $\tau\lesssim 10\,\mathrm{fm/c}$}\\[1pt]
+                    \item Local equilibrium {\scriptsize $\tau\lesssim 10\,\mathrm{fm/c}$}\\[1pt]
                     {\color{lightgray}\scriptsize\itshape Relativistic hydrodynamics} 
                     % \\ {\color{lightgray}\scriptsize Energy-momentum tensor}
                     \item Final stages {\scriptsize $\tau\geq 10\,\mathrm{fm/c}$}\\[1pt]
@@ -760,10 +760,10 @@
 \begin{frame}
     \frametitle{Jets as probes}
     \framesubtitle{Stages and scales of interest}
-    \blfootnote{\scriptsize Apolinario \href{https://indico.cern.ch/event/1385550/}{{\color{jyured}\texttt{[CERN 24]$^\text{\scalebox{0.9}{\faExternalLink}}$}}}}
+    \blfootnote{\scriptsize Apolinário \href{https://indico.cern.ch/event/1385550/}{{\color{jyured}\texttt{[CERN 24]$^\text{\scalebox{0.9}{\faExternalLink}}$}}}}
     \begin{tikzpicture}[overlay, remember picture]
         \node[anchor=north west] 
-        at ([xshift=0.05cm,yshift=-0.05cm]current page.north west) {\begin{talkbox}\scriptsize{\color{destacado}Apolinario$\hspace{1pt}^\text{\scalebox{0.9}{\faComment}}$} {\itshape Mon 9:00$\hspace{1pt}^\text{\scalebox{0.9}{\faClockO}}$} \end{talkbox}};
+        at ([xshift=0.05cm,yshift=-0.05cm]current page.north west) {\begin{talkbox}\scriptsize{\color{destacado}Apolinário$\hspace{1pt}^\text{\scalebox{0.9}{\faComment}}$} {\itshape Mon 9:00$\hspace{1pt}^\text{\scalebox{0.9}{\faClockO}}$} \end{talkbox}};
     \end{tikzpicture}
     \begin{tikzpicture}[overlay, remember picture]
         \node[anchor=north west] 
@@ -783,7 +783,7 @@
 \begin{frame}[noframenumbering]
     \frametitle{Jets as probes of {\color{jyured}early stages}}
     % \framesubtitle{Stages and scales of interest}
-    \blfootnote{\scriptsize Apolinario \href{https://indico.uni-muenster.de/event/1409/contributions/2412/}{{\color{jyured}\texttt{[Hard Probes 23]$^\text{\scalebox{0.9}{\faExternalLink}}$}}} adapted}
+    \blfootnote{\scriptsize Apolinário \href{https://indico.uni-muenster.de/event/1409/contributions/2412/}{{\color{jyured}\texttt{[Hard Probes 23]$^\text{\scalebox{0.9}{\faExternalLink}}$}}} adapted}
     \begin{tikzpicture}[overlay, remember picture]
         \node[anchor=north west] 
         at ([xshift=0.05cm,yshift=-0.05cm]current page.north west) {\begin{talkbox}\scriptsize{\color{destacado}López$\hspace{1pt}^\text{\scalebox{0.9}{\faComment}}$} {\itshape Mon 9:45$\hspace{1pt}^\text{\scalebox{0.9}{\faClockO}}$} \end{talkbox}};
@@ -1304,7 +1304,7 @@
         \centering
         \includegraphics[width=0.9\textwidth]{images/flux_tubes_auau_200_nums_1_dpi_300_nounits.png}
         \captionsetup{justification=centering}
-        \caption{Relevant scale ${\color{custompink}\boldsymbol{Q_s}}$ \\
+        \caption{Relevant scale ${\color{custompink}\boldsymbol{Q_s}}$ {\scriptsize\textit{($Q_s=2\,\mathrm{GeV}$ corresponds to $1/Q_s\approx 0.1\,\mathrm{fm}$)}}\\
         {\scriptsize Fields arrange themselves in \textit{\textbf{\color{customgreen} correlation domains}} of $\delta x_T \simeq {\color{custompink}\boldsymbol{Q}}^{-1}_{\color{custompink}\boldsymbol{s}}$, \textit{\textbf{\color{customgreen} dilute}} after $\delta\tau\simeq {\color{custompink}\boldsymbol{Q}}^{-1}_{\color{custompink}\boldsymbol{s}}$, } 
         }
     \end{figure}
@@ -1532,49 +1532,6 @@
 
 
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-    \frametitle{Boltzmann-Vlasov equations}
-    % \framesubtitle{Boltzmann-Vlasov equations}
-        \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{ming}\blacktriangleright}$}}} 
-   \begin{center}
-    \begin{custombox2}{Classical transport equations}{lightgray}
-        \small
-        \begin{varwidth}{0.76\textwidth}
-        \begin{itemize}\itemsep0em 
-            \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{lightgray}\blacktriangleright}$}}} 
-            \item Wong's equations $\leftrightarrow$ equations of motion for test particles $({\color{customblue}x^\mu},{\color{customred}p^\mu},{\color{customyellow}Q})$\\
-            probing a distribution function $\boldsymbol{f}({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})$ in a Yang-Mills field ${\color{starrysecond}A^\mu}$
-        \end{itemize}
-        \end{varwidth}
-    \end{custombox2}
-
-   \end{center} 
-    \begin{itemize}\itemsep0em 
-        \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{${\color{starrysecond}\blacktriangleright}$}}} 
-        \item Boltzmann-Vlasov equation for {\color{jyured}\bfseries collisionless} non-Abelian plasma
-            $${\color{customred}p^\mu}[\partial_\mu+g {\color{customyellow}Q^a} {\color{starrysecond}F^{\mu\nu}}({\color{customblue}x^\mu})\partial^\nu_{{\color{customred}p^\mu}}+gf^{abc}{\color{starrysecond}A^b_\mu}({\color{customblue}x^\mu}){\color{customyellow}Q^c}\partial_{{\color{customyellow}Q^a}}]\boldsymbol{f}({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})={\color{jyured}\boldsymbol{0}}$$
-        \item $\boldsymbol{f}({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})\xrightarrow{\text{sample}}$ test particles $({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})\Rightarrow$ Wong's equations\\[10pt] 
-        \item Particle current ${\color{jyured}\boldsymbol{j^\mu}}\xleftrightarrow{\text{couple}}$ fields $\mathcal{D}_\mu F^{\mu\nu}[{\color{starrysecond}A^a_\mu}]={\color{jyured}\boldsymbol{j^\nu}}({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})$\\[5pt]
-        \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{${\color{jyured}\blacktriangleright}$}}} 
-        \item {\bfseries\color{jyured} Couple glasma to next stages}: Boltzmann-Vlasov with collisions + color current 
-    \end{itemize}
-        
-
-    % \begin{itemize}\itemsep0em 
-    %     \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{${\color{starrysecond}\blacktriangleright}$}}} 
-    %     \item \begin{center}\footnotesize Solve the classical transport equations with {\color{starrysecond}$A^\mu$} the {\color{starrysecond}glasma field}\end{center} 
-    %     \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{${\color{palgold}\blacktriangleright}$}}} 
-    %     \item \begin{center}\footnotesize Color rotation conserves ${\color{palgold}q_{2}}=Q^aQ^a$ and ${\color{palgold}q_3}=d_{abc}Q^aQ^bQ^c$ {\color{palgold}SU($3$) Casimir invariants} \end{center} 
-    % \end{itemize}
-
-    \blfootnote{\scriptsize Dumitru, Nara, Strickland \href{https://arxiv.org/abs/hep-ph/0604149}{{\color{palgold}\texttt{[hep-ph/0604149]}$^\text{\scalebox{0.9}{\faExternalLink}}$}} Mrowczynski, Schenke, Strickland \href{https://arxiv.org/abs/1603.08946}{{\color{palgold}\texttt{[1603.08946]}$^\text{\scalebox{0.9}{\faExternalLink}}$}}}
-\end{frame}
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%% SECTION %%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1654,7 +1611,7 @@
                     \vspace{-5pt}
                     \begin{itemize}\itemsep0em 
                         \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.6}{${\color{palteal}\blacktriangleright}$}}} 
-                        \item {\scriptsize Momentum kicks due to {\color{palteal}\bfseries coherent color fields}}
+                        \item {\scriptsize Momentum deflection from {\color{palteal}\bfseries color Lorentz force}}
                         % \\[1pt] 
                         % \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.6}{${\color{palteal}\blacktriangleright}$}}} 
                         % \item {\scriptsize Averaged over glasma and particle ensembles}
@@ -1674,7 +1631,7 @@
                     \vspace{-15pt}
                     \begin{itemize}\itemsep0em 
                         \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.6}{${\color{customyellow}\blacktriangleright}$}}} 
-                        \item {\scriptsize Different interpretation than standard $\kappa$, $\hat{q}$}
+                        \item {\scriptsize Not the standard diffusion $\kappa$ or quenching $\hat{q}$}
                     \end{itemize}
                     \end{varwidth}
                 \end{custombox2}
@@ -1781,6 +1738,361 @@
     \end{tikzpicture}
 \end{frame}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \frametitle{Jets in glasma}
+    % \framesubtitle{Momentum broadening, transport coefficient, anisotropy}
+    \begin{center}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.85\textwidth]{images/hp23_mom_broad_qhat_anis_wong_vs_qhat.pdf}
+        \end{figure}
+    \end{center}
+    \vspace{-20pt}
+    \blfootnote{\scriptsize DA, Băran, Greco, Ipp, Müller, Ruggieri  \href{https://arxiv.org/abs/2307.07999}{{\color{custompink}\texttt{[2307.07999]}$^\text{\scalebox{0.9}{\faExternalLink}}$}}}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[noframenumbering]
+    \frametitle{Jets in glasma}
+    % \framesubtitle{Momentum broadening, transport coefficient, anisotropy}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=0.85\textwidth]{images/hp23_mom_broad_qhat_anis_wong_vs_qhat.pdf}};
+            % \draw<1>[white, fill=white, fill opacity=0.9] (4.3,0.85) rectangle (5.4,5.5);
+            \draw<1>[white,fill=white,fill opacity=0.9] (5.2,0.2) rectangle (13.0,6.8) node[opacity=1.0, pos=0.5, rotate=0, anchor=center, xshift=0.0 ,text width=7cm,align=center] {
+                \begin{itemize}\itemsep0em 
+                    \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{custompink}\blacktriangleright}$}}} 
+                    \item \large {\color{custompink}Rapid increase in $\langle \delta p^2\rangle$ at early $\delta\tau$}\\{\color{lightgray}\footnotesize $\not\sim$ successive independent momentum kicks}\\[10pt]
+                    \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{lightgray}\blacktriangleright}$}}} 
+                    \item Different $\langle \delta p^2\rangle$ behavior at late $\delta\tau$
+                        \begin{itemize}\itemsep0em 
+                            \setbeamertemplate{itemize items}{\raisebox{0.1em}{\scalebox{0.6}{${\color{lightgray}\blacktriangleright}$}}} 
+                            \item \color{lightgray}\footnotesize Transverse $\langle \delta p^2_y\rangle$ saturates
+                            \item \color{lightgray}\footnotesize Longitudinal $\langle \delta p^2_z\rangle$ decreases\\[10pt]
+                        \end{itemize}
+                    \item \large Eikonal $\approx$ dynamic with large $p^x$ \\[10pt]
+                        % \begin{itemize}\itemsep0em 
+                        %     \setbeamertemplate{itemize items}{\raisebox{0.1em}{\scalebox{0.6}{${\color{lightgray}\blacktriangleright}$}}} 
+                        %     \item \color{lightgray}\footnotesize Transverse $\langle \delta p^2_y\rangle$ increases with $p^x$
+                        %     \item \color{lightgray}\footnotesize Longitudinal $\langle \delta p^2_z\rangle$ descreses with $p^x$\\[10pt]
+                        % \end{itemize}
+                    \item \large Anisotropic $\langle \delta p^2_z\rangle>\langle \delta p^2_y\rangle$ 
+                    \begin{itemize}\itemsep0em 
+                        \setbeamertemplate{itemize items}{\raisebox{0.1em}{\scalebox{0.6}{${\color{lightgray}\blacktriangleright}$}}} 
+                        \item \color{lightgray}More anisotropic for small $p^x$
+                    \end{itemize}
+                \end{itemize}
+                };
+        \end{tikzpicture}
+    \end{center}
+    \vspace{-20pt}
+    \blfootnote{\scriptsize DA, Băran, Greco, Ipp, Müller, Ruggieri  \href{https://arxiv.org/abs/2307.07999}{{\color{custompink}\texttt{[2307.07999]}$^\text{\scalebox{0.9}{\faExternalLink}}$}}}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[noframenumbering]
+    \frametitle{Jets in glasma}
+    % \framesubtitle{Momentum broadening, transport coefficient, anisotropy}
+    \begin{center}
+        \begin{tikzpicture}
+            \hspace{-15pt}\node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=0.85\textwidth]{images/hp23_mom_broad_qhat_anis_wong_vs_qhat.pdf}};
+            % \draw<1>[white, fill=white, fill opacity=0.9] (4.3,0.85) rectangle (5.4,5.5);
+            \draw<1>[white,fill=white,fill opacity=0.9] (0.0,0.2) rectangle (5.2,6.8) node[opacity=1.0, pos=0.5, rotate=0, anchor=center, xshift=0.0 ,text width=6cm,align=center] {tg
+                \begin{itemize}\itemsep0em 
+                    \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{custompink}\blacktriangleright}$}}} 
+                    \item \large {\color{custompink} Large $\hat{q}$ peak at early $\delta\tau$}\\[10pt]
+                    \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{lightgray}\blacktriangleright}$}}} 
+                    \item Behavior of $\hat{q}$ at late $\delta\tau$
+                        \begin{itemize}\itemsep0em 
+                            \setbeamertemplate{itemize items}{\raisebox{0.1em}{\scalebox{0.6}{${\color{lightgray}\blacktriangleright}$}}} 
+                            \item \color{lightgray}\footnotesize Transverse $\hat{q}_y\approx 0$
+                            \item \color{lightgray}\footnotesize Longitudinal $\hat{q}_z<0$\\[10pt]
+                        \end{itemize}
+                    \item \large {\color{custompink} $\hat{q}_z<0$ $\sim$ ``coherence'' effect}\\
+                    {\color{lightgray}\footnotesize $\not\sim$ independent momentum kicks}\\[10pt]
+                    \item \large Anisotropic $\hat{q}_z\neq\hat{q}_y$ 
+                    
+                \end{itemize}
+                };
+        \end{tikzpicture}
+    \end{center}
+    \vspace{-20pt}
+    \blfootnote{\scriptsize DA, Băran, Greco, Ipp, Müller, Ruggieri  \href{https://arxiv.org/abs/2307.07999}{{\color{custompink}\texttt{[2307.07999]}$^\text{\scalebox{0.9}{\faExternalLink}}$}}}
+\end{frame}
+
+    
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \frametitle{Heavy quarks in glasma}
+    % \framesubtitle{Momentum broadening, transport coefficient, anisotropy}
+    \begin{center}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.85\textwidth]{images/hp23_mom_broad_kappa_anis_wong_vs_kappa.pdf}
+        \end{figure}
+    \end{center}
+    \vspace{-20pt}
+    \blfootnote{\scriptsize DA, Băran, Greco, Ipp, Müller, Ruggieri  \href{https://arxiv.org/abs/2307.07999}{{\color{Mahogany}\texttt{[2307.07999]}$^\text{\scalebox{0.9}{\faExternalLink}}$}}}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[noframenumbering]
+    \frametitle{Heavy quarks in glasma}
+    % \framesubtitle{Momentum broadening, transport coefficient, anisotropy}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=0.85\textwidth]{images/hp23_mom_broad_kappa_anis_wong_vs_kappa.pdf}};
+            % \draw<1>[white, fill=white, fill opacity=0.9] (4.3,0.85) rectangle (5.4,5.5);
+            \draw<1>[white,fill=white,fill opacity=0.9] (5.2,0.2) rectangle (13.0,6.8) node[opacity=1.0, pos=0.5, rotate=0, anchor=center, xshift=0.0 ,text width=7cm,align=center] {
+                \begin{itemize}\itemsep0em 
+                    \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{Mahogany}\blacktriangleright}$}}} 
+                    \item \large {\color{Mahogany}Rapid increase in $\langle \delta p^2\rangle$ at early $\delta\tau$}\\{\color{lightgray}\footnotesize $\not\sim$ successive independent momentum kicks}\\[10pt]
+                    \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{lightgray}\blacktriangleright}$}}} 
+                    \item Different $\langle \delta p^2\rangle$ behavior at late $\delta\tau$
+                        \begin{itemize}\itemsep0em 
+                            \setbeamertemplate{itemize items}{\raisebox{0.1em}{\scalebox{0.6}{${\color{lightgray}\blacktriangleright}$}}} 
+                            \item \color{lightgray}\footnotesize Transverse $\langle \delta p^2_T\rangle$ saturates
+                            \item \color{lightgray}\footnotesize Longitudinal $\langle \delta p^2_L\rangle$ oscilates\\[10pt]
+                        \end{itemize}
+                    \item \large Static $\neq$ dynamic with $p_T(\tau_\mathrm{form})$ \\[10pt]
+                        % \begin{itemize}\itemsep0em 
+                        %     \setbeamertemplate{itemize items}{\raisebox{0.1em}{\scalebox{0.6}{${\color{lightgray}\blacktriangleright}$}}} 
+                        %     \item \color{lightgray}\footnotesize Transverse $\langle \delta p^2_T\rangle$ increases with $p_T$
+                        %     \item \color{lightgray}\footnotesize Longitudinal $\langle \delta p^2_L\rangle$ descreses with $p_T$\\[10pt]
+                        % \end{itemize}
+                    \item \large Anisotropic $\langle \delta p^2_L\rangle>\langle \delta p^2_T\rangle$ 
+                    \begin{itemize}\itemsep0em 
+                        \setbeamertemplate{itemize items}{\raisebox{0.1em}{\scalebox{0.6}{${\color{lightgray}\blacktriangleright}$}}} 
+                        \item \color{lightgray}More anisotropic for small $p_T$
+                    \end{itemize}
+                \end{itemize}
+                };
+        \end{tikzpicture}
+    \end{center}
+    \vspace{-20pt}
+    \blfootnote{\scriptsize DA, Băran, Greco, Ipp, Müller, Ruggieri  \href{https://arxiv.org/abs/2307.07999}{{\color{Mahogany}\texttt{[2307.07999]}$^\text{\scalebox{0.9}{\faExternalLink}}$}}}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[noframenumbering]
+    \frametitle{Heavy quarks in glasma}
+    % \framesubtitle{Momentum broadening, transport coefficient, anisotropy}
+    \begin{center}
+        \begin{tikzpicture}
+            \hspace{-15pt}\node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=0.85\textwidth]{images/hp23_mom_broad_kappa_anis_wong_vs_kappa.pdf}};
+            % \draw<1>[white, fill=white, fill opacity=0.9] (4.3,0.85) rectangle (5.4,5.5);
+            \draw<1>[white,fill=white,fill opacity=0.9] (0.0,0.2) rectangle (5.2,6.8) node[opacity=1.0, pos=0.5, rotate=0, anchor=center, xshift=0.0 ,text width=6cm,align=center] {tg
+                \begin{itemize}\itemsep0em 
+                    \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{Mahogany}\blacktriangleright}$}}} 
+                    \item \large {\color{Mahogany} Large $\kappa$ peak at early $\delta\tau$}\\[10pt]
+                    \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{lightgray}\blacktriangleright}$}}} 
+                    \item Behavior of $\kappa$ at late $\delta\tau$
+                        \begin{itemize}\itemsep0em 
+                            \setbeamertemplate{itemize items}{\raisebox{0.1em}{\scalebox{0.6}{${\color{lightgray}\blacktriangleright}$}}} 
+                            \item \color{lightgray}\footnotesize Transverse $\kappa_T\approx 0$
+                            \item \color{lightgray}\footnotesize Longitudinal $\kappa_L<0$\\[10pt]
+                        \end{itemize}
+                        \item \large {\color{Mahogany} $\kappa_L<0$ $\sim$ ``coherence'' effect}\\
+                        {\color{lightgray}\footnotesize $\not\sim$ independent momentum kicks}\\[10pt]
+                    \item \large Anisotropic $\kappa_L\neq\kappa_T$ 
+                    
+                \end{itemize}
+                };
+        \end{tikzpicture}
+    \end{center}
+    \vspace{-20pt}
+    \blfootnote{\scriptsize DA, Băran, Greco, Ipp, Müller, Ruggieri  \href{https://arxiv.org/abs/2307.07999}{{\color{Mahogany}\texttt{[2307.07999]}$^\text{\scalebox{0.9}{\faExternalLink}}$}}}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}
+    \frametitle{Large $\hat{q}$ in glasma}
+    \framesubtitle{Compatible with EKT}
+    \vspace{-0.4cm}
+    \begin{columns}[onlytextwidth,t]
+    \column{.5\textwidth}
+        \begin{figure}[!hbt]
+            \centering
+            \captionsetup{justification=centering}
+            \caption{Schematic evolution of $\hat{q}$}\vspace{-0.3cm}
+            \includegraphics[width=0.8\columnwidth]{images/qhat_schematic_evolution.pdf}\vspace{-0.3cm}
+            % \caption{\scriptsize\itshape Figure from \href{https://arxiv.org/abs/2303.12595}{\color{ForestGreen}[2303.12595]}}
+        \end{figure}
+    \column{.5\textwidth}
+        \begin{figure}[!hbt]
+            \centering
+            \captionsetup{justification=centering}
+            \caption{{\color{ForestGreen}Kinetic theory} connects the large $\hat{q}$ in {\color{Dandelion}Glasma}\\ to subsequent {\color{Periwinkle}hydrodynamics}}\vspace{-0.2cm}
+            \includegraphics[width=0.8\columnwidth]{images/2023-03-07-16-41-35_qhat_appetizer_glasma_comparison_493.pdf}
+        \end{figure}
+    \end{columns}   
+
+    \blfootnote{\scriptsize Boguslavski, Kurkela, Lappi, Lindenbauer, Peuron \href{https://arxiv.org/abs/2303.12595}{{\color{ForestGreen}\texttt{[2303.12595]}$^\text{\scalebox{0.9}{\faExternalLink}}$}}, \href{https://arxiv.org/abs/2312.00447}{{\color{ForestGreen}\texttt{[2312.00447]}$^\text{\scalebox{0.9}{\faExternalLink}}$}}}
+    \begin{tikzpicture}[overlay, remember picture]
+        \node[anchor=north west] 
+        at ([xshift=0.05cm,yshift=-0.05cm]current page.north west) {\begin{talkbox}\scriptsize{\color{destacado}Lindenbauer$\hspace{1pt}^\text{\scalebox{0.9}{\faComment}}$} {\itshape Mon 15:15$\hspace{1pt}^\text{\scalebox{0.9}{\faClockO}}$} \end{talkbox}};
+    \end{tikzpicture}
+    \begin{tikzpicture}[overlay, remember picture]
+        \node[anchor=north west] 
+        at ([xshift=0.05cm,yshift=-0.48cm]current page.north west) {\begin{talkbox}\scriptsize Jets in EKT \end{talkbox}};
+    \end{tikzpicture}
+    \begin{tikzpicture}[overlay, remember picture]
+        \node[anchor=north west] 
+        at ([xshift=0.05cm,yshift=-1.05cm]current page.north west) {\begin{talkbox}\scriptsize{\color{destacado}Zhou$\hspace{1pt}^\text{\scalebox{0.9}{\faComment}}$} {\itshape Tue 12:30$\hspace{1pt}^\text{\scalebox{0.9}{\faClockO}}$} \end{talkbox}};
+    \end{tikzpicture}
+    \begin{tikzpicture}[overlay, remember picture]
+        \node[anchor=north west] 
+        at ([xshift=0.05cm,yshift=-1.48cm]current page.north west) {\begin{talkbox}\scriptsize{Minijets in EKT} \end{talkbox}};
+    \end{tikzpicture}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[noframenumbering]
+    \frametitle{The ``creation'' of $\hat{q}$}
+    \framesubtitle{Glasma and EKT initial stages}
+    \vspace{-0.4cm}
+    \begin{columns}[onlytextwidth,t]
+    \column{.5\textwidth}
+        \begin{figure}[!hbt]
+            \centering
+            \captionsetup{justification=centering}
+            \caption{Schematic evolution of $\hat{q}$}\vspace{-0.3cm}
+            \includegraphics[width=0.78\columnwidth]{images/qhat_schematic_evolution.pdf}\vspace{-0.3cm}
+            % \caption{\scriptsize\itshape Figure from \href{https://arxiv.org/abs/2303.12595}{\color{ForestGreen}[2303.12595]}}
+        \end{figure}
+    \column{.5\textwidth}
+        \begin{figure}[!hbt]
+            \centering
+            \captionsetup{justification=centering}
+            \caption{{\color{ForestGreen}Kinetic theory} connects the large $\hat{q}$ in {\color{Dandelion}Glasma}\\ to subsequent {\color{Periwinkle}hydrodynamics}}\vspace{-0.2cm}
+            \includegraphics[width=0.8\columnwidth]{images/qhat_glasma_ekt.png}
+        \end{figure}
+    \end{columns}   
+    \blfootnote{\scriptsize Boguslavski, Kurkela, Lappi, Lindenbauer, Peuron \href{https://arxiv.org/abs/2303.12595}{{\color{ForestGreen}\texttt{[2303.12595]}$^\text{\scalebox{0.9}{\faExternalLink}}$}}, \href{https://arxiv.org/abs/2312.00447}{{\color{ForestGreen}\texttt{[2312.00447]}$^\text{\scalebox{0.9}{\faExternalLink}}$}}}
+    % \begin{tikzpicture}[overlay, remember picture]
+    %     \node[anchor=north west] 
+    %     at ([xshift=0.05cm,yshift=-0.05cm]current page.north west) {\begin{talkbox}\scriptsize{\color{destacado}Lindenbauer$\hspace{1pt}^\text{\scalebox{0.9}{\faComment}}$} {\itshape Mon 15:15$\hspace{1pt}^\text{\scalebox{0.9}{\faClockO}}$} \end{talkbox}};
+    % \end{tikzpicture}
+    % \begin{tikzpicture}[overlay, remember picture]
+    %     \node[anchor=north west] 
+    %     at ([xshift=0.05cm,yshift=-0.48cm]current page.north west) {\begin{talkbox}\scriptsize Jets in EKT \end{talkbox}};
+    % \end{tikzpicture}
+\end{frame}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}
+    \frametitle{Large $\kappa$ in glasma}
+    \framesubtitle{Not yet compatible with EKT}
+    \vspace{-0.4cm}
+    \begin{columns}[onlytextwidth,t]
+    \column{.5\textwidth}
+        \begin{figure}[!hbt]
+            \centering
+            \captionsetup{justification=centering}
+            \caption{Schematic evolution of $\kappa$}\vspace{-0.3cm}
+            \includegraphics[width=0.8\columnwidth]{images/kappa_schematic.png}\vspace{-0.3cm}
+            % \caption{\scriptsize\itshape Figure from \href{https://arxiv.org/abs/2303.12595}{\color{ForestGreen}[2303.12595]}}
+        \end{figure}
+    \column{.5\textwidth}
+        \begin{figure}[!hbt]
+            \centering
+            \captionsetup{justification=centering}
+            \caption{{\color{ForestGreen}Kinetic theory} doesn't smoothly connect the large $\kappa$\\ in {\color{Dandelion}Glasma} to subsequent {\color{Periwinkle}hydrodynamics}}\vspace{-0.2cm}
+            \includegraphics[width=0.8\columnwidth]{images/KappaGlasmaVsEKTvsLatticev2.pdf}
+        \end{figure}
+    \end{columns}   
+
+    \blfootnote{\scriptsize Boguslavski, Kurkela, Lappi, Lindenbauer, Peuron \href{https://arxiv.org/abs/2303.12520}{{\color{ForestGreen}\texttt{[2303.12520]}$^\text{\scalebox{0.9}{\faExternalLink}}$}}}
+    \begin{tikzpicture}[overlay, remember picture]
+        \node[anchor=north west] 
+        at ([xshift=0.05cm,yshift=-0.05cm]current page.north west) {\begin{talkbox}\scriptsize{\color{destacado}Lindenbauer$\hspace{1pt}^\text{\scalebox{0.9}{\faComment}}$} {\itshape Mon 15:15$\hspace{1pt}^\text{\scalebox{0.9}{\faClockO}}$} \end{talkbox}};
+    \end{tikzpicture}
+    \begin{tikzpicture}[overlay, remember picture]
+        \node[anchor=north west] 
+        at ([xshift=0.05cm,yshift=-0.48cm]current page.north west) {\begin{talkbox}\scriptsize HQs in EKT \end{talkbox}};
+    \end{tikzpicture}
+    \begin{tikzpicture}[overlay, remember picture]
+        \node[anchor=north west] 
+        at ([xshift=0.05cm,yshift=-1.05cm]current page.north west) {\begin{talkbox}\scriptsize{\color{destacado}Du$\hspace{1pt}^\text{\scalebox{0.9}{\faComment}}$} {\itshape Fri 11:00$\hspace{1pt}^\text{\scalebox{0.9}{\faClockO}}$} \end{talkbox}};
+    \end{tikzpicture}
+    \begin{tikzpicture}[overlay, remember picture]
+        \node[anchor=north west] 
+        at ([xshift=0.05cm,yshift=-1.48cm]current page.north west) {\begin{talkbox}\scriptsize{HQ diffusion in EKT} \end{talkbox}};
+    \end{tikzpicture}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[noframenumbering]
+    \frametitle{Can we ``create'' $\kappa$?}
+    \framesubtitle{Glasma and EKT initial stages}
+    \vspace{-0.4cm}
+    \begin{columns}[onlytextwidth,t]
+    \column{.5\textwidth}
+        \begin{figure}[!hbt]
+            \centering
+            \captionsetup{justification=centering}
+            \caption{Schematic evolution of $\kappa$}\vspace{-0.3cm}
+            \includegraphics[width=0.78\columnwidth]{images/kappa_schematic.png}\vspace{-0.3cm}
+            % \caption{\scriptsize\itshape Figure from \href{https://arxiv.org/abs/2303.12595}{\color{ForestGreen}[2303.12595]}}
+        \end{figure}
+    \column{.5\textwidth}
+        \begin{figure}[!hbt]
+            \centering
+            \captionsetup{justification=centering}
+            \caption{{\color{ForestGreen}Kinetic theory} doesn't smoothly connect the large $\kappa$\\ in {\color{Dandelion}Glasma} to subsequent {\color{Periwinkle}hydrodynamics}}\vspace{-0.2cm}
+            \includegraphics[width=0.9\columnwidth]{images/kappa_glasma_ekt.png}
+        \end{figure}
+    \end{columns}   
+    \blfootnote{\scriptsize Boguslavski, Kurkela, Lappi, Lindenbauer, Peuron \href{https://arxiv.org/abs/2303.12520}{{\color{ForestGreen}\texttt{[2303.12520]}$^\text{\scalebox{0.9}{\faExternalLink}}$}}}
+    % \begin{tikzpicture}[overlay, remember picture]
+    %     \node[anchor=north west] 
+    %     at ([xshift=0.05cm,yshift=-0.05cm]current page.north west) {\begin{talkbox}\scriptsize{\color{destacado}Lindenbauer$\hspace{1pt}^\text{\scalebox{0.9}{\faComment}}$} {\itshape Mon 15:15$\hspace{1pt}^\text{\scalebox{0.9}{\faClockO}}$} \end{talkbox}};
+    % \end{tikzpicture}
+    % \begin{tikzpicture}[overlay, remember picture]
+    %     \node[anchor=north west] 
+    %     at ([xshift=0.05cm,yshift=-0.48cm]current page.north west) {\begin{talkbox}\scriptsize HQs in EKT \end{talkbox}};
+    % \end{tikzpicture}
+\end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2185,7 +2497,7 @@
                 \begin{itemize}
                     \item {\color{lightgray}Analytical glasma fields in $\boldsymbol{\tau}$ \textbf{expansion}}
                     \item {\color{lightgray} {\bfseries Field correlators}, {\bfseries Fokker-Planck} equation}
-                    \item {\color{lightgray} Estimate $\Delta p_T^2|^\mathrm{neq}/\Delta p_T^2|^\mathrm{eq}\approx 0.93$}
+                    \item {\color{lightgray} {\bfseries\color{red}Estimate $\boldsymbol{\Delta p_T^2|^\mathrm{neq}/\Delta p_T^2|^\mathrm{eq}\approx 0.93}$}}
                 \end{itemize}
                 % {\footnotesize\color{lightgray}\texttt{Ballistic diffusion of heavy quarks in \\ the early stage of relativistic heavy \\ ion collisions at RHIC and LHC}}
         \end{center}
@@ -2313,360 +2625,10 @@
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-    \frametitle{Jets in glasma}
-    % \framesubtitle{Momentum broadening, transport coefficient, anisotropy}
-    \begin{center}
-        \begin{figure}
-            \centering
-            \includegraphics[width=0.85\textwidth]{images/hp23_mom_broad_qhat_anis_wong_vs_qhat.pdf}
-        \end{figure}
-    \end{center}
-    \vspace{-20pt}
-    \blfootnote{\scriptsize DA, Băran, Greco, Ipp, Müller, Ruggieri  \href{https://arxiv.org/abs/2307.07999}{{\color{custompink}\texttt{[2307.07999]}$^\text{\scalebox{0.9}{\faExternalLink}}$}}}
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}[noframenumbering]
-    \frametitle{Jets in glasma}
-    % \framesubtitle{Momentum broadening, transport coefficient, anisotropy}
-    \begin{center}
-        \begin{tikzpicture}
-            \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=0.85\textwidth]{images/hp23_mom_broad_qhat_anis_wong_vs_qhat.pdf}};
-            % \draw<1>[white, fill=white, fill opacity=0.9] (4.3,0.85) rectangle (5.4,5.5);
-            \draw<1>[white,fill=white,fill opacity=0.9] (5.2,0.2) rectangle (13.0,6.8) node[opacity=1.0, pos=0.5, rotate=0, anchor=center, xshift=0.0 ,text width=7cm,align=center] {
-                \begin{itemize}\itemsep0em 
-                    \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{custompink}\blacktriangleright}$}}} 
-                    \item \large {\color{custompink}Rapid increase in $\langle \delta p^2\rangle$ at early $\delta\tau$}\\[10pt]
-                    \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{lightgray}\blacktriangleright}$}}} 
-                    \item Different $\langle \delta p^2\rangle$ behavior at late $\delta\tau$
-                        \begin{itemize}\itemsep0em 
-                            \setbeamertemplate{itemize items}{\raisebox{0.1em}{\scalebox{0.6}{${\color{lightgray}\blacktriangleright}$}}} 
-                            \item \color{lightgray}\footnotesize Transverse $\langle \delta p^2_y\rangle$ saturates
-                            \item \color{lightgray}\footnotesize Longitudinal $\langle \delta p^2_z\rangle$ decreases\\[10pt]
-                        \end{itemize}
-                    \item \large Eikonal $\approx$ dynamic with large $p^x$ \\[10pt]
-                        % \begin{itemize}\itemsep0em 
-                        %     \setbeamertemplate{itemize items}{\raisebox{0.1em}{\scalebox{0.6}{${\color{lightgray}\blacktriangleright}$}}} 
-                        %     \item \color{lightgray}\footnotesize Transverse $\langle \delta p^2_y\rangle$ increases with $p^x$
-                        %     \item \color{lightgray}\footnotesize Longitudinal $\langle \delta p^2_z\rangle$ descreses with $p^x$\\[10pt]
-                        % \end{itemize}
-                    \item \large Anisotropic $\langle \delta p^2_z\rangle>\langle \delta p^2_y\rangle$ 
-                    \begin{itemize}\itemsep0em 
-                        \setbeamertemplate{itemize items}{\raisebox{0.1em}{\scalebox{0.6}{${\color{lightgray}\blacktriangleright}$}}} 
-                        \item \color{lightgray}More anisotropic for small $p^x$
-                    \end{itemize}
-                \end{itemize}
-                };
-        \end{tikzpicture}
-    \end{center}
-    \vspace{-20pt}
-    \blfootnote{\scriptsize DA, Băran, Greco, Ipp, Müller, Ruggieri  \href{https://arxiv.org/abs/2307.07999}{{\color{custompink}\texttt{[2307.07999]}$^\text{\scalebox{0.9}{\faExternalLink}}$}}}
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}[noframenumbering]
-    \frametitle{Jets in glasma}
-    % \framesubtitle{Momentum broadening, transport coefficient, anisotropy}
-    \begin{center}
-        \begin{tikzpicture}
-            \hspace{-15pt}\node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=0.85\textwidth]{images/hp23_mom_broad_qhat_anis_wong_vs_qhat.pdf}};
-            % \draw<1>[white, fill=white, fill opacity=0.9] (4.3,0.85) rectangle (5.4,5.5);
-            \draw<1>[white,fill=white,fill opacity=0.9] (0.0,0.2) rectangle (5.2,6.8) node[opacity=1.0, pos=0.5, rotate=0, anchor=center, xshift=0.0 ,text width=5.5cm,align=center] {tg
-                \begin{itemize}\itemsep0em 
-                    \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{custompink}\blacktriangleright}$}}} 
-                    \item \large {\color{custompink} Large $\hat{q}$ peak at early $\delta\tau$}\\[10pt]
-                    \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{lightgray}\blacktriangleright}$}}} 
-                    \item Behavior of $\hat{q}$ at late $\delta\tau$
-                        \begin{itemize}\itemsep0em 
-                            \setbeamertemplate{itemize items}{\raisebox{0.1em}{\scalebox{0.6}{${\color{lightgray}\blacktriangleright}$}}} 
-                            \item \color{lightgray}\footnotesize Transverse $\hat{q}_y\approx 0$
-                            \item \color{lightgray}\footnotesize Longitudinal $\hat{q}_z<0$\\[10pt]
-                        \end{itemize}
-                    \item \large Anisotropic $\hat{q}_z\neq\hat{q}_y$ 
-                    
-                \end{itemize}
-                };
-        \end{tikzpicture}
-    \end{center}
-    \vspace{-20pt}
-    \blfootnote{\scriptsize DA, Băran, Greco, Ipp, Müller, Ruggieri  \href{https://arxiv.org/abs/2307.07999}{{\color{custompink}\texttt{[2307.07999]}$^\text{\scalebox{0.9}{\faExternalLink}}$}}}
-\end{frame}
-
-    
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-    \frametitle{Heavy quarks in glasma}
-    % \framesubtitle{Momentum broadening, transport coefficient, anisotropy}
-    \begin{center}
-        \begin{figure}
-            \centering
-            \includegraphics[width=0.85\textwidth]{images/hp23_mom_broad_kappa_anis_wong_vs_kappa.pdf}
-        \end{figure}
-    \end{center}
-    \vspace{-20pt}
-    \blfootnote{\scriptsize DA, Băran, Greco, Ipp, Müller, Ruggieri  \href{https://arxiv.org/abs/2307.07999}{{\color{Mahogany}\texttt{[2307.07999]}$^\text{\scalebox{0.9}{\faExternalLink}}$}}}
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}[noframenumbering]
-    \frametitle{Heavy quarks in glasma}
-    % \framesubtitle{Momentum broadening, transport coefficient, anisotropy}
-    \begin{center}
-        \begin{tikzpicture}
-            \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=0.85\textwidth]{images/hp23_mom_broad_kappa_anis_wong_vs_kappa.pdf}};
-            % \draw<1>[white, fill=white, fill opacity=0.9] (4.3,0.85) rectangle (5.4,5.5);
-            \draw<1>[white,fill=white,fill opacity=0.9] (5.2,0.2) rectangle (13.0,6.8) node[opacity=1.0, pos=0.5, rotate=0, anchor=center, xshift=0.0 ,text width=7cm,align=center] {
-                \begin{itemize}\itemsep0em 
-                    \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{Mahogany}\blacktriangleright}$}}} 
-                    \item \large {\color{Mahogany}Rapid increase in $\langle \delta p^2\rangle$ at early $\delta\tau$}\\[10pt]
-                    \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{lightgray}\blacktriangleright}$}}} 
-                    \item Different $\langle \delta p^2\rangle$ behavior at late $\delta\tau$
-                        \begin{itemize}\itemsep0em 
-                            \setbeamertemplate{itemize items}{\raisebox{0.1em}{\scalebox{0.6}{${\color{lightgray}\blacktriangleright}$}}} 
-                            \item \color{lightgray}\footnotesize Transverse $\langle \delta p^2_T\rangle$ saturates
-                            \item \color{lightgray}\footnotesize Longitudinal $\langle \delta p^2_L\rangle$ oscilates\\[10pt]
-                        \end{itemize}
-                    \item \large Static $\neq$ dynamic with $p_T(\tau_\mathrm{form})$ \\[10pt]
-                        % \begin{itemize}\itemsep0em 
-                        %     \setbeamertemplate{itemize items}{\raisebox{0.1em}{\scalebox{0.6}{${\color{lightgray}\blacktriangleright}$}}} 
-                        %     \item \color{lightgray}\footnotesize Transverse $\langle \delta p^2_T\rangle$ increases with $p_T$
-                        %     \item \color{lightgray}\footnotesize Longitudinal $\langle \delta p^2_L\rangle$ descreses with $p_T$\\[10pt]
-                        % \end{itemize}
-                    \item \large Anisotropic $\langle \delta p^2_L\rangle>\langle \delta p^2_T\rangle$ 
-                    \begin{itemize}\itemsep0em 
-                        \setbeamertemplate{itemize items}{\raisebox{0.1em}{\scalebox{0.6}{${\color{lightgray}\blacktriangleright}$}}} 
-                        \item \color{lightgray}More anisotropic for small $p_T$
-                    \end{itemize}
-                \end{itemize}
-                };
-        \end{tikzpicture}
-    \end{center}
-    \vspace{-20pt}
-    \blfootnote{\scriptsize DA, Băran, Greco, Ipp, Müller, Ruggieri  \href{https://arxiv.org/abs/2307.07999}{{\color{Mahogany}\texttt{[2307.07999]}$^\text{\scalebox{0.9}{\faExternalLink}}$}}}
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}[noframenumbering]
-    \frametitle{Heavy quarks in glasma}
-    % \framesubtitle{Momentum broadening, transport coefficient, anisotropy}
-    \begin{center}
-        \begin{tikzpicture}
-            \hspace{-15pt}\node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=0.85\textwidth]{images/hp23_mom_broad_kappa_anis_wong_vs_kappa.pdf}};
-            % \draw<1>[white, fill=white, fill opacity=0.9] (4.3,0.85) rectangle (5.4,5.5);
-            \draw<1>[white,fill=white,fill opacity=0.9] (0.0,0.2) rectangle (5.2,6.8) node[opacity=1.0, pos=0.5, rotate=0, anchor=center, xshift=0.0 ,text width=5.5cm,align=center] {tg
-                \begin{itemize}\itemsep0em 
-                    \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{Mahogany}\blacktriangleright}$}}} 
-                    \item \large {\color{Mahogany} Large $\kappa$ peak at early $\delta\tau$}\\[10pt]
-                    \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{lightgray}\blacktriangleright}$}}} 
-                    \item Behavior of $\kappa$ at late $\delta\tau$
-                        \begin{itemize}\itemsep0em 
-                            \setbeamertemplate{itemize items}{\raisebox{0.1em}{\scalebox{0.6}{${\color{lightgray}\blacktriangleright}$}}} 
-                            \item \color{lightgray}\footnotesize Transverse $\kappa_T\approx 0$
-                            \item \color{lightgray}\footnotesize Longitudinal $\kappa_L<0$\\[10pt]
-                        \end{itemize}
-                    \item \large Anisotropic $\kappa_L\neq\kappa_T$ 
-                    
-                \end{itemize}
-                };
-        \end{tikzpicture}
-    \end{center}
-    \vspace{-20pt}
-    \blfootnote{\scriptsize DA, Băran, Greco, Ipp, Müller, Ruggieri  \href{https://arxiv.org/abs/2307.07999}{{\color{Mahogany}\texttt{[2307.07999]}$^\text{\scalebox{0.9}{\faExternalLink}}$}}}
-\end{frame}
 
 
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\begin{frame}
-    \frametitle{Large $\hat{q}$ in glasma}
-    \framesubtitle{Compatible with EKT}
-    \vspace{-0.4cm}
-    \begin{columns}[onlytextwidth,t]
-    \column{.5\textwidth}
-        \begin{figure}[!hbt]
-            \centering
-            \captionsetup{justification=centering}
-            \caption{Schematic evolution of $\hat{q}$}\vspace{-0.3cm}
-            \includegraphics[width=0.8\columnwidth]{images/qhat_schematic_evolution.pdf}\vspace{-0.3cm}
-            % \caption{\scriptsize\itshape Figure from \href{https://arxiv.org/abs/2303.12595}{\color{ForestGreen}[2303.12595]}}
-        \end{figure}
-    \column{.5\textwidth}
-        \begin{figure}[!hbt]
-            \centering
-            \captionsetup{justification=centering}
-            \caption{{\color{ForestGreen}Kinetic theory} connects the large $\hat{q}$ in {\color{Dandelion}Glasma}\\ to subsequent {\color{Periwinkle}hydrodynamics}}\vspace{-0.2cm}
-            \includegraphics[width=0.8\columnwidth]{images/2023-03-07-16-41-35_qhat_appetizer_glasma_comparison_493.pdf}
-        \end{figure}
-    \end{columns}   
-
-    \blfootnote{\scriptsize Boguslavski, Kurkela, Lappi, Lindenbauer, Peuron \href{https://arxiv.org/abs/2303.12595}{{\color{ForestGreen}\texttt{[2303.12595]}$^\text{\scalebox{0.9}{\faExternalLink}}$}}, \href{https://arxiv.org/abs/2312.00447}{{\color{ForestGreen}\texttt{[2312.00447]}$^\text{\scalebox{0.9}{\faExternalLink}}$}}}
-    \begin{tikzpicture}[overlay, remember picture]
-        \node[anchor=north west] 
-        at ([xshift=0.05cm,yshift=-0.05cm]current page.north west) {\begin{talkbox}\scriptsize{\color{destacado}Lindenbauer$\hspace{1pt}^\text{\scalebox{0.9}{\faComment}}$} {\itshape Mon 15:15$\hspace{1pt}^\text{\scalebox{0.9}{\faClockO}}$} \end{talkbox}};
-    \end{tikzpicture}
-    \begin{tikzpicture}[overlay, remember picture]
-        \node[anchor=north west] 
-        at ([xshift=0.05cm,yshift=-0.48cm]current page.north west) {\begin{talkbox}\scriptsize Jets in EKT \end{talkbox}};
-    \end{tikzpicture}
-    \begin{tikzpicture}[overlay, remember picture]
-        \node[anchor=north west] 
-        at ([xshift=0.05cm,yshift=-1.05cm]current page.north west) {\begin{talkbox}\scriptsize{\color{destacado}Zhou$\hspace{1pt}^\text{\scalebox{0.9}{\faComment}}$} {\itshape Tue 12:30$\hspace{1pt}^\text{\scalebox{0.9}{\faClockO}}$} \end{talkbox}};
-    \end{tikzpicture}
-    \begin{tikzpicture}[overlay, remember picture]
-        \node[anchor=north west] 
-        at ([xshift=0.05cm,yshift=-1.48cm]current page.north west) {\begin{talkbox}\scriptsize{Minijets in EKT} \end{talkbox}};
-    \end{tikzpicture}
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}[noframenumbering]
-    \frametitle{The ``creation'' of $\hat{q}$}
-    \framesubtitle{Glasma and EKT initial stages}
-    \vspace{-0.4cm}
-    \begin{columns}[onlytextwidth,t]
-    \column{.5\textwidth}
-        \begin{figure}[!hbt]
-            \centering
-            \captionsetup{justification=centering}
-            \caption{Schematic evolution of $\hat{q}$}\vspace{-0.3cm}
-            \includegraphics[width=0.78\columnwidth]{images/qhat_schematic_evolution.pdf}\vspace{-0.3cm}
-            % \caption{\scriptsize\itshape Figure from \href{https://arxiv.org/abs/2303.12595}{\color{ForestGreen}[2303.12595]}}
-        \end{figure}
-    \column{.5\textwidth}
-        \begin{figure}[!hbt]
-            \centering
-            \captionsetup{justification=centering}
-            \caption{{\color{ForestGreen}Kinetic theory} connects the large $\hat{q}$ in {\color{Dandelion}Glasma}\\ to subsequent {\color{Periwinkle}hydrodynamics}}\vspace{-0.2cm}
-            \includegraphics[width=0.8\columnwidth]{images/qhat_glasma_ekt.png}
-        \end{figure}
-    \end{columns}   
-    \blfootnote{\scriptsize Boguslavski, Kurkela, Lappi, Lindenbauer, Peuron \href{https://arxiv.org/abs/2303.12595}{{\color{ForestGreen}\texttt{[2303.12595]}$^\text{\scalebox{0.9}{\faExternalLink}}$}}, \href{https://arxiv.org/abs/2312.00447}{{\color{ForestGreen}\texttt{[2312.00447]}$^\text{\scalebox{0.9}{\faExternalLink}}$}}}
-    % \begin{tikzpicture}[overlay, remember picture]
-    %     \node[anchor=north west] 
-    %     at ([xshift=0.05cm,yshift=-0.05cm]current page.north west) {\begin{talkbox}\scriptsize{\color{destacado}Lindenbauer$\hspace{1pt}^\text{\scalebox{0.9}{\faComment}}$} {\itshape Mon 15:15$\hspace{1pt}^\text{\scalebox{0.9}{\faClockO}}$} \end{talkbox}};
-    % \end{tikzpicture}
-    % \begin{tikzpicture}[overlay, remember picture]
-    %     \node[anchor=north west] 
-    %     at ([xshift=0.05cm,yshift=-0.48cm]current page.north west) {\begin{talkbox}\scriptsize Jets in EKT \end{talkbox}};
-    % \end{tikzpicture}
-\end{frame}
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\begin{frame}
-    \frametitle{Large $\kappa$ in glasma}
-    \framesubtitle{Not yet compatible with EKT}
-    \vspace{-0.4cm}
-    \begin{columns}[onlytextwidth,t]
-    \column{.5\textwidth}
-        \begin{figure}[!hbt]
-            \centering
-            \captionsetup{justification=centering}
-            \caption{Schematic evolution of $\kappa$}\vspace{-0.3cm}
-            \includegraphics[width=0.8\columnwidth]{images/kappa_schematic.png}\vspace{-0.3cm}
-            % \caption{\scriptsize\itshape Figure from \href{https://arxiv.org/abs/2303.12595}{\color{ForestGreen}[2303.12595]}}
-        \end{figure}
-    \column{.5\textwidth}
-        \begin{figure}[!hbt]
-            \centering
-            \captionsetup{justification=centering}
-            \caption{{\color{ForestGreen}Kinetic theory} doesn't smoothly connect the large $\kappa$\\ in {\color{Dandelion}Glasma} to subsequent {\color{Periwinkle}hydrodynamics}}\vspace{-0.2cm}
-            \includegraphics[width=0.8\columnwidth]{images/KappaGlasmaVsEKTvsLatticev2.pdf}
-        \end{figure}
-    \end{columns}   
-
-    \blfootnote{\scriptsize Boguslavski, Kurkela, Lappi, Lindenbauer, Peuron \href{https://arxiv.org/abs/2303.12520}{{\color{ForestGreen}\texttt{[2303.12520]}$^\text{\scalebox{0.9}{\faExternalLink}}$}}}
-    \begin{tikzpicture}[overlay, remember picture]
-        \node[anchor=north west] 
-        at ([xshift=0.05cm,yshift=-0.05cm]current page.north west) {\begin{talkbox}\scriptsize{\color{destacado}Lindenbauer$\hspace{1pt}^\text{\scalebox{0.9}{\faComment}}$} {\itshape Mon 15:15$\hspace{1pt}^\text{\scalebox{0.9}{\faClockO}}$} \end{talkbox}};
-    \end{tikzpicture}
-    \begin{tikzpicture}[overlay, remember picture]
-        \node[anchor=north west] 
-        at ([xshift=0.05cm,yshift=-0.48cm]current page.north west) {\begin{talkbox}\scriptsize HQs in EKT \end{talkbox}};
-    \end{tikzpicture}
-    \begin{tikzpicture}[overlay, remember picture]
-        \node[anchor=north west] 
-        at ([xshift=0.05cm,yshift=-1.05cm]current page.north west) {\begin{talkbox}\scriptsize{\color{destacado}Du$\hspace{1pt}^\text{\scalebox{0.9}{\faComment}}$} {\itshape Fri 11:00$\hspace{1pt}^\text{\scalebox{0.9}{\faClockO}}$} \end{talkbox}};
-    \end{tikzpicture}
-    \begin{tikzpicture}[overlay, remember picture]
-        \node[anchor=north west] 
-        at ([xshift=0.05cm,yshift=-1.48cm]current page.north west) {\begin{talkbox}\scriptsize{HQ diffusion in EKT} \end{talkbox}};
-    \end{tikzpicture}
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}[noframenumbering]
-    \frametitle{Can we ``create'' $\kappa$?}
-    \framesubtitle{Glasma and EKT initial stages}
-    \vspace{-0.4cm}
-    \begin{columns}[onlytextwidth,t]
-    \column{.5\textwidth}
-        \begin{figure}[!hbt]
-            \centering
-            \captionsetup{justification=centering}
-            \caption{Schematic evolution of $\kappa$}\vspace{-0.3cm}
-            \includegraphics[width=0.78\columnwidth]{images/kappa_schematic.png}\vspace{-0.3cm}
-            % \caption{\scriptsize\itshape Figure from \href{https://arxiv.org/abs/2303.12595}{\color{ForestGreen}[2303.12595]}}
-        \end{figure}
-    \column{.5\textwidth}
-        \begin{figure}[!hbt]
-            \centering
-            \captionsetup{justification=centering}
-            \caption{{\color{ForestGreen}Kinetic theory} doesn't smoothly connect the large $\kappa$\\ in {\color{Dandelion}Glasma} to subsequent {\color{Periwinkle}hydrodynamics}}\vspace{-0.2cm}
-            \includegraphics[width=0.9\columnwidth]{images/kappa_glasma_ekt.png}
-        \end{figure}
-    \end{columns}   
-    \blfootnote{\scriptsize Boguslavski, Kurkela, Lappi, Lindenbauer, Peuron \href{https://arxiv.org/abs/2303.12520}{{\color{ForestGreen}\texttt{[2303.12520]}$^\text{\scalebox{0.9}{\faExternalLink}}$}}}
-    % \begin{tikzpicture}[overlay, remember picture]
-    %     \node[anchor=north west] 
-    %     at ([xshift=0.05cm,yshift=-0.05cm]current page.north west) {\begin{talkbox}\scriptsize{\color{destacado}Lindenbauer$\hspace{1pt}^\text{\scalebox{0.9}{\faComment}}$} {\itshape Mon 15:15$\hspace{1pt}^\text{\scalebox{0.9}{\faClockO}}$} \end{talkbox}};
-    % \end{tikzpicture}
-    % \begin{tikzpicture}[overlay, remember picture]
-    %     \node[anchor=north west] 
-    %     at ([xshift=0.05cm,yshift=-0.48cm]current page.north west) {\begin{talkbox}\scriptsize HQs in EKT \end{talkbox}};
-    % \end{tikzpicture}
-\end{frame}
 
 
 
@@ -2693,7 +2655,7 @@
     \end{tikzpicture}
     \begin{tikzpicture}[overlay, remember picture]
         \node[anchor=north west] 
-        at ([xshift=0.05cm,yshift=-0.48cm]current page.north west) {\begin{talkbox}\scriptsize{HQs in glasma pheno} \end{talkbox}};
+        at ([xshift=0.05cm,yshift=-0.48cm]current page.north west) {\begin{talkbox}\scriptsize{HF observables for glasma} \end{talkbox}};
     \end{tikzpicture}
 \end{frame}
 \setbeamertemplate{background}{}
@@ -2870,10 +2832,10 @@
             {\Large\color{palteal} $R_{AA}$ and $v_2$ for jets \\[10pt]}
             \footnotesize
                 \begin{itemize}
-                    \item {\color{lightgray}{\bfseries EKRT} initial condition, {\bfseries no glasma}}
+                    \item {\color{lightgray}{\bfseries EKRT} initial condition, {\bfseries\color{jyured} no glasma}}
                     \item {\color{lightgray}Relativistic boost-invariant hydrodynamics}
                     \item {\color{lightgray}Jet quenching using {\bfseries BDMPS-Z} formalism}
-                    \item {\color{lightgray}Energy loss in suppressed in first $\sim 0.6\,\mathrm{fm/c}$}
+                    \item {\color{lightgray}{\bfseries\color{jyured} Energy loss suppressed in first $\boldsymbol{\sim 0.6\,\mathrm{fm/c}}$}}
                     \item {\color{lightgray}Initial stage energy loss affects $v_2$}
                 \end{itemize}
                 % {\footnotesize\color{lightgray}\texttt{Ballistic diffusion of heavy quarks in \\ the early stage of relativistic heavy \\ ion collisions at RHIC and LHC}}
@@ -2930,7 +2892,7 @@
                     \item {\color{lightgray}{\bfseries DREENA} framework for energy loss}
                     \item {\color{lightgray}Bjorken hydrodynamics for medium evolution}
                     \item {\color{lightgray}Radiative and collisional energy loss}
-                    \item {\color{lightgray}Different {\bfseries initial $\boldsymbol{T}$ profiles}, {\bfseries no glasma}}
+                    \item {\color{lightgray}Different {\bfseries initial $\boldsymbol{T}$ profiles}, {\bfseries\color{jyured} no glasma}}
                     \item {\color{lightgray}No effect on $v_2$, {\bfseries only $\boldsymbol{R_{AA}}$ is affected}}
                 \end{itemize}
                 % {\footnotesize\color{lightgray}\texttt{Ballistic diffusion of heavy quarks in \\ the early stage of relativistic heavy \\ ion collisions at RHIC and LHC}}
@@ -2986,7 +2948,7 @@
                 \begin{itemize}
                     \item {\color{lightgray}{\bfseries BDMPS-Z} framework for energy loss}
                     \item {\color{lightgray}Consider {\bfseries vacuum emissions before QGP}}
-                    \item {\color{lightgray}No medium, {\bfseries no glasma}}
+                    \item {\color{lightgray}No medium, {\bfseries\color{jyured} no glasma}}
                     \item {\color{lightgray}Extract $Q_{AA}$ and $w_2$, proxies for $R_{AA}$ and $v_2$}
                     \item {\color{lightgray}No effect on $Q_{AA}$, {\bfseries only $\boldsymbol{w_2}$ is affected}}
                 \end{itemize}
@@ -3147,10 +3109,11 @@
                 \footnotesize
                 \item Initial pQCD $p_T$ spectrum for bare quarks\\
                 {\scriptsize\color{lightgray}Fixed-Order+Next-to-Leading Logarithm}
+                \item Factorize pQCD production from glasma
             \end{itemize}
             \end{varwidth}
         \end{custombox2}
-
+        \vspace{-10pt}
         \renewcommand{\eqnhighlightheight}{\vphantom{\mathcal{D}_\mu}\mathstrut}
         \begin{equation*}
             \hspace{0pt}
@@ -3961,7 +3924,7 @@
     \end{tikzpicture}
     \begin{tikzpicture}[overlay, remember picture]
         \node[anchor=north west] 
-        at ([xshift=0.05cm,yshift=-0.48cm]current page.north west) {\begin{talkbox}\scriptsize{Jet eloss in glasma} \end{talkbox}};
+        at ([xshift=0.05cm,yshift=-0.48cm]current page.north west) {\begin{talkbox}\scriptsize{Jet quenching in IS} \end{talkbox}};
     \end{tikzpicture}
 \end{frame}
 
@@ -4316,6 +4279,48 @@
    \vspace{-5pt}
     \blfootnote{\scriptsize Boguslavski, Kurkela, Lappi, Lindenbauer, Peuron \href{https://arxiv.org/abs/2303.12595}{{\color{palgold}\texttt{[2303.12595]}$^\text{\scalebox{0.9}{\faExternalLink}}$}}, \href{https://arxiv.org/abs/2303.12520}{{\color{palgold}\texttt{[2303.12520]}$^\text{\scalebox{0.9}{\faExternalLink}}$}}\\
     \hspace{16.5pt}Greif, Greiner, Schenke, Schlichting, Xu \href{https://arxiv.org/abs/1903.00314}{{\color{palviolet}\texttt{[1903.00314]}$^\text{\scalebox{0.9}{\faExternalLink}}$}} IP-Glasma + KT}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \frametitle{Boltzmann-Vlasov equations}
+    % \framesubtitle{Boltzmann-Vlasov equations}
+        \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{ming}\blacktriangleright}$}}} 
+   \begin{center}
+    \begin{custombox2}{Classical transport equations}{lightgray}
+        \small
+        \begin{varwidth}{0.76\textwidth}
+        \begin{itemize}\itemsep0em 
+            \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.7}{${\color{lightgray}\blacktriangleright}$}}} 
+            \item Wong's equations $\leftrightarrow$ equations of motion for test particles $({\color{customblue}x^\mu},{\color{customred}p^\mu},{\color{customyellow}Q})$\\
+            probing a distribution function $\boldsymbol{f}({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})$ in a Yang-Mills field ${\color{starrysecond}A^\mu}$
+        \end{itemize}
+        \end{varwidth}
+    \end{custombox2}
+
+   \end{center} 
+    \begin{itemize}\itemsep0em 
+        \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{${\color{starrysecond}\blacktriangleright}$}}} 
+        \item Boltzmann-Vlasov equation for {\color{jyured}\bfseries collisionless} non-Abelian plasma
+            $${\color{customred}p^\mu}[\partial_\mu+g {\color{customyellow}Q^a} {\color{starrysecond}F^{\mu\nu}}({\color{customblue}x^\mu})\partial^\nu_{{\color{customred}p^\mu}}+gf^{abc}{\color{starrysecond}A^b_\mu}({\color{customblue}x^\mu}){\color{customyellow}Q^c}\partial_{{\color{customyellow}Q^a}}]\boldsymbol{f}({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})={\color{jyured}\boldsymbol{0}}$$
+        \item $\boldsymbol{f}({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})\xrightarrow{\text{sample}}$ test particles $({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})\Rightarrow$ Wong's equations\\[10pt] 
+        \item Particle current ${\color{jyured}\boldsymbol{j^\mu}}\xleftrightarrow{\text{couple}}$ fields $\mathcal{D}_\mu F^{\mu\nu}[{\color{starrysecond}A^a_\mu}]={\color{jyured}\boldsymbol{j^\nu}}({\color{customblue}x^\mu}, {\color{customred}p^\mu}, {\color{customyellow}Q^a})$\\[5pt]
+        \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{${\color{jyured}\blacktriangleright}$}}} 
+        \item {\bfseries\color{jyured} Couple glasma to next stages}: Boltzmann-Vlasov with collisions + color current 
+    \end{itemize}
+        
+
+    % \begin{itemize}\itemsep0em 
+    %     \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{${\color{starrysecond}\blacktriangleright}$}}} 
+    %     \item \begin{center}\footnotesize Solve the classical transport equations with {\color{starrysecond}$A^\mu$} the {\color{starrysecond}glasma field}\end{center} 
+    %     \setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{${\color{palgold}\blacktriangleright}$}}} 
+    %     \item \begin{center}\footnotesize Color rotation conserves ${\color{palgold}q_{2}}=Q^aQ^a$ and ${\color{palgold}q_3}=d_{abc}Q^aQ^bQ^c$ {\color{palgold}SU($3$) Casimir invariants} \end{center} 
+    % \end{itemize}
+
+    \blfootnote{\scriptsize Dumitru, Nara, Strickland \href{https://arxiv.org/abs/hep-ph/0604149}{{\color{palgold}\texttt{[hep-ph/0604149]}$^\text{\scalebox{0.9}{\faExternalLink}}$}} Mrowczynski, Schenke, Strickland \href{https://arxiv.org/abs/1603.08946}{{\color{palgold}\texttt{[1603.08946]}$^\text{\scalebox{0.9}{\faExternalLink}}$}}}
 \end{frame}
 
 
